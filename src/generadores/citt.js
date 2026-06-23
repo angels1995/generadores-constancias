@@ -34,6 +34,16 @@ function toMayus(str) {
   return str ? String(str).toUpperCase() : '';
 }
 
+function sanitizar(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 function getFormatoFechaMinsa(dateStr) {
   if (!dateStr) return 'N/A';
   const date = parseFechaUTC(dateStr);
@@ -59,22 +69,18 @@ function rellenarTemplate(html, tokens) {
 }
 
 export async function generarCitt(body) {
-  // 1. Validar campos obligatorios
   for (const campo of CAMPOS_REQUERIDOS) {
     if (!body[campo]) throw new Error(`Falta el campo requerido: ${campo}`);
   }
 
-  // 2. Fechas y periodos
   const descansoInicio = calcularInicioDescanso(body.fecha_atencion, body.hora_atencion);
   const dias           = calcularDias(descansoInicio, body.descanso_fin);
   const validoHasta    = calcularValidoHasta(body.descanso_fin);
 
-  // 3. Identificadores únicos
   const autog      = generarAutogMinsa();
   const autogShort = 'D' + Math.floor(10000000 + Math.random() * 90000000);
   const actoMedico = Math.floor(1000000 + Math.random() * 9000000).toString();
 
-  // FIX: fecha otorgamiento — usar descansoInicio directamente (es string ISO)
   const otorgamientoDate = parseFechaUTC(descansoInicio);
   if (!otorgamientoDate || isNaN(otorgamientoDate.getTime())) {
     throw new Error(`descansoInicio inválido: ${descansoInicio}`);
@@ -82,7 +88,6 @@ export async function generarCitt(body) {
   otorgamientoDate.setUTCDate(otorgamientoDate.getUTCDate() - 1);
   const fechaOtorgamiento = getFormatoFechaMinsa(otorgamientoDate.toISOString().slice(0, 10));
 
-  // 4. Datos del médico (de body o valores por defecto)
   const medicoNombre = toMayus(body.medico_nombre || 'MEDICO GARCIA TORRES PEDRO JOSE');
   const medicoCmp    = body.medico_cmp  || '012345';
   const medicoRne    = body.medico_rne  || '022291';
@@ -91,15 +96,13 @@ export async function generarCitt(body) {
   const tipoAtencion = toMayus(body.tipo_atencion || 'CONSULTA EXTERNA');
   const usuario      = toMayus(body.usuario       || body.paciente_nombre);
 
-  // Fecha y hora actual (hora Peru UTC-5)
-  const ahora     = new Date();
-  const horaHoy   = ahora.toLocaleTimeString('es-PE', {
+  const ahora    = new Date();
+  const horaHoy  = ahora.toLocaleTimeString('es-PE', {
     hour: '2-digit', minute: '2-digit',
     hour12: true, timeZone: 'America/Lima'
   });
-  const fechaHoy  = getFormatoFechaMinsa(ahora.toISOString().slice(0, 10));
+  const fechaHoy = getFormatoFechaMinsa(ahora.toISOString().slice(0, 10));
 
-  // 5. Assets
   const qrUrl = `${VERIFICADOR_URL_BASE}?citt=${autog}`;
   const [qrBase64, logoBase64, firmaBase64] = await Promise.all([
     generarQRBase64(qrUrl),
@@ -107,39 +110,36 @@ export async function generarCitt(body) {
     Promise.resolve(imagenBase64('minsafirma_certificado.png'))
   ]);
 
-  // 6. Todos los tokens incluyendo los que faltaban
   const htmlFinal = rellenarTemplate(TEMPLATE_HTML, {
-    LOGO_BASE64:     logoBase64,
-    SELLO_BASE64:    logoBase64,
-    FIRMA_BASE64:    firmaBase64,
-    QR_BASE64:       qrBase64,
-    HOSPITAL:        toMayus(body.hospital || 'HOSPITAL NACIONAL'),
-    ACTO_MEDICO:     actoMedico,
-    AUTOG:           autog,
-    AUTOG_SHORT:     autogShort,
-    SERVICIO:        servicio,
-    TIPO_ATENCION:   tipoAtencion,
-    PACIENTE_NOMBRE: toMayus(body.paciente_nombre),
-    PACIENTE_EDAD:   String(body.paciente_edad || ''),
-    PACIENTE_DNI:    body.paciente_dni,
-    DIAGNOSTICO:     toMayus(body.diagnostico),
-    INICIO_DESCANSO: getFormatoFechaMinsa(descansoInicio),
-    FIN_DESCANSO:    getFormatoFechaMinsa(body.descanso_fin),
-    OBS_DIAS:        String(dias.total),
+    LOGO_BASE64:        logoBase64,
+    SELLO_BASE64:       logoBase64,
+    FIRMA_BASE64:       firmaBase64,
+    QR_BASE64:          qrBase64,
+    HOSPITAL:           sanitizar(toMayus(body.hospital || 'HOSPITAL NACIONAL')),
+    ACTO_MEDICO:        actoMedico,
+    AUTOG:              autog,
+    AUTOG_SHORT:        autogShort,
+    SERVICIO:           sanitizar(servicio),
+    TIPO_ATENCION:      sanitizar(tipoAtencion),
+    PACIENTE_NOMBRE:    sanitizar(toMayus(body.paciente_nombre)),
+    PACIENTE_EDAD:      sanitizar(String(body.paciente_edad || '')),
+    PACIENTE_DNI:       sanitizar(body.paciente_dni),
+    DIAGNOSTICO:        sanitizar(toMayus(body.diagnostico)),
+    INICIO_DESCANSO:    getFormatoFechaMinsa(descansoInicio),
+    FIN_DESCANSO:       getFormatoFechaMinsa(body.descanso_fin),
+    OBS_DIAS:           String(dias.total),
     FECHA_OTORGAMIENTO: fechaOtorgamiento,
-    MEDICO_NOMBRE:   medicoNombre,
-    MEDICO_CMP:      medicoCmp,
-    MEDICO_RNE:      medicoRne,
-    MEDICO_RUC:      medicoRuc,
-    USUARIO:         usuario,
-    FECHA_HOY:       fechaHoy,
-    HORA_HOY:        horaHoy
+    MEDICO_NOMBRE:      sanitizar(medicoNombre),
+    MEDICO_CMP:         sanitizar(medicoCmp),
+    MEDICO_RNE:         sanitizar(medicoRne),
+    MEDICO_RUC:         sanitizar(medicoRuc),
+    USUARIO:            sanitizar(usuario),
+    FECHA_HOY:          fechaHoy,
+    HORA_HOY:           horaHoy
   });
 
-  // 7. PDF — una sola página A4
   const pdfBase64 = await htmlAPdfBase64(htmlFinal);
 
-  // 8. Persistencia
   await pool.query(
     `insert into constancias_citt
       (autog, hospital, paciente_nombre, paciente_dni, paciente_edad,
@@ -151,7 +151,7 @@ export async function generarCitt(body) {
       toMayus(body.hospital || 'HOSPITAL NACIONAL'),
       toMayus(body.paciente_nombre),
       body.paciente_dni,
-      String(body.paciente_edad || '') + ' años',
+      body.paciente_edad ? `${body.paciente_edad} años` : '',
       body.fecha_atencion,
       descansoInicio,
       body.descanso_fin,

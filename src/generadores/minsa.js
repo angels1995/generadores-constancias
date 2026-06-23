@@ -32,10 +32,18 @@ const CAMPOS_REQUERIDOS = [
   'diagnostico'
 ];
 
-// ===================== Helpers de formato (portados del frontend) =====================
-
 function toMayus(str) {
   return str ? String(str).toUpperCase() : '';
+}
+
+function sanitizar(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 function formatDateToMinsa(dateStr) {
@@ -112,8 +120,6 @@ function rellenarTemplate(html, tokens) {
   return resultado;
 }
 
-// ===================== Orquestación principal =====================
-
 export async function generarMinsa(body) {
   for (const campo of CAMPOS_REQUERIDOS) {
     if (!body[campo]) throw new Error(`Falta el campo requerido: ${campo}`);
@@ -121,29 +127,28 @@ export async function generarMinsa(body) {
 
   const sintomasInput = Array.isArray(body.sintomas) ? body.sintomas : [];
 
-  // El backend calcula el inicio de descanso (regla de las 5pm), no se confía en el frontend.
   const descansoInicio = calcularInicioDescanso(body.fecha_atencion, body.hora_atencion);
   const dias = calcularDias(descansoInicio, body.descanso_fin);
   const validoHasta = calcularValidoHasta(body.descanso_fin);
   const autog = generarAutog();
 
   const datos = {
-    hospital: toMayus(body.hospital),
-    pacienteNombre: toMayus(body.paciente_nombre),
-    pacienteEdad: calculateYears(body.paciente_nacimiento),
-    pacienteDNI: body.paciente_dni,
-    descansoInicio: getFormatoFecha(descansoInicio),
-    descansoFin: getFormatoFecha(body.descanso_fin),
-    diagnosticoCompleto: toMayus(body.diagnostico),
-    fechaAtencion: formatDateToMinsa(body.fecha_atencion),
-    horaAtencion: formatTime(body.hora_atencion),
-    sintomas: formatSintomas(sintomasInput),
-    diagnosticoLimpio: toMayus(stripCIE(body.diagnostico)),
-    diasTexto: dias.texto,
+    hospital:            sanitizar(toMayus(body.hospital)),
+    pacienteNombre:      sanitizar(toMayus(body.paciente_nombre)),
+    pacienteEdad:        calculateYears(body.paciente_nacimiento),
+    pacienteDNI:         sanitizar(body.paciente_dni),
+    descansoInicio:      getFormatoFecha(descansoInicio),
+    descansoFin:         getFormatoFecha(body.descanso_fin),
+    diagnosticoCompleto: sanitizar(toMayus(body.diagnostico)),
+    fechaAtencion:       formatDateToMinsa(body.fecha_atencion),
+    horaAtencion:        formatTime(body.hora_atencion),
+    sintomas:            sanitizar(formatSintomas(sintomasInput)),
+    diagnosticoLimpio:   sanitizar(toMayus(stripCIE(body.diagnostico))),
+    diasTexto:           dias.texto,
     autog
   };
 
-  const qrUrl = `${VERIFICADOR_URL_BASE}?autog=${autog}`;
+  const qrUrl = `${VERIFICADOR_URL_BASE}?minsa=${autog}`;
   const [qrBase64, logoBase64, firmaBase64] = await Promise.all([
     generarQRBase64(qrUrl),
     Promise.resolve(imagenBase64('minsasello_certificado.png')),
@@ -151,22 +156,22 @@ export async function generarMinsa(body) {
   ]);
 
   const htmlFinal = rellenarTemplate(TEMPLATE_HTML, {
-    LOGO_BASE64: logoBase64,
-    FIRMA_BASE64: firmaBase64,
-    QR_BASE64: qrBase64,
-    HOSPITAL: datos.hospital,
+    LOGO_BASE64:     logoBase64,
+    FIRMA_BASE64:    firmaBase64,
+    QR_BASE64:       qrBase64,
+    HOSPITAL:        datos.hospital,
     PACIENTE_NOMBRE: datos.pacienteNombre,
-    PACIENTE_EDAD: datos.pacienteEdad,
-    PACIENTE_DNI: datos.pacienteDNI,
+    PACIENTE_EDAD:   datos.pacienteEdad,
+    PACIENTE_DNI:    datos.pacienteDNI,
     INICIO_DESCANSO: datos.descansoInicio,
-    FIN_DESCANSO: datos.descansoFin,
-    DIAGNOSTICO: datos.diagnosticoCompleto,
-    OBS_DNI: datos.pacienteDNI,
-    OBS_FECHA: datos.fechaAtencion,
-    OBS_HORA: datos.horaAtencion,
-    OBS_SINTOMAS: datos.sintomas,
+    FIN_DESCANSO:    datos.descansoFin,
+    DIAGNOSTICO:     datos.diagnosticoCompleto,
+    OBS_DNI:         datos.pacienteDNI,
+    OBS_FECHA:       datos.fechaAtencion,
+    OBS_HORA:        datos.horaAtencion,
+    OBS_SINTOMAS:    datos.sintomas,
     OBS_DIAGNOSTICO: datos.diagnosticoLimpio,
-    OBS_DIAS: datos.diasTexto
+    OBS_DIAS:        datos.diasTexto
   });
 
   const pdfBase64 = await htmlAPdfBase64(htmlFinal);
@@ -179,15 +184,15 @@ export async function generarMinsa(body) {
      values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12)`,
     [
       autog,
-      datos.hospital,
-      datos.pacienteNombre,
+      toMayus(body.hospital),
+      toMayus(body.paciente_nombre),
       body.paciente_dni,
       datos.pacienteEdad,
       body.fecha_atencion,
       descansoInicio,
       body.descanso_fin,
       dias.total,
-      datos.diagnosticoCompleto,
+      toMayus(body.diagnostico),
       JSON.stringify(sintomasInput),
       validoHasta
     ]
