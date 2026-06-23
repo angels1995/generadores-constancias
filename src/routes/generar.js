@@ -13,7 +13,7 @@ router.post("/minsa/generar", async (req, res) => {
       data: {
         autog: resultado.autog,
         valido_hasta: resultado.valido_hasta,
-        verificador_url: `${process.env.VERIFICADOR_URL_BASE}?citt=${resultado.autog}`,
+        verificador_url: `${process.env.VERIFICADOR_URL_BASE}?minsa=${resultado.autog}`,
         input: req.body,
         pdf_base64: resultado.pdf_base64,
       },
@@ -37,7 +37,7 @@ router.post("/citt/generar", async (req, res) => {
       data: {
         autog: resultado.autog,
         valido_hasta: resultado.valido_hasta,
-        verificador_url: `${process.env.VERIFICADOR_URL_BASE}?minsa=${resultado.autog}`,
+        verificador_url: `${process.env.VERIFICADOR_URL_BASE}?citt=${resultado.autog}`,
         input: req.body,
         pdf_base64: resultado.pdf_base64,
       },
