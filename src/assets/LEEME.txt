@@ -1,0 +1,11 @@
+Coloca aquí estos dos archivos (con estos nombres exactos):
+
+  minsasello_certificado.png   -> logo/sello del encabezado
+  minsafirma_certificado.png   -> firma del médico
+
+El código los lee con fs.readFileSync y los cachea en memoria como base64
+la primera vez que se generan (src/lib/assets.js). El QR NO va aquí: se
+genera dinámicamente en cada request (src/lib/qr.js).
+
+Si el archivo no existe, generarMinsa() lanzará un error claro indicando
+cuál falta, en vez de fallar en silencio.

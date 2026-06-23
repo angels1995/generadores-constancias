@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Plantilla CITT</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        #citt-container {
+            width: 794px;
+            height: 1123px; /* A4 exacto a 96dpi — no se corta */
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .data {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+            font-weight: 700;
+            color: #000;
+            position: absolute;
+            white-space: nowrap;
+            line-height: 1.2;
+            z-index: 2;
+        }
+        .label {
+            font-size: 12px;
+            color: #333;
+            font-weight: 400;
+            position: absolute;
+            white-space: nowrap;
+            line-height: 1.2;
+            z-index: 2;
+        }
+        .subsection-title {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            position: absolute;
+            text-align: left;
+            line-height: 1.2;
+            z-index: 2;
+        }
+        .separator-line {
+            position: absolute;
+            left: 60px;
+            width: calc(100% - 120px);
+            height: 2px;
+            background-color: #000;
+            z-index: 2;
+        }
+
+        /* ── HEADER ── */
+        #citt-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+            left: 60px;
+            width: calc(100% - 120px);
+            z-index: 2;
+        }
+        #form-id { position: static; font-weight: 700; font-size: 12px; }
+        #user-id { position: static; font-weight: 700; font-size: 12px; }
+
+        /* ── TÍTULO ── */
+        #main-title {
+            position: absolute;
+            top: 55px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 15px;
+            font-weight: 700;
+            text-align: center;
+            width: 80%;
+            z-index: 2;
+        }
+
+        /* ── BLOQUE 1: EE.SS / CITT ── */
+        .label-eess     { top: 100px; left: 60px; }
+        #data-eess      { top: 100px; left: 175px; }
+
+        .label-citt     { top: 130px; left: 60px; }
+        #data-citt      { top: 127px; left: 175px; font-size: 22px; font-weight: 900; }
+
+        .label-acto     { top: 168px; left: 60px; }
+        #data-acto-medico { top: 168px; left: 175px; }
+
+        .label-servicio { top: 190px; left: 60px; }
+        #data-servicio  { top: 190px; left: 175px; }
+
+        /* ── QR ── */
+        #qr-code-container {
+            position: absolute;
+            top: 100px;
+            right: 60px;
+            width: 95px;
+            height: 95px;
+            z-index: 2;
+        }
+        #qr-code-container img { display: block; width: 100%; height: 100%; }
+
+        /* ── SEP 1 ── */
+        #linea-separadora-1 { top: 218px; }
+
+        /* ── BLOQUE 2: PACIENTE ── */
+        .label-asegurado    { top: 234px; left: 60px; }
+        #data-paciente-nombre { top: 234px; left: 175px; }
+
+        .label-doc          { top: 256px; left: 60px; }
+        #label-dni-sub      { top: 256px; left: 175px; font-family: Arial; font-size: 12px; font-weight: 400; }
+        #data-paciente-dni  { top: 256px; left: 240px; }
+
+        .label-autogen      { top: 278px; left: 60px; }
+        #data-autogenerado  { top: 278px; left: 175px; }
+
+        .label-atencion     { top: 308px; left: 60px; }
+        #data-tipo-atencion { top: 308px; left: 175px; }
+
+        .label-contingencia { top: 330px; left: 60px; }
+        #data-contingencia  { top: 330px; left: 175px; }
+
+        /* ── SEP 2 ── */
+        #linea-separadora-2 { top: 358px; }
+
+        /* ── BLOQUE 3: PERIODO ── */
+        #title-periodo      { top: 374px; left: 60px; }
+
+        .label-f-inicio     { top: 400px; left: 60px; }
+        #data-fecha-inicio  { top: 400px; left: 175px; }
+
+        .label-f-fin        { top: 422px; left: 60px; }
+        #data-fecha-fin     { top: 422px; left: 175px; }
+
+        .label-total-dias   { top: 444px; left: 60px; }
+        #data-total-dias    { top: 444px; left: 175px; }
+
+        .label-f-otorga          { top: 466px; left: 60px; }
+        #data-fecha-otorgamiento { top: 466px; left: 175px; }
+
+        /* ── SEP 3 ── */
+        #linea-separadora-3 { top: 492px; }
+
+        /* ── BLOQUE 4: ACUMULADOS ── */
+        #title-acumulados   { top: 508px; left: 60px; }
+
+        .label-consec       { top: 534px; left: 60px; }
+        #data-dias-consecutivos { top: 534px; left: 175px; }
+
+        .label-no-consec    { top: 556px; left: 60px; }
+        #data-dias-no-consecutivos { top: 556px; left: 175px; }
+
+        .label-tratante     { top: 578px; left: 60px; }
+        #data-medico-info   { top: 578px; left: 175px; }
+
+        .label-cmp          { top: 600px; left: 60px; }
+        #data-medico-cmp    { top: 600px; left: 175px; }
+
+        .label-rne          { top: 622px; left: 60px; }
+        #data-medico-rne    { top: 622px; left: 175px; }
+
+        .label-ruc          { top: 644px; left: 60px; }
+        #data-ruc           { top: 644px; left: 175px; }
+
+        /* ── SEP 4 ── */
+        #linea-separadora-4 { top: 670px; }
+
+        /* ── BLOQUE 5: OBSERVACIONES ── */
+        .label-obs          { top: 686px; left: 60px; font-weight: 700; }
+        .label-dias-acum    { top: 708px; left: 60px; }
+        #data-dias-acumulados { top: 708px; left: 310px; }
+
+        /* ── SEP 5 ── */
+        #linea-separadora-5 { top: 734px; }
+
+        /* ── BLOQUE 6: USUARIO ── */
+        .label-usuario         { top: 752px; left: 60px; }
+        #data-usuario-registro { top: 750px; left: 115px; font-size: 11px; }
+
+        /* ── SELLOS ── */
+        .signature-box {
+            position: absolute;
+            width: 200px;
+            height: 140px;
+            overflow: hidden;
+            text-align: center;
+            z-index: 1;
+            bottom: 100px;
+        }
+        #sello-final { left: 100px; }
+        #firma-final { right: 100px; }
+        .signature-box img {
+            max-width: 200px;
+            max-height: 140px;
+            width: auto;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        /* ── SEP FOOTER ── */
+        #linea-separadora-footer {
+            position: absolute;
+            left: 60px;
+            width: calc(100% - 120px);
+            height: 2px;
+            background-color: #000;
+            bottom: 76px;
+            z-index: 2;
+        }
+
+        /* ── FECHA / HORA PIE ── */
+        .label-fecha-reg     { bottom: 52px; left: 60px; }
+        #data-fecha-registro { bottom: 50px; left: 108px; }
+        .label-hora-reg      { bottom: 52px; right: 145px; }
+        #data-hora-registro  { bottom: 50px; right: 60px; }
+    </style>
+</head>
+<body>
+<div id="citt-container">
+
+    <div id="citt-header">
+        <span class="label" id="form-id">Formulario 8017-1</span>
+        <span class="label" id="user-id">USUARIO</span>
+    </div>
+
+    <h1 id="main-title">CERTIFICADO DE INCAPACIDAD TEMPORAL PARA EL TRABAJO</h1>
+
+    <span class="label label-eess">EE.SS:</span>
+    <span class="data" id="data-eess">{{HOSPITAL}}</span>
+
+    <span class="label label-citt">No. CITT:</span>
+    <span class="data" id="data-citt">{{AUTOG}}</span>
+
+    <span class="label label-acto">Acto médico:</span>
+    <span class="data" id="data-acto-medico">{{ACTO_MEDICO}}</span>
+
+    <span class="label label-servicio">Servicio:</span>
+    <span class="data" id="data-servicio">{{SERVICIO}}</span>
+
+    <div id="qr-code-container">
+        <img src="{{QR_BASE64}}" alt="QR CITT">
+    </div>
+
+    <div class="separator-line" id="linea-separadora-1"></div>
+
+    <span class="label label-asegurado">Nombre Asegurado:</span>
+    <span class="data" id="data-paciente-nombre">{{PACIENTE_NOMBRE}}</span>
+
+    <span class="label label-doc">Doc. de Identidad:</span>
+    <span class="label" id="label-dni-sub">DNI/C. E</span>
+    <span class="data" id="data-paciente-dni">{{PACIENTE_DNI}}</span>
+
+    <span class="label label-autogen">Autogenerado:</span>
+    <span class="data" id="data-autogenerado">{{AUTOG_SHORT}}</span>
+
+    <span class="label label-atencion">Tipo de Atención:</span>
+    <span class="data" id="data-tipo-atencion">{{TIPO_ATENCION}}</span>
+
+    <span class="label label-contingencia">Contingencia:</span>
+    <span class="data" id="data-contingencia">{{DIAGNOSTICO}}</span>
+
+    <div class="separator-line" id="linea-separadora-2"></div>
+
+    <span class="subsection-title" id="title-periodo">PERIODO INCAPACIDAD</span>
+
+    <span class="label label-f-inicio">Fecha de Inicio:</span>
+    <span class="data" id="data-fecha-inicio">{{INICIO_DESCANSO}}</span>
+
+    <span class="label label-f-fin">Fecha Fin:</span>
+    <span class="data" id="data-fecha-fin">{{FIN_DESCANSO}}</span>
+
+    <span class="label label-total-dias">Total de Días:</span>
+    <span class="data" id="data-total-dias">{{OBS_DIAS}}</span>
+
+    <span class="label label-f-otorga">F. de Otorgamiento:</span>
+    <span class="data" id="data-fecha-otorgamiento">{{FECHA_OTORGAMIENTO}}</span>
+
+    <div class="separator-line" id="linea-separadora-3"></div>
+
+    <span class="subsection-title" id="title-acumulados">DIAS ACUMULADOS</span>
+
+    <span class="label label-consec">Consecutivos:</span>
+    <span class="data" id="data-dias-consecutivos">{{OBS_DIAS}}</span>
+
+    <span class="label label-no-consec">No Consecutivos:</span>
+    <span class="data" id="data-dias-no-consecutivos">0</span>
+
+    <span class="label label-tratante">PP.SS. Tratante:</span>
+    <span class="data" id="data-medico-info">{{MEDICO_NOMBRE}}</span>
+
+    <span class="label label-cmp">CMP:</span>
+    <span class="data" id="data-medico-cmp">{{MEDICO_CMP}}</span>
+
+    <span class="label label-rne">RNE:</span>
+    <span class="data" id="data-medico-rne">{{MEDICO_RNE}}</span>
+
+    <span class="label label-ruc">RUC:</span>
+    <span class="data" id="data-ruc">{{MEDICO_RUC}}</span>
+
+    <div class="separator-line" id="linea-separadora-4"></div>
+
+    <span class="label label-obs">OBSERVACIONES:</span>
+    <span class="label label-dias-acum">Días de Incapacidad Temporal Acumulados:</span>
+    <span class="data" id="data-dias-acumulados">{{OBS_DIAS}}</span>
+
+    <div class="separator-line" id="linea-separadora-5"></div>
+
+    <span class="label label-usuario">Usuario:</span>
+    <span class="data" id="data-usuario-registro">{{USUARIO}}</span>
+
+    <div class="signature-box" id="sello-final">
+        <img src="{{SELLO_BASE64}}" alt="Sello">
+    </div>
+    <div class="signature-box" id="firma-final">
+        <img src="{{FIRMA_BASE64}}" alt="Firma">
+    </div>
+
+    <div id="linea-separadora-footer"></div>
+
+    <span class="label label-fecha-reg">Fecha:</span>
+    <span class="data" id="data-fecha-registro">{{FECHA_HOY}}</span>
+
+    <span class="label label-hora-reg">Hora:</span>
+    <span class="data" id="data-hora-registro">{{HORA_HOY}}</span>
+
+</div>
+</body>
+</html>
