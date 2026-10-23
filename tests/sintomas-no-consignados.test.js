@@ -8,7 +8,7 @@ import { cerrarBrowser } from '../src/lib/pdf.js';
 let html='',inserts=0;
 const query=pool.query,launch=puppeteer.launch;
 pool.query=async()=>{inserts++;return {rows:[]};};
-puppeteer.launch=async()=>({newPage:async()=>({setContent:async h=>{html=h;},pdf:async()=>Buffer.from('PDF SIMULADO'),close:async()=>{}}),close:async()=>{}});
+puppeteer.launch=async()=>({once:()=>{},isConnected:()=>true,newPage:async()=>({setContent:async h=>{html=h;},pdf:async()=>Buffer.from('PDF SIMULADO'),close:async()=>{}}),close:async()=>{}});
 const base={hospital:'ESTABLECIMIENTO DEMO',paciente_nombre:'PACIENTE DEMO',paciente_dni:'00000001',paciente_nacimiento:'1990-01-01',
  fecha_atencion:'2026-10-22',hora_atencion:'08:00',descanso_fin:'2026-10-24',diagnostico:'DIAGNÓSTICO DEMO',sintomas:[]};
 after(async()=>{await cerrarBrowser();pool.query=query;puppeteer.launch=launch;await pool.end();});

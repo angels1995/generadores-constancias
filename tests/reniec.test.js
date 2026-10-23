@@ -87,7 +87,7 @@ test('ambos generadores usan la identidad en HTML, BD simulada y respuesta; fall
   const launch = puppeteer.launch;
   const query = pool.query;
   let inserts = 0;
-  puppeteer.launch = async () => ({
+  puppeteer.launch = async () => ({ once: () => {}, isConnected: () => true,
     newPage: async () => ({
       setContent: async (html) => assert.ok(html.includes('PERSONA DE PRUEBA')),
       pdf: async () => Buffer.from('PDF SIMULADO'), close: async () => {}

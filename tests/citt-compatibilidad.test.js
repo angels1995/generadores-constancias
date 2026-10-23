@@ -14,7 +14,7 @@ const originalQuery = pool.query;
 let html = '';
 let inserts = 0;
 let values;
-puppeteer.launch = async () => ({
+puppeteer.launch = async () => ({ once: () => {}, isConnected: () => true,
   newPage: async () => ({
     setContent: async (value) => { html = value; },
     pdf: async () => Buffer.from('PDF SIMULADO'), close: async () => {}

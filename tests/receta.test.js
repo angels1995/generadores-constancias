@@ -12,7 +12,7 @@ const fetchOriginal = globalThis.fetch;
 const queryOriginal = pool.query;
 const launchOriginal = puppeteer.launch;
 let html, registros = new Map(), externas = 0;
-puppeteer.launch = async () => ({ newPage: async () => ({
+puppeteer.launch = async () => ({ once: () => {}, isConnected: () => true, newPage: async () => ({
   setViewport: async () => {}, evaluate: async () => {},
   setContent: async h => { html = h; }, pdf: async () => Buffer.from('PDF SIMULADO'), close: async () => {}
 }), close: async () => {} });
