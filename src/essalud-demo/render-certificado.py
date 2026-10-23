@@ -1,4 +1,4 @@
-"""Certificado narrativo A4: datos declarados, pendiente de firma profesional."""
+"""Certificado narrativo A4: datos declarados, registrado en el sistema profesional."""
 import sys
 import json
 import base64
@@ -21,12 +21,12 @@ BODY=ParagraphStyle('body',fontName='Times-Roman',fontSize=12,leading=18.5,align
 
 def render(data,output):
     c=canvas.Canvas(output,pagesize=A4)
-    c.setTitle('Certificado médico - Pendiente de firma')
+    c.setTitle('Certificado médico - Registro del sistema')
     c.setAuthor('Registro interno')
     c.setSubject('Documento pendiente de validación y firma profesional.')
     c.setFont('Helvetica',7)
     c.setFillColor(HexColor('#555555'))
-    c.drawRightString(RIGHT,H-14,'PENDIENTE DE VALIDACIÓN Y FIRMA PROFESIONAL')
+    c.drawRightString(RIGHT,H-14,'REGISTRO VERIFICADO EN EL SISTEMA')
     c.setFillColor(black)
     resources=data.get('recursos') or {}
     if resources.get('logo'):

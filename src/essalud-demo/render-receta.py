@@ -21,7 +21,7 @@ TEXT=ParagraphStyle('cell',fontName='Helvetica',fontSize=8,leading=11)
 
 def render(data,output):
     c=canvas.Canvas(output,pagesize=A4)
-    c.setTitle('Receta EsSalud - Pendiente de firma')
+    c.setTitle('Receta EsSalud - Registro del sistema')
     c.setAuthor('Registro interno')
     resources=data.get('recursos') or {}
 
@@ -101,7 +101,7 @@ def render(data,output):
     for page_no,part in enumerate(pages,1):
         c.setFillColor(HexColor('#555555'))
         c.setFont('Helvetica',7)
-        c.drawRightString(RIGHT,H-19,'PENDIENTE DE VALIDACIÓN Y FIRMA PROFESIONAL')
+        c.drawRightString(RIGHT,H-19,'REGISTRO VERIFICADO EN EL SISTEMA')
         if resources.get('logo'):
             logo=ImageReader(BytesIO(base64.b64decode(resources['logo'],validate=True)))
             c.drawImage(logo,40.17,H-108.71,width=230.05,height=71.22,

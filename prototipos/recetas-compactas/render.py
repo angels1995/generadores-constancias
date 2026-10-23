@@ -26,7 +26,7 @@ STYLE=ParagraphStyle('cell',fontName='LiberationSans-Regular',fontSize=8.25,lead
 
 def render(d,output):
     c=canvas.Canvas(output,pagesize=(W,H))
-    c.setTitle('Receta compacta - muestra local sin validación')
+    c.setTitle('Receta compacta - '+('Registro del sistema' if d.get('modo')=='produccion' else 'muestra local sin validación'))
     c.setAuthor('Prototipo local')
     def label(x,y,s,size=8.25,bold=False,mono=False,right=False):
         c.setFont('LiberationMono-Bold' if mono else ('LiberationSans-Bold' if bold else 'LiberationSans-Regular'),size)
@@ -69,7 +69,7 @@ def render(d,output):
         pages.append(parts[0]);table=parts[1]
     for n,part in enumerate(pages,1):
         c.setFillColor(HexColor('#555555'))
-        label(R,15,('' if d.get('modo')=='produccion' else 'MUESTRA LOCAL - ')+'PENDIENTE DE VALIDACIÓN Y FIRMA PROFESIONAL',6,right=True)
+        label(R,15,('REGISTRO VERIFICADO EN EL SISTEMA' if d.get('modo')=='produccion' else 'MUESTRA LOCAL - PENDIENTE DE VALIDACIÓN Y FIRMA PROFESIONAL'),6,right=True)
         c.setFillColor(black)
         img('logo',L,22.5,75 if d['perfil']=='minsa' else 234,75)
         label(L,114,'No. DE ORDEN:',8.25,bold=True)

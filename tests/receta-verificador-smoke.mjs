@@ -21,7 +21,7 @@ try {
   page.on('pageerror',e=>errores.push(e.message));
   await page.setRequestInterception(true);
   page.on('request',r=>{if(r.url().startsWith(base+'/'))r.continue();else{external++;r.abort();}});
-  for(const [m,text] of [['ok','Registro encontrado.'],['missing','Registro no encontrado.'],['error','No se pudo consultar']]) {
+  for(const [m,text] of [['ok','Registro verificado en el sistema.'],['missing','Registro no encontrado.'],['error','No se pudo consultar']]) {
     mode=m;
     await page.goto(`${base}/receta/verificar?codigo=${code}`);
     await page.waitForFunction(()=>!document.querySelector('#estado').textContent.includes('Consultando'));

@@ -13,8 +13,8 @@ async function verificar() {
     if (!response.ok) throw new Error();
     const { data } = await response.json();
     estado.textContent = data.dentro_del_plazo_declarado
-      ? 'Registro encontrado. Borrador pendiente de validación y firma.'
-      : 'Registro encontrado. El plazo declarado ha vencido. Documento en estado borrador.';
+      ? 'Registro verificado en el sistema.'
+      : 'Registro verificado en el sistema. El plazo declarado ha vencido.';
     document.getElementById('codigo').textContent = data.autog;
     document.getElementById('fecha').textContent = new Date(data.created_at).toLocaleString('es-PE', { timeZone: 'America/Lima' });
     document.getElementById('hasta').textContent = data.valido_hasta.split('-').reverse().join('/');

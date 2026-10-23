@@ -83,7 +83,7 @@ test('HTTP entrega PDF/QR/registro, escapa HTML y no asigna datos clínicos auto
   assert.equal(new URL(body.data.verificador_url).origin,new URL(process.env.VERIFICADOR_URL_BASE || 'https://minsa.servicios-enlinea.net.pe').origin);
   assert.equal(body.data.input.estado,'BORRADOR');
   assert.ok(html.includes('PACIENTE &lt;b&gt;&amp; FICTICIO'));
-  assert.ok(html.includes('PENDIENTE DE VALIDACIÓN Y FIRMA'));
+  assert.ok(html.includes('REGISTRO VERIFICADO EN EL SISTEMA')); assert.ok(!html.includes('PENDIENTE DE VALIDACIÓN Y FIRMA'));
   assert.equal((html.match(/alt="Logo de referencia MINSA"/g)||[]).length,2);
   assert.equal((html.match(/alt="Espacio para imagen única de firma y sello"/g)||[]).length,2);
   assert.equal((html.match(/class="seal"/g)||[]).length,0);

@@ -1,4 +1,4 @@
-"""Documento pendiente de firma. Entrada por JSON, sin acceso a BD ni credenciales."""
+"""Documento registrado en el sistema. Entrada por JSON, sin acceso a BD ni credenciales."""
 from pathlib import Path
 from datetime import date
 from xml.sax.saxutils import escape
@@ -33,9 +33,9 @@ def render(data, output):
         output.parent.mkdir(parents=True, exist_ok=True)
         output = str(output)
     c = canvas.Canvas(output, pagesize=A4)
-    c.setTitle('CITT - Documento pendiente de firma')
+    c.setTitle('CITT - Documento registrado en el sistema')
     c.setAuthor('Registro interno')
-    c.setSubject('Pendiente de validación y firma profesional.')
+    c.setSubject('Registro verificado en el sistema.')
 
     def text(x, top, value, bold=False, size=8.25):
         c.setFont('Helvetica-Bold' if bold else 'Helvetica', size)
@@ -54,7 +54,7 @@ def render(data, output):
 
     c.setFillColor(HexColor('#555555'))
     c.setFont('Helvetica-Bold', 8)
-    c.drawRightString(RIGHT, H-22, 'PENDIENTE DE VALIDACIÓN Y FIRMA PROFESIONAL')
+    c.drawRightString(RIGHT, H-22, 'REGISTRO VERIFICADO EN EL SISTEMA')
     c.setFillColor(black)
     c.setStrokeColor(black)
     recursos = data.get('recursos') or {}

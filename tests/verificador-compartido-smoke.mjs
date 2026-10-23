@@ -41,7 +41,7 @@ try{
    assert.equal(calls.length,1);assert.ok(calls[0].includes(`/api/${tipo==='essalud'?'essalud/citt-demo':tipo==='documento'?'documentos':tipo}/verificar/`));
    const text=await page.$eval('#results-container',el=>el.textContent);
    if(['essalud','documento'].includes(tipo)){
-     assert.ok(text.includes('Pendiente de validación y firma profesional.'));assert.ok(text.includes('SHA-256'));
+     assert.ok(text.includes('Registro verificado en el sistema'));assert.ok(text.includes('SHA-256'));
      assert.equal(await page.$$eval('#essalud-details .label',els=>els.filter(el=>el.textContent==='Estado').length),0);
      assert.ok(text.includes('<img src=x'));assert.equal(await page.evaluate(()=>window.inyectado),undefined);
      assert.ok(!text.includes('Válida y Auténtica'));
@@ -49,7 +49,7 @@ try{
      assert.ok(!(await page.$eval('.main-footer',el=>el.textContent)).includes('Ministerio'));
      assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
    }else if(tipo==='receta'){
-     assert.ok(text.includes('BORRADOR'));assert.ok(text.includes('Medicamentos registrados'));
+     assert.ok(text.includes('Registro verificado en el sistema'));assert.ok(!text.includes('BORRADOR'));assert.ok(text.includes('Medicamentos registrados'));
      assert.ok(text.includes('<img src=x'));assert.equal(await page.evaluate(()=>window.inyectado),undefined);
      assert.ok(!text.includes('Válida y Auténtica'));assert.ok(!text.includes('Paciente'));
      await page.setViewport({width:390,height:844});
@@ -74,7 +74,7 @@ try{
  assert.ok((await page.$eval('#results-container',el=>el.textContent)).includes('no encontrado'));
  await page.click('#newSearchBtn');await page.type('#autog-input',code);status=200;
  await page.click('#verify-button');await page.waitForSelector('#receta-details');
- assert.ok((await page.$eval('#results-container',el=>el.textContent)).includes('BORRADOR'));
+ assert.ok((await page.$eval('#results-container',el=>el.textContent)).includes('Registro verificado en el sistema'));
  calls=[];
  await page.goto(`${base}/?receta=%3Cscript%3E`);await page.waitForFunction(()=>document.getElementById('form-error').textContent.includes('no es válido'));
  assert.equal(calls.length,0);assert.deepEqual(errores,[]);

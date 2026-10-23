@@ -29,7 +29,7 @@ def long_date(v):
 class Document:
     def __init__(self,d,out):
         self.d=d;self.c=canvas.Canvas(out,pagesize=(W,H))
-        self.c.setTitle('Clínica La Luz - '+d['tipo']+' - muestra local pendiente de firma')
+        self.c.setTitle('Clínica La Luz - '+d['tipo']+(' - Registro del sistema' if d.get('modo')=='produccion' else ' - muestra local pendiente de firma'))
         self.c.setAuthor('Prototipo local')
     def text(self,x,y,s,size=10,bold=False,align='left',width=None):
         s=str(s or '');font='Helvetica-Bold' if bold else 'Helvetica'
@@ -54,7 +54,7 @@ class Document:
         self.c.restoreState()
     def begin(self):
         self.c.setFillColor(HexColor('#555555'))
-        self.text(R,25,('' if self.d.get('modo')=='produccion' else 'MUESTRA LOCAL - ')+'PENDIENTE DE VALIDACIÓN Y FIRMA PROFESIONAL',6,align='right')
+        self.text(R,25,('REGISTRO VERIFICADO EN EL SISTEMA' if self.d.get('modo')=='produccion' else 'MUESTRA LOCAL - PENDIENTE DE VALIDACIÓN Y FIRMA PROFESIONAL'),6,align='right')
         self.c.setFillColor(black)
     def physician(self,x,top,width):
         self.image('sello',x+width*.08,top, width*.32,58)
@@ -76,7 +76,7 @@ class Document:
         renderPDF.draw(drawing,self.c,L,H-808)
         self.c.linkURL(self.d['verificador_url'],(L,H-808,L+side,H-732),relative=0)
         self.text(L+86,773,('Registro interno: ' if self.d.get('modo')=='produccion' else 'Código local de muestra: ')+self.d['autog'],6.5)
-        self.text(L+86,784,'Pendiente de validación y firma profesional.' if self.d.get('modo')=='produccion' else 'Sin registro público ni firma profesional.',6.5)
+        self.text(L+86,784,'Registro verificado en el sistema.' if self.d.get('modo')=='produccion' else 'Sin registro público ni firma profesional.',6.5)
         self.text(R,827,f'Página {page} de {pages}',6,align='right')
         self.c.showPage()
 

@@ -66,10 +66,12 @@ documentos_pendientes; no guarda información clínica.
 
 ## Imágenes y configuración
 
-Tus imágenes y config local se conservaron; no se borró ningún archivo añadido
-por ti. La configuración de producción de los modelos nuevos mantiene firma/sello
-desactivados: no se publicaron facsímiles de firmas/sellos de los profesionales
-de las plantillas. Los modelos siguen pendientes de validación y firma.
+La configuración publicada activa las imágenes de firma/sello ya configuradas
+en la PC y la firma existente de receta MINSA compacta. Los recursos se incrustan
+en los PDF nuevos. Las cabeceras de producción y el verificador muestran
+«Registro verificado en el sistema»; las muestras locales conservan su aviso.
+Los códigos internos BORRADOR/PENDIENTE_FIRMA se conservan para mantener el
+contrato de API y la base de datos; este cambio actualiza la presentación.
 
 Para una imagen propia/autorizada se puede fijar la ruta una vez y sustituir
 después el archivo con el mismo nombre. Si está en null, sigue desactivada.

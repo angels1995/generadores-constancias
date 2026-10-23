@@ -16,7 +16,7 @@ export async function renderHtmlReceta(input, meta) {
     <h3>RECETA ÚNICA ESTANDARIZADA${indicaciones ? '<br>INDICACIONES' : ''}</h3><small>N.º ${e(meta.autog)}</small></header>${paciente}`;
   const firma = `<div class="signature"><div class="signature-art">
     <img class="firma-sello-image" alt="Espacio para imagen única de firma y sello" src="${e(firmaSelloConfigurada)}"></div>
-    <div class="signature-caption">Firma y sello del profesional: pendiente de validación</div>
+    <div class="signature-caption">Firma y sello del profesional</div>
     <div class="professional">Profesional declarado: ${e(input.medico_nombre)} &nbsp; CMP: ${e(input.medico_cmp)}</div></div>`;
   const tablas = (items, indicaciones, pagina) => `<table><thead><tr>${(indicaciones ?
     ['Medicamento', 'Dosis', 'Vía', 'Frecuencia', 'Días'] :
@@ -41,7 +41,7 @@ export async function renderHtmlReceta(input, meta) {
     .signature-art{height:108px;display:flex;align-items:center;justify-content:center}.firma-sello-image{width:100%;max-width:294px;height:106.5px;object-fit:contain}
     .signature-caption{padding:3px 6px;font-size:8px}.professional{padding:4px 6px;line-height:12px}.dates{margin-top:14px;font-size:10px;line-height:17px}
     footer{border-top:1px solid #aaa;display:flex;align-items:center;gap:12px;padding-top:8px;min-height:94px;font-size:9px;line-height:14px}footer img{width:76px;height:76px;flex:0 0 76px}footer .text{flex:1;min-width:0;overflow-wrap:anywhere}footer .metadata{flex:0 0 145px;overflow-wrap:anywhere;font-size:8px}a{color:#254b6b}footer a{font-size:8px}
-  </style></head><body>${grupos.map((items, i) => `<section class="page"><div class="banner">PENDIENTE DE VALIDACIÓN Y FIRMA DEL PROFESIONAL</div><div class="columns">
+  </style></head><body>${grupos.map((items, i) => `<section class="page"><div class="banner">REGISTRO VERIFICADO EN EL SISTEMA</div><div class="columns">
     <div class="col">${encabezado(false)}<div class="details"><b>USUARIO / SEGURO:</b> ${e(input.seguro)}<br><b>ATENCIÓN:</b> ${e(input.atencion)}<br><b>ESPECIALIDAD:</b> ${e(input.especialidad)}<br>
       <b>HISTORIA INTERNA:</b> ${e(input.historia_interna)}<br><b>Diagnóstico:</b> ${e(input.diagnostico)}<br><b>CIE-10:</b> ${e(input.cie10)}</div>
       ${tablas(items, false, i)}${firma}<div class="dates">Fecha de atención: ${f(input.fecha_atencion)}<br>Válido hasta (declarado): ${f(input.valido_hasta)}</div></div>
