@@ -1,3 +1,11 @@
+## Alineación Git completada (22 de octubre de 2026)
+
+- Rama compartida trabajo/generadores publicada; PC y VPS consolidados inicialmente en 170bdef. Respaldo recuperable privado remoto en /root/generadores-backups/alineacion-20261022/privado-completo.tar y rama local VPS respaldo/alineacion-20261022 (c449324), sin publicar esa rama.
+- Corregida propiedad de carpetas de código previamente root para permitir checkout como appuser. Conservados .env y JSON activo remotos por SHA-256; todas las imágenes anteriores conservadas. README de recursos de receta sí se actualizó.
+- 58 pruebas backend aprobadas en PC, copia aislada y checkout VPS; 3 pruebas Python y navegador compartido aprobados. Los 50 archivos originales de configuración/recursos PC siguen idénticos por SHA-256. No se activaron imágenes nuevas en producción.
+- Verificador f52298b: nombres visibles profesionales sin slugs/versiones y sin fila duplicada Estado; indicación pendiente en cabecera conservada. Sin interruptor que acredite validación inexistente.
+- Flujo preparado: git add . / commit / push en PC y scripts/desplegar.bat, o bash scripts/desplegar-vps.sh dentro del VPS. Configuración a publicar en config/recursos-pdf.example.json; JSON activo privado preservado en cada equipo.
+
 ## Preparación de Git (22 de octubre de 2026)
 
 - Revisados ENTORNO, diff local completo y copia del código remoto. Sin secretos en el paquete de revisión. Copias privadas PC en tmp/alineacion-git/ y VPS en /root/alineacion-codigo-20261022.tar.gz; antes de alinear se crea además respaldo completo privado del servidor.

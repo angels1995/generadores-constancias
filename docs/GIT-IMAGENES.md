@@ -49,7 +49,7 @@ También puedes ejecutarlo dentro del VPS como root:
 
 ```bash
 cd /var/www/constancias-api
-bash scripts/desplegar-servidor.sh trabajo/generadores "$(git -c safe.directory=/var/www/constancias-api ls-remote origin refs/heads/trabajo/generadores | cut -f1)"
+bash scripts/desplegar-vps.sh
 ```
 
 ## Cliente Python y error 403
