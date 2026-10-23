@@ -2,12 +2,27 @@ import puppeteer from 'puppeteer';
 
 let browserPromise = null;
 
-function getBrowser() {
+async function getBrowser() {
+  if (browserPromise) {
+    const current = browserPromise;
+    const browser = await current;
+    if (browser.isConnected()) return browser;
+    if (browserPromise === current) browserPromise = null;
+  }
   if (!browserPromise) {
-    browserPromise = puppeteer.launch({
+    const pending = puppeteer.launch({
       headless: 'new',
       args: ['--no-sandbox', '--disable-setuid-sandbox']
+    }).then(browser => {
+      browser.once('disconnected', () => {
+        if (browserPromise === pending) browserPromise = null;
+      });
+      return browser;
+    }).catch(error => {
+      if (browserPromise === pending) browserPromise = null;
+      throw error;
     });
+    browserPromise = pending;
   }
   return browserPromise;
 }
@@ -25,14 +40,15 @@ export async function htmlAPdfBase64(html) {
     });
     return buffer.toString('base64');
   } finally {
-    await page.close();
+    await page.close().catch(() => {});
   }
 }
 
 export async function cerrarBrowser() {
   if (browserPromise) {
-    const browser = await browserPromise;
-    await browser.close();
+    const pending = browserPromise;
     browserPromise = null;
+    const browser = await pending;
+    await browser.close();
   }
 }
