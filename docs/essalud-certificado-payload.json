@@ -1,0 +1,21 @@
+{
+  "usar_reniec": false,
+  "paciente_dni": "00000000",
+  "paciente_nombre": "PACIENTE FICTICIO DE DEMOSTRACIÓN",
+  "paciente_edad": 25,
+  "hospital": "ESTABLECIMIENTO FICTICIO",
+  "fecha_atencion": "2026-10-22",
+  "hora_atencion": "08:00",
+  "descanso_inicio": "2026-10-22",
+  "descanso_hora_inicio": "08:00",
+  "descanso_fin": "2026-10-22",
+  "descanso_hora_fin": "18:00",
+  "diagnostico": "CASO FICTICIO PARA REVISIÓN DEL DISEÑO",
+  "recomendaciones": "RECOMENDACIONES FICTICIAS PARA REVISAR EL FORMATO. NO USAR COMO INDICACIÓN MÉDICA.",
+  "medico_nombre": null,
+  "medico_especialidad": null,
+  "medico_cmp": null,
+  "medico_rne": null,
+  "lema": "Año de la recuperación y consolidación de la economía peruana",
+  "distrito_expedicion": "DISTRITO DE DEMOSTRACIÓN"
+}

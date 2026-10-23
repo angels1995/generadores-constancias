@@ -14,13 +14,13 @@ router.post("/minsa/generar", async (req, res) => {
         autog: resultado.autog,
         valido_hasta: resultado.valido_hasta,
         verificador_url: `${process.env.VERIFICADOR_URL_BASE}?minsa=${resultado.autog}`,
-        input: req.body,
+        input: resultado.input,
         pdf_base64: resultado.pdf_base64,
       },
     });
   } catch (err) {
     console.error("Error generando MINSA:", err);
-    res.status(400).json({
+    res.status(err.statusCode || 400).json({
       status: false,
       message: err.message,
       data: null,
@@ -38,13 +38,13 @@ router.post("/citt/generar", async (req, res) => {
         autog: resultado.autog,
         valido_hasta: resultado.valido_hasta,
         verificador_url: `${process.env.VERIFICADOR_URL_BASE}?citt=${resultado.autog}`,
-        input: req.body,
+        input: resultado.input,
         pdf_base64: resultado.pdf_base64,
       },
     });
   } catch (err) {
     console.error("Error generando CITT:", err);
-    res.status(400).json({
+    res.status(err.statusCode || 400).json({
       status: false,
       message: err.message,
       data: null,

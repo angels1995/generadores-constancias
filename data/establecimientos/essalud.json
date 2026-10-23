@@ -1,0 +1,3694 @@
+{
+  "essalud": [
+    [
+      "00029680",
+      "CENTRO MEDICO AYAVIRI",
+      "PUNO",
+      "MELGAR",
+      "AYAVIRI",
+      "210801",
+      "GRAU"
+    ],
+    [
+      "00011215",
+      "CENTRO DE ATENCION PRIMARIA I CHUQUIBAMBILLA",
+      "APURIMAC",
+      "GRAU",
+      "CHUQUIBAMBILLA",
+      "030701",
+      "PASAJE VARELA  S/N,  BARRIOS ALTOS"
+    ],
+    [
+      "00011217",
+      "CENTRO DE ATENCION PRIMARIA I ANTABAMBA",
+      "APURIMAC",
+      "ANTABAMBA",
+      "ANTABAMBA",
+      "030301",
+      "JR. SUCRE  S/N"
+    ],
+    [
+      "00011337",
+      "HOSPITAL II GUSTAVO LANATTA LUJAN - ESSALUD",
+      "LIMA",
+      "HUAURA",
+      "HUACHO",
+      "150801",
+      "AVENIDA FRANCISCO VIDAL Nº 707"
+    ],
+    [
+      "00011386",
+      "CAP II SAN JUAN BAUTISTA",
+      "LORETO",
+      "MAYNAS",
+      "SAN JUAN BAUTISTA",
+      "160113",
+      "AV. ABELARDO QUIÑONES KM. 3.5"
+    ],
+    [
+      "00011403",
+      "CENTRO DE ATENCION PRIMARIA II NAUTA",
+      "LORETO",
+      "LORETO",
+      "NAUTA",
+      "160301",
+      "TARAPACA N° 1179 - NAUTA"
+    ],
+    [
+      "00011405",
+      "CAP II REQUENA",
+      "LORETO",
+      "REQUENA",
+      "REQUENA",
+      "160501",
+      "MALECON BOLOGNESI S/N"
+    ],
+    [
+      "00011221",
+      "CENTRO DE ATENCION PRIMARIA II CHINCHEROS",
+      "APURIMAC",
+      "CHINCHEROS",
+      "CHINCHEROS",
+      "030601",
+      "AV. SAN MARTÍN, BARRIO  LIMPE"
+    ],
+    [
+      "00011218",
+      "CENTRO DE ATENCION PRIMARIA I CHALHUANCA",
+      "APURIMAC",
+      "AYMARAES",
+      "CHALHUANCA",
+      "030401",
+      "AV.  PANAMERICANA S/N"
+    ],
+    [
+      "00011214",
+      "HOSPITAL I SANTA MARGARITA ANDAHUAYLAS - ESSALUD",
+      "APURIMAC",
+      "ANDAHUAYLAS",
+      "ANDAHUAYLAS",
+      "030201",
+      "JR. AYACUCHO 740"
+    ],
+    [
+      "00012271",
+      "CENTRO MEDICO DE ZARUMILLA",
+      "TUMBES",
+      "ZARUMILLA",
+      "ZARUMILLA",
+      "240301",
+      "PANAMERICANA NORTE KM. 1.4"
+    ],
+    [
+      "00012274",
+      "POSTA MEDICA LA CRUZ",
+      "TUMBES",
+      "TUMBES",
+      "LA CRUZ",
+      "240103",
+      "CALLE PIURA NRO. S/N"
+    ],
+    [
+      "00012105",
+      "CENTRO DE SALUD  OTUZCO",
+      "LA LIBERTAD",
+      "OTUZCO",
+      "OTUZCO",
+      "130601",
+      "AVENIDA TRUJILLO 608 BARRIO SAN REMIGIO"
+    ],
+    [
+      "00010434",
+      "HOSPITAL GERIÁTRICO IIE SAN ISIDRO LABRADOR - ESSALUD",
+      "LIMA",
+      "LIMA",
+      "SANTA ANITA",
+      "150137",
+      "AV. CARRETERA CENTRAL 1345, KM. 3.5"
+    ],
+    [
+      "00018081",
+      "CENTRO DE ATENCIÓN PRIMARIA III - METROPOLITANO",
+      "HUANUCO",
+      "HUANUCO",
+      "HUANUCO",
+      "100101",
+      "JR. ABTAO N° 299"
+    ],
+    [
+      "00021969",
+      "POSTA DE SALUD BOLIVAR",
+      "LA LIBERTAD",
+      "BOLIVAR",
+      "BOLIVAR",
+      "130301",
+      "JR. CORDOVA N° 627"
+    ],
+    [
+      "00011815",
+      "CENTRO DE ATENCIÓN DE MEDICINA COMPLEMENTARIA",
+      "PUNO",
+      "PUNO",
+      "PUNO",
+      "210101",
+      "JR. LAMPA 156. BARRIO BELLAVISTA"
+    ],
+    [
+      "00011434",
+      "POSTA MEDICA QUEROBAMBA",
+      "AYACUCHO",
+      "SUCRE",
+      "QUEROBAMBA",
+      "050901",
+      "BOLIVAR"
+    ],
+    [
+      "00011435",
+      "POSTA MEDICA VILCASHUAMAN",
+      "AYACUCHO",
+      "VILCAS HUAMAN",
+      "VILCAS HUAMAN",
+      "051101",
+      "CHINCHAYSUYO"
+    ],
+    [
+      "00016488",
+      "CENTRO NACIONAL DE SALUD RENAL - ESSALUD",
+      "LIMA",
+      "LIMA",
+      "JESUS MARIA",
+      "150113",
+      "CALLE CORONEL FELIX ZEGARRA Nº 223-225"
+    ],
+    [
+      "00019913",
+      "CAP II CHULUCANAS",
+      "PIURA",
+      "MORROPON",
+      "CHULUCANAS",
+      "200401",
+      "AV MARIA PARADO DE BELLIDO MZ U LOTE 01 AA.HH. ÑACARA"
+    ],
+    [
+      "00011443",
+      "CAP I CORACORA",
+      "AYACUCHO",
+      "PARINACOCHAS",
+      "CORACORA",
+      "050701",
+      "JR. BOLOGNESI Nº 608"
+    ],
+    [
+      "00011446",
+      "HUANTA",
+      "AYACUCHO",
+      "HUANTA",
+      "HUANTA",
+      "050401",
+      "AV. CIRCUNVALACION S/N"
+    ],
+    [
+      "00011968",
+      "SANTA MARGARITA",
+      "ICA",
+      "ICA",
+      "SANTIAGO",
+      "110111",
+      "PANAMERICANA SUR KM 319, FUNDO SAN JOSE"
+    ],
+    [
+      "00011841",
+      "CENTRO MEDICO CAYALTI",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "CAYALTI",
+      "140116",
+      "AVENIDA 9 DE OCTUBRE 200"
+    ],
+    [
+      "00011969",
+      "TUPAC AMARU",
+      "ICA",
+      "PISCO",
+      "TUPAC AMARU INCA",
+      "110508",
+      "CALLE CHINCHAYSUYO MZ 8 LOTE 5"
+    ],
+    [
+      "00011967",
+      "MACACONA",
+      "ICA",
+      "ICA",
+      "SUBTANJALLA",
+      "110112",
+      "AVENIDA 28 DE JULIO N° 298"
+    ],
+    [
+      "00012277",
+      "PUEBLO NUEVO",
+      "ICA",
+      "CHINCHA",
+      "PUEBLO NUEVO",
+      "110207",
+      "AVENIDA DOS DE MAYO N°100"
+    ],
+    [
+      "00008349",
+      "POSTA MEDICA DE CHONGOYAPE - ESAALUD",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "CHONGOYAPE",
+      "140102",
+      "AV. CHICLAYO N° 2511"
+    ],
+    [
+      "00008353",
+      "HOSPITAL II VITARTE - ESSALUD",
+      "LIMA",
+      "LIMA",
+      "ATE",
+      "150103",
+      "JR. SAN MARTIN DE PORTES 265"
+    ],
+    [
+      "00008674",
+      "CAP II MOROCOCHA",
+      "JUNIN",
+      "YAULI",
+      "MOROCOCHA",
+      "120805",
+      "CAMPAMENTO VISTA ALEGRE - MOROCOCHA VIEJA"
+    ],
+    [
+      "00009926",
+      "POSTA MEDICA PISCOBAMBA",
+      "ANCASH",
+      "MARISCAL LUZURIAGA",
+      "PISCOBAMBA",
+      "021301",
+      "JR. MANCO INCA Nº 231"
+    ],
+    [
+      "00009921",
+      "CENTRO DE ATENCION PRIMARIA II SAN JACINTO",
+      "ANCASH",
+      "SANTA",
+      "NEPEÑA",
+      "021806",
+      "ALAMEDA SOLIVIN MZA  F 2 LOTE 02"
+    ],
+    [
+      "00009925",
+      "POSTA MEDICA PALLASCA",
+      "ANCASH",
+      "PALLASCA",
+      "PALLASCA",
+      "021508",
+      "JR. MARAÑON 101 - PALLASCA"
+    ],
+    [
+      "00012110",
+      "POSTA DE SALUD SAN JOSE",
+      "LA LIBERTAD",
+      "PACASMAYO",
+      "SAN JOSE",
+      "130705",
+      "CALLE LIMA N° 909"
+    ],
+    [
+      "00008514",
+      "HOSPITAL I PACASMAYO",
+      "LA LIBERTAD",
+      "PACASMAYO",
+      "PACASMAYO",
+      "130704",
+      "AVENIDA MARISCAL CÁCERES N° 701"
+    ],
+    [
+      "00009251",
+      "HOSPITAL NACIONAL GUILLERMO ALMENARA IRIGOYEN",
+      "LIMA",
+      "LIMA",
+      "LA VICTORIA",
+      "150115",
+      "AV. GRAU Nº 800"
+    ],
+    [
+      "00008836",
+      "POLICLINICO CHICLAYO OESTE",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "CHICLAYO",
+      "140101",
+      "JUAN TOMIS STACK # 180 URB. SANTA ELENA CARRETERA A PIMENTEL"
+    ],
+    [
+      "00009204",
+      "CENTRO MEDICO HUARI",
+      "ANCASH",
+      "HUARI",
+      "HUARI",
+      "021001",
+      "JR.SAN MARTIN 1105"
+    ],
+    [
+      "00009920",
+      "CENTRO MEDICO CARAZ",
+      "ANCASH",
+      "HUAYLAS",
+      "CARAZ",
+      "021201",
+      "JR. SAN MARTIN N° 1020"
+    ],
+    [
+      "00009059",
+      "CENTRO MEDICO HUARMEY",
+      "ANCASH",
+      "HUARMEY",
+      "HUARMEY",
+      "021101",
+      "AV. RICARDO PALMA S/N"
+    ],
+    [
+      "00009055",
+      "CENTRO MEDICO COISHCO",
+      "ANCASH",
+      "SANTA",
+      "COISHCO",
+      "021803",
+      "JR.ANCASH S/N"
+    ],
+    [
+      "00009054",
+      "HOSPITAL I CONO SUR",
+      "ANCASH",
+      "SANTA",
+      "NUEVO CHIMBOTE",
+      "021809",
+      "AV.ANCHOVETA S/N"
+    ],
+    [
+      "00009053",
+      "HOSPITAL II HUARAZ",
+      "ANCASH",
+      "HUARAZ",
+      "INDEPENDENCIA",
+      "020105",
+      "AV INDEPENDENCIA Nº 2161 BARRIO VICHAY"
+    ],
+    [
+      "00008669",
+      "POSTA MEDICA DE ANDAYCHAGUA",
+      "JUNIN",
+      "YAULI",
+      "HUAY HUAY",
+      "120803",
+      "CAMPAMENTO MINERO SAN JOSE DE ANDAYCHAGUA"
+    ],
+    [
+      "00008711",
+      "POLICLINICO PABLO BERMUDEZ",
+      "LIMA",
+      "LIMA",
+      "JESUS MARIA",
+      "150113",
+      "PABLO BERMUDEZ"
+    ],
+    [
+      "00008318",
+      "ESSALUD - HOSPITAL I JORGE VOTO BERNALES CORPANCHO",
+      "LIMA",
+      "LIMA",
+      "SANTA ANITA",
+      "150137",
+      "CARRETERA CENTRAL KM. 3.5 Nº 1351"
+    ],
+    [
+      "00009066",
+      "HOSPITAL HIGOS URCO",
+      "AMAZONAS",
+      "CHACHAPOYAS",
+      "CHACHAPOYAS",
+      "010101",
+      "JR. ORTIZ ARRIETA N° 612"
+    ],
+    [
+      "00008901",
+      "ESSALUD HOSPITAL 1 \"AGUSTIN ARBULU NEYRA\" FERREÑAFE",
+      "LAMBAYEQUE",
+      "FERREÑAFE",
+      "PUEBLO NUEVO",
+      "140206",
+      "CALLE MIGUEL PASCO N° 101 - PUEBLO NUEVO"
+    ],
+    [
+      "00008678",
+      "ESSALUD SAN PEDRO DE CAJAS",
+      "JUNIN",
+      "TARMA",
+      "SAN PEDRO DE CAJAS",
+      "120708",
+      "CALLE CHANCHAMAYO S/N  SAN PEDRO DE CAJAS"
+    ],
+    [
+      "00008668",
+      "CENTRO MEDICO CONCEPCION",
+      "JUNIN",
+      "CONCEPCION",
+      "CONCEPCION",
+      "120201",
+      "JIRON JUNÍN Nº 1101"
+    ],
+    [
+      "00009924",
+      "POSTA MEDICA CABANA",
+      "ANCASH",
+      "PALLASCA",
+      "CABANA",
+      "021501",
+      "LA PAMPA"
+    ],
+    [
+      "00008654",
+      "HOSPITAL I TARMA",
+      "JUNIN",
+      "TARMA",
+      "TARMA",
+      "120701",
+      "AVENIDA ODRIA S/N CD. 14"
+    ],
+    [
+      "00008741",
+      "HOSPITAL ULDARICO ROCCA FERNANDEZ",
+      "LIMA",
+      "LIMA",
+      "VILLA EL SALVADOR",
+      "150142",
+      "AV.SEPARADORA INDUSTRIAL Y AV. CESAR VALLEJO"
+    ],
+    [
+      "00009646",
+      "POSTA DE SALUD JEQUETEPEQUE",
+      "LA LIBERTAD",
+      "PACASMAYO",
+      "JEQUETEPEQUE",
+      "130703",
+      "CALLE SAN PABLO S/N"
+    ],
+    [
+      "00013310",
+      "POSTA  MEDICA  DE CHUQUIBAMBA",
+      "AREQUIPA",
+      "CONDESUYOS",
+      "CHUQUIBAMBA",
+      "040601",
+      "AV  MARISCAL  CASTILLA  108 A"
+    ],
+    [
+      "00008564",
+      "HOSPITAL I OCTAVIO MONGRUT MUÑOZ",
+      "LIMA",
+      "LIMA",
+      "SAN MIGUEL",
+      "150136",
+      "PARQUE DE LAS LEYENDAS"
+    ],
+    [
+      "00009047",
+      "HOSPITAL III CHIMBOTE",
+      "ANCASH",
+      "SANTA",
+      "CHIMBOTE",
+      "021801",
+      "AV.CIRCUNVALACION Nº 119 - LADERAS DEL NORTE"
+    ],
+    [
+      "00008677",
+      "POSTA MEDICA SAN CRISTOBAL",
+      "JUNIN",
+      "YAULI",
+      "YAULI",
+      "120810",
+      "CAMPAMENTO MINERO SAN CRISTOBAL"
+    ],
+    [
+      "00008652",
+      "HOSPITAL NACIONAL RAMIRO PRIALE PRIALE",
+      "JUNIN",
+      "HUANCAYO",
+      "EL TAMBO",
+      "120114",
+      "AVENIDA INDEPENDENCIA Nº 296"
+    ],
+    [
+      "00009043",
+      "CENTRO DE SALUD ASCOPE",
+      "LA LIBERTAD",
+      "ASCOPE",
+      "ASCOPE",
+      "130201",
+      "CHICLAYO"
+    ],
+    [
+      "00009219",
+      "POSTA MEDICA YUNGUYO",
+      "PUNO",
+      "YUNGUYO",
+      "YUNGUYO",
+      "211301",
+      "JIRON GRAU 656"
+    ],
+    [
+      "00008438",
+      "POLICLINICO JUAN JOSE RODRIGUEZ LAZO",
+      "LIMA",
+      "LIMA",
+      "CHORRILLOS",
+      "150108",
+      "AV.GUARDIA PERUANA CUADRA 8 S/N CHORRILLOS"
+    ],
+    [
+      "00008670",
+      "POSTA MEDICA CORPACANCHA",
+      "JUNIN",
+      "YAULI",
+      "MARCAPOMACOCHA",
+      "120804",
+      "CALLE S/N UP CORPACANCHA."
+    ],
+    [
+      "00009037",
+      "HOSPITAL II CHOCOPE",
+      "LA LIBERTAD",
+      "ASCOPE",
+      "CHOCOPE",
+      "130203",
+      "PANAMERICANA NORTE KM N° 604"
+    ],
+    [
+      "00008833",
+      "CAP III CARLOS CASTAÑEDA IPARRAGUIRRE",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "LA VICTORIA",
+      "140106",
+      "INCA YUPANQUI 1020 LA VICTORIA."
+    ],
+    [
+      "00008839",
+      "CENTRO DE ATENCION PRIMARIA II MOTUPE",
+      "LAMBAYEQUE",
+      "LAMBAYEQUE",
+      "MOTUPE",
+      "140307",
+      "CALLE SAN JULIAN N° 572 - MOTUPE"
+    ],
+    [
+      "00013300",
+      "POSTA MEDICA  CORIRE",
+      "AREQUIPA",
+      "CASTILLA",
+      "URACA",
+      "040413",
+      "AVENIDA JUAN PABLO VIZCARDO Y GUZMAN 439"
+    ],
+    [
+      "00009119",
+      "POSTA MEDICA COBRIZA",
+      "HUANCAVELICA",
+      "CHURCAMPA",
+      "SAN PEDRO DE CORIS",
+      "090509",
+      "PAMPA DE CORIS S/N EXPANSION"
+    ],
+    [
+      "00008838",
+      "CENTRO MEDICO \"JUAN AITA VALLE\" ETEN",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "ETEN",
+      "140103",
+      "CALLE QUIÑONEZ N° 101"
+    ],
+    [
+      "00009042",
+      "VICTOR LAZARTE ECHEGARAY",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "TRUJILLO",
+      "130101",
+      "PROLONGACION UNION 1350"
+    ],
+    [
+      "00012101",
+      "POSTA DE SALUD GUADALUPE",
+      "LA LIBERTAD",
+      "PACASMAYO",
+      "GUADALUPE",
+      "130702",
+      "AVENIDA HÚSARES DE JUNÍN S/N"
+    ],
+    [
+      "00009278",
+      "FLORENCIA DE MORA",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "FLORENCIA DE MORA",
+      "130103",
+      "AVENIDA NUEVE DE OCTUBRE S/N"
+    ],
+    [
+      "00012114",
+      "POSTA DE SALUD SANTIAGO DE CAO",
+      "LA LIBERTAD",
+      "ASCOPE",
+      "SANTIAGO DE CAO",
+      "130207",
+      "CALLE GRAU S/N"
+    ],
+    [
+      "00010703",
+      "POSTA MEDICA TOCACHE",
+      "SAN MARTIN",
+      "TOCACHE",
+      "TOCACHE",
+      "221001",
+      "JR. TOCACHE C 02"
+    ],
+    [
+      "00009958",
+      "POSTA MEDICA PANAO",
+      "HUANUCO",
+      "PACHITEA",
+      "PANAO",
+      "100801",
+      "JR. GRAU 135"
+    ],
+    [
+      "00009132",
+      "HOSPITAL II HUANCAVELICA",
+      "HUANCAVELICA",
+      "HUANCAVELICA",
+      "ASCENSION",
+      "090118",
+      "AV. FELIX R. CRISPIN VARGAS S/N"
+    ],
+    [
+      "00012272",
+      "CARLOS ALBERTO CORTEZ JIMENEZ",
+      "TUMBES",
+      "TUMBES",
+      "TUMBES",
+      "240101",
+      "PROLONG. AV. TUMBES Nª 1625"
+    ],
+    [
+      "00013290",
+      "HOSPITAL NACIONAL III-1 CARLOS ALBERTO SEGUÍN ESCOBEDO",
+      "AREQUIPA",
+      "AREQUIPA",
+      "AREQUIPA",
+      "040101",
+      "ESQUINA PERAL - EL FILTRO S/N"
+    ],
+    [
+      "00008891",
+      "CENTRO DE ATENCION PRIMARIA II JAYANCA",
+      "LAMBAYEQUE",
+      "LAMBAYEQUE",
+      "JAYANCA",
+      "140304",
+      "CALLE JUNIN N° 300 - JAYANCA"
+    ],
+    [
+      "00008685",
+      "HOSPITAL I ALBRECHT",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "TRUJILLO",
+      "130101",
+      "AV JESUS DE NAZARETH S/N RESIDENCIAL ALBRECHT"
+    ],
+    [
+      "00010394",
+      "CENTRO DE ATENCION PRIMARIA II PARAMONGA",
+      "LIMA",
+      "BARRANCA",
+      "PARAMONGA",
+      "150202",
+      "AV. MIGUEL GRAU S/N - PARAMONGA"
+    ],
+    [
+      "00011775",
+      "HOSPITAL II HUAMANGA",
+      "AYACUCHO",
+      "HUAMANGA",
+      "SAN JUAN BAUTISTA",
+      "050110",
+      "AV. VENEZUELA S/N"
+    ],
+    [
+      "00009133",
+      "CENTRO MEDICO PAMPAS",
+      "HUANCAVELICA",
+      "TAYACAJA",
+      "PAMPAS",
+      "090701",
+      "JR. CORDOVA 283"
+    ],
+    [
+      "00010570",
+      "CENTRO MEDICO CASAPALCA",
+      "LIMA",
+      "HUAROCHIRI",
+      "CHICLA",
+      "150705",
+      "CENTRO MINERO CASAPALCA, CARRETERA CENTRAL KM 116"
+    ],
+    [
+      "00013305",
+      "POSTA MEDICA LA JOYA",
+      "AREQUIPA",
+      "AREQUIPA",
+      "LA JOYA",
+      "040108",
+      "AVENIDA ABELARDO QUIÑONEZ S/N"
+    ],
+    [
+      "00013306",
+      "POSTA MEDICA VITOR",
+      "AREQUIPA",
+      "AREQUIPA",
+      "VITOR",
+      "040125",
+      "CALLE JUAN VELAZCO ALVARADO 401"
+    ],
+    [
+      "00013292",
+      "POSTA MEDICA CHIVAY",
+      "AREQUIPA",
+      "CAYLLOMA",
+      "CHIVAY",
+      "040501",
+      "CALLE 2 DE MAYO 1525"
+    ],
+    [
+      "00008881",
+      "FRANCISCO PIZARRO",
+      "LIMA",
+      "LIMA",
+      "RIMAC",
+      "150128",
+      "AV. FRANCISCO PIZARRO 585"
+    ],
+    [
+      "00009141",
+      "CENTRO DE SALUD SIN INTERNAMIENTO CASA GRANDE",
+      "LA LIBERTAD",
+      "ASCOPE",
+      "CASA GRANDE",
+      "130208",
+      "PROLONGACION AV. ATAHUALPA MZ 15 LOTE 01 URB. 8 DE SETIEMBRE"
+    ],
+    [
+      "00009188",
+      "HOSPITAL II RAMON CASTILLA",
+      "LIMA",
+      "LIMA",
+      "LIMA",
+      "150101",
+      "JIRÓN GUILLERMO DANSEY Nº 390"
+    ],
+    [
+      "00009220",
+      "CENTRO DE ATENCIÓN PRIMARIA II ACORA - RED ASISTENCIAL PUNO",
+      "PUNO",
+      "PUNO",
+      "ACORA",
+      "210102",
+      "CENTRO CIVICO DE LA MUNICIPALIDAD DE ACORA"
+    ],
+    [
+      "00008146",
+      "CENTRO DE ATENCION PRIMARIA III HERMANA MARIA DONROSE SUTMÖLLER",
+      "CALLAO",
+      "CALLAO",
+      "VENTANILLA",
+      "070106",
+      "AVENIDA GONZALES GANOZA S/N I SECTOR IZQUIERDO URB ANTONIO MORENO DE CACERES"
+    ],
+    [
+      "00009600",
+      "HOSPITAL II PUCALLPA- ESSALUD",
+      "UCAYALI",
+      "CORONEL PORTILLO",
+      "CALLERIA",
+      "250101",
+      "AV.LLOQUE YUPANQUI  510"
+    ],
+    [
+      "00010843",
+      "CENTRO MEDICO ESSALUD CONTAMANA",
+      "LORETO",
+      "UCAYALI",
+      "CONTAMANA",
+      "160601",
+      "CALLE ALBERTO ANGULO S/N"
+    ],
+    [
+      "00008660",
+      "POLICLINICO METROPOLITANO HUANCAYO",
+      "JUNIN",
+      "HUANCAYO",
+      "EL TAMBO",
+      "120114",
+      "AVENIDA INDEPENDENCIA Nº 200"
+    ],
+    [
+      "00008720",
+      "HOSPITAL NACIONAL EDGARDO REBAGLIATI MARTINS",
+      "LIMA",
+      "LIMA",
+      "JESUS MARIA",
+      "150113",
+      "EDGARDO REBAGLIATI"
+    ],
+    [
+      "00009067",
+      "HOSPITAL EL BUEN SAMARITANO",
+      "AMAZONAS",
+      "UTCUBAMBA",
+      "BAGUA GRANDE",
+      "010701",
+      "JR. ANGAMOS Nº 990"
+    ],
+    [
+      "00009148",
+      "POLICLINICO SANTA CRUZ",
+      "LIMA",
+      "LIMA",
+      "MIRAFLORES",
+      "150122",
+      "AV. MARISCAL LA MAR 1390 URB. SANTA CRUZ"
+    ],
+    [
+      "00009041",
+      "CENTRO DE SALUD CON INTERNAMIENTO EL PORVENIR",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "EL PORVENIR",
+      "130102",
+      "JIRON MAYTA CAPAC Nº 823 RIO SECO"
+    ],
+    [
+      "00009221",
+      "CENTRO DE ATENCION PRIMARIA I DESAGUADERO",
+      "PUNO",
+      "CHUCUITO",
+      "DESAGUADERO",
+      "210402",
+      "JIRON DESAGUADERO S/N"
+    ],
+    [
+      "00008251",
+      "CAP III HUAYCAN-GRPA-ESSALUD",
+      "LIMA",
+      "LIMA",
+      "ATE",
+      "150103",
+      "AV. J.C. MARIATEGUI, MZ. C, LOTE 49-50 - URB. LUCUMO, PARIACHI"
+    ],
+    [
+      "00009215",
+      "HOSPITAL BASE III  PUNO - RED ASISTENCIAL PUNO",
+      "PUNO",
+      "PUNO",
+      "PUNO",
+      "210101",
+      "JR. FRANCISCO CACERES JARA Nº 600 - DEL PARQUE INDUSTRIAL SALCEDO"
+    ],
+    [
+      "00010222",
+      "CENTRO  DE ATENCION PRIMARIA II LUIS PALZA LEVANO",
+      "TACNA",
+      "TACNA",
+      "CORONEL GREGORIO ALBARRACIN L.",
+      "230110",
+      "CALLE SAN VALENTIN ASOCIACION 1° DE MAYO MZ.I  LTE.17"
+    ],
+    [
+      "00010191",
+      "CENTRO DE ATENCION PRIMARIA I   ILABAYA",
+      "TACNA",
+      "JORGE BASADRE",
+      "ILABAYA",
+      "230302",
+      "AV.  ALFONSO UGARTE S/N"
+    ],
+    [
+      "00009979",
+      "CENTRO DE ATENCION PRIMARIA II LURIN",
+      "LIMA",
+      "LIMA",
+      "LURIN",
+      "150119",
+      "AV. ANTIGUA PANAMERICANA SUR KM. 36.5"
+    ],
+    [
+      "00009486",
+      "POSTA DE SALUD LIMONCARRO",
+      "LA LIBERTAD",
+      "PACASMAYO",
+      "GUADALUPE",
+      "130702",
+      "AVENIDA CAJAMARCA N° 19"
+    ],
+    [
+      "00010192",
+      "CENTRO DE ATENCION PRIMARIA I TARATA",
+      "TACNA",
+      "TARATA",
+      "TARATA",
+      "230401",
+      "CALLE BOLOGNESI Nº 551"
+    ],
+    [
+      "00012113",
+      "POSTA DE SALUD CARTAVIO",
+      "LA LIBERTAD",
+      "ASCOPE",
+      "SANTIAGO DE CAO",
+      "130207",
+      "AVENIDA SAN FRANCISCO N° 2"
+    ],
+    [
+      "00009070",
+      "SANTA MARIA DE NIEVA",
+      "AMAZONAS",
+      "CONDORCANQUI",
+      "NIEVA",
+      "010401",
+      "JR. EL PORVENIR N° 300"
+    ],
+    [
+      "00008676",
+      "POSTA MEDICA PACHACAYO",
+      "JUNIN",
+      "JAUJA",
+      "CANCHAYLLO",
+      "120405",
+      "CARRETERA CENTRAL KM 43"
+    ],
+    [
+      "00013298",
+      "CAP III MELITON SALAS TEJADA",
+      "AREQUIPA",
+      "AREQUIPA",
+      "SOCABAYA",
+      "040122",
+      "AV. SOCABAYA Nº 300 SAN MARTIN DE SOCABAYA"
+    ],
+    [
+      "00009142",
+      "CENTRO DE ATENCION PRIMARIA II LAREDO",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "LAREDO",
+      "130106",
+      "AVENIDA TRUJILLO S/N"
+    ],
+    [
+      "00009139",
+      "POSTA MEDICA HUAYTARA",
+      "HUANCAVELICA",
+      "HUAYTARA",
+      "HUAYTARA",
+      "090601",
+      "CALLE 24 DE JUNIO S/N"
+    ],
+    [
+      "00010185",
+      "Hospital III Daniel Alcides Carrión EsSalud Red de Tacna",
+      "TACNA",
+      "TACNA",
+      "CALANA",
+      "230103",
+      "CARRETERA CALANA KM 6.5 - CALANA"
+    ],
+    [
+      "00028917",
+      "PRESTACION DE ATENCION DOMICILIARIA - PADOMI",
+      "LIMA",
+      "LIMA",
+      "JESUS MARIA",
+      "150113",
+      "ARENALES"
+    ],
+    [
+      "00029684",
+      "POLICLINICO AZANGARO",
+      "PUNO",
+      "AZANGARO",
+      "AZANGARO",
+      "210201",
+      "JULIA H PAREDES"
+    ],
+    [
+      "00012097",
+      "POSTA DE SALUD SAN PEDRO DE LLOC",
+      "LA LIBERTAD",
+      "PACASMAYO",
+      "SAN PEDRO DE LLOC",
+      "130701",
+      "CALLE CALLAO 570 SAN PEDRO DE LLOC"
+    ],
+    [
+      "00010073",
+      "MACHU PICCHU - ESSALUD",
+      "CUSCO",
+      "URUBAMBA",
+      "MACHUPICCHU",
+      "081304",
+      "AVENIDA / IMPERIO LOS INCAS S/N / MACHUPICCHU / URUBAMBA  / CUSCO"
+    ],
+    [
+      "00010076",
+      "ACOMAYO - ESSALUD",
+      "CUSCO",
+      "ACOMAYO",
+      "ACOMAYO",
+      "080201",
+      "JIRON / SUCRE S/N / ACOMAYO / ACOMAYO / CUSCO"
+    ],
+    [
+      "00010077",
+      "PAUCARTAMBO -ESSALUD",
+      "CUSCO",
+      "PAUCARTAMBO",
+      "PAUCARTAMBO",
+      "081101",
+      "PLAZA DE ARMAS N°124 / PAUCARTAMBO / PAUCARTAMBO / CUSCO"
+    ],
+    [
+      "00010569",
+      "CENTRO MEDICO MALA",
+      "LIMA",
+      "CAÑETE",
+      "MALA",
+      "150509",
+      "CALLE PROLONGACION REAL 825-827"
+    ],
+    [
+      "00012107",
+      "P. M. PAIJAN",
+      "LA LIBERTAD",
+      "ASCOPE",
+      "PAIJAN",
+      "130205",
+      "CALLE 2 DE MAYO N° 310"
+    ],
+    [
+      "00009317",
+      "POSTA MEDICA IBERIA",
+      "MADRE DE DIOS",
+      "TAHUAMANU",
+      "IBERIA",
+      "170302",
+      "AV. MOCOPATA S/N BARRIO EMPLEADOS"
+    ],
+    [
+      "00009319",
+      "HOSPITAL I VICTOR ALFREDO LAZO PERALTA",
+      "MADRE DE DIOS",
+      "TAMBOPATA",
+      "TAMBOPATA",
+      "170101",
+      "AV. ANDRES AVELINO CACERES Nº 560"
+    ],
+    [
+      "00009318",
+      "POSTA MEDICA MAZUKO",
+      "MADRE DE DIOS",
+      "TAMBOPATA",
+      "INAMBARI",
+      "170102",
+      "AV. INAMBARI CON RAMON CASTILLA"
+    ],
+    [
+      "00011763",
+      "HOSPITAL I MIGUEL CRUZADO VERA - PAITA",
+      "PIURA",
+      "PAITA",
+      "PAITA",
+      "200501",
+      "CARRETERA PAITA - PIURA KM 1.5"
+    ],
+    [
+      "00009901",
+      "POLICLINICO JULIACA - ESSALUD - RED ASISTENCIAL JULIACA",
+      "PUNO",
+      "SAN ROMAN",
+      "JULIACA",
+      "211101",
+      "JR. MARIANO NÚÑEZ 135 - JULIACA"
+    ],
+    [
+      "00009899",
+      "HOSPITAL BASE III JULIACA - ESSALUD - RED ASISTENCIAL JULIACA",
+      "PUNO",
+      "SAN ROMAN",
+      "JULIACA",
+      "211101",
+      "AV. JOSÉ SANTOS CHOCANO S/N – LA CAPILLA JULIACA."
+    ],
+    [
+      "00009897",
+      "POSTA MEDICA SANDIA - ESSALUD - RED ASISTENCIAL JULIACA",
+      "PUNO",
+      "SANDIA",
+      "SANDIA",
+      "211201",
+      "JR. PLAYA S/N. - SANDIA."
+    ],
+    [
+      "00009898",
+      "POSTA MEDICA SAN RAFAEL - ESSALUD - RED ASISTENCIAL JULIACA",
+      "PUNO",
+      "MELGAR",
+      "ANTAUTA",
+      "210802",
+      "CAMPAMENTO CUMANI BLOQUE 11 -12  SAN RAFAEL."
+    ],
+    [
+      "00010041",
+      "ADOLFO GUEVARA VELASCO",
+      "CUSCO",
+      "CUSCO",
+      "WANCHAQ",
+      "080108",
+      "AV. ANSELMO ALVAREZ S/N"
+    ],
+    [
+      "00009954",
+      "HOSPITAL I CHEPEN ESSALUD",
+      "LA LIBERTAD",
+      "CHEPEN",
+      "CHEPEN",
+      "130401",
+      "AV. LAS PALMERAS S/N - URB HUANCHACO"
+    ],
+    [
+      "00011659",
+      "POLICLINICO VICTOR LARCO HERRERA",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "VICTOR LARCO HERRERA",
+      "130111",
+      "AVENIDA VICTOR LARCO Nº 878 VISTA ALEGRE"
+    ],
+    [
+      "00009747",
+      "HOSPITAL II PASCO",
+      "PASCO",
+      "PASCO",
+      "SIMON BOLIVAR",
+      "190109",
+      "BARRIO BUENOS AIRES S/N"
+    ],
+    [
+      "00009749",
+      "HOSPITAL II - E HUARIACA",
+      "PASCO",
+      "PASCO",
+      "HUARIACA",
+      "190103",
+      "CARRETERA CENTRAL S/N HUARIACA, DISTRITO DE HUARIACA, PROVINCIA Y REGIÓN PASCO"
+    ],
+    [
+      "00009750",
+      "CENTRO MEDICO DE SAN JUAN",
+      "PASCO",
+      "PASCO",
+      "YANACANCHA",
+      "190113",
+      "AV. BOLÍVAR S/N. DISTRITO DE YANACANCHA, PROVINCIA Y REGIÓN DE PASCO"
+    ],
+    [
+      "00009752",
+      "POSTA MEDICA DE CHICRIN",
+      "PASCO",
+      "PASCO",
+      "YANACANCHA",
+      "190113",
+      "JR. ARTESANOS S/N. DISTRITO DE YANACANCHA, PROVINCIA Y REGIÓN PASCO"
+    ],
+    [
+      "00009753",
+      "POSTA MEDICO DE MILPO",
+      "PASCO",
+      "PASCO",
+      "SAN FCO DE ASIS DE YARUSYACAN",
+      "190108",
+      "CAMPAMENTO MINERO DE MILPO S/N. DISTRITO DE SAN FRANCISCO DE YARUSYACAN, PROVINCIA Y REGIÓN DE PASCO"
+    ],
+    [
+      "00010060",
+      "URUBAMBA ESSALUD",
+      "CUSCO",
+      "URUBAMBA",
+      "URUBAMBA",
+      "081301",
+      "AV. 9 DE NOVIEMBRE S/N / URUBAMBA / URUBAMBA / CUSCO"
+    ],
+    [
+      "00013299",
+      "CENTRO MEDICO APLAO",
+      "AREQUIPA",
+      "CASTILLA",
+      "APLAO",
+      "040401",
+      "ESQUINA AVENIDA 3 DE ABRIL CON AVENIDA LAS PEÑAS SIN NUMERO"
+    ],
+    [
+      "00010061",
+      "ESPINAR - ESSALUD",
+      "CUSCO",
+      "ESPINAR",
+      "ESPINAR",
+      "080801",
+      "CALLE 22 DE FEBRERO Y SAN PEDRO N°108 / YAURI / ESPINAR / CUSCO"
+    ],
+    [
+      "00010062",
+      "QUILLABAMBA - ESSALUD",
+      "CUSCO",
+      "LA CONVENCION",
+      "SANTA ANA",
+      "080901",
+      "AVENIDA KUMPIRUSHIATO S/N° / SANTA ANA / LA CONVENCION / CUSCO"
+    ],
+    [
+      "00010063",
+      "ESSALUD SICUANI",
+      "CUSCO",
+      "CANCHIS",
+      "SICUANI",
+      "080601",
+      "AVENIDA EL SOL N° 501 LA BOMBONERA / SICUANI / CANCHIS / CUSCO"
+    ],
+    [
+      "00012197",
+      "POSTA MEDICA ATICO",
+      "AREQUIPA",
+      "CARAVELI",
+      "ATICO",
+      "040303",
+      "CALLE SAN PEDRO S/N  - LA FLORIDA - ATICO"
+    ],
+    [
+      "00012192",
+      "POSTA MEDICA MATARANI",
+      "AREQUIPA",
+      "ISLAY",
+      "ISLAY",
+      "040704",
+      "CALLE SIMON BOLIVAR 620 C-10 MATARANI"
+    ],
+    [
+      "00013297",
+      "POLICLINICO METROPOLITANO ESSALUD",
+      "AREQUIPA",
+      "AREQUIPA",
+      "AREQUIPA",
+      "040101",
+      "PROLONGACION CALLE AYACUCHO S/N"
+    ],
+    [
+      "00013296",
+      "HOSPITAL I EDMUNDO ESCOMEL",
+      "AREQUIPA",
+      "AREQUIPA",
+      "PAUCARPATA",
+      "040112",
+      "AV. CAYRO S/N"
+    ],
+    [
+      "00011009",
+      "HOSPITAL I SAMUEL PASTOR DE CAMANA ESSALUD",
+      "AREQUIPA",
+      "CAMANA",
+      "SAMUEL PASTOR",
+      "040208",
+      "AV. PLAZA DE ARMAS S/N, SAMUEL PASTOR - LA PAMPA"
+    ],
+    [
+      "00009754",
+      "POSTA MEDICA DE COLQUIJIRCA",
+      "PASCO",
+      "PASCO",
+      "TINYAHUARCO",
+      "190111",
+      "CENTRO POBLADO DE COLQUIJIRCA S/N. DISTRITO DE TINYAHUARCO, PROVINCIA Y REGIÓN DE PASCO"
+    ],
+    [
+      "00009756",
+      "POSTA MEDICA DE HUARON",
+      "PASCO",
+      "PASCO",
+      "HUAYLLAY",
+      "190104",
+      "AV. LA HUECA S/N. DISTRITO DE HUAYLLAY, PROVINCIA  Y REGIÓN PASCO"
+    ],
+    [
+      "00009758",
+      "POSTA MEDICA DE POZUZO",
+      "PASCO",
+      "OXAPAMPA",
+      "POZUZO",
+      "190305",
+      "CALLE JOSÉ EGG N° 171, DISTRITO DE POZUZO, PROVINCIA DE OXAPAMPA Y REGIÓN PASCO"
+    ],
+    [
+      "00009763",
+      "POSTA MEDICA DE PUERTO BERMUDEZ",
+      "PASCO",
+      "OXAPAMPA",
+      "PUERTO BERMUDEZ",
+      "190306",
+      "JR. POMA ROSA S/N. DISTRITO DE PUERTO BERMUDEZ, PROVINCIA DE OXAPAMPA Y REGIÓN PASCO"
+    ],
+    [
+      "00010065",
+      "SAN SEBASTIAN ESSALUD",
+      "CUSCO",
+      "CUSCO",
+      "SAN SEBASTIAN",
+      "080105",
+      "URBANIZACION CACHIMAYO LA PLANICIE S/N° / SAN SEBASTIAN / CUSCO / CUSCO"
+    ],
+    [
+      "00010069",
+      "ESSALUD CALCA",
+      "CUSCO",
+      "CALCA",
+      "CALCA",
+      "080401",
+      "CALLE UCAYALI S/N, CALCAL / CALCA / CUSCO"
+    ],
+    [
+      "00010429",
+      "NASCA",
+      "ICA",
+      "NAZCA",
+      "VISTA ALEGRE",
+      "110305",
+      "PASAJE ANGELA S/N"
+    ],
+    [
+      "00010483",
+      "PALPA",
+      "ICA",
+      "PALPA",
+      "PALPA",
+      "110401",
+      "PORTAL DE BOTONEROS N° 120"
+    ],
+    [
+      "00009895",
+      "POSTA MEDICA HUANCANE - ESSALUD - RED ASISTENCIAL JULIACA",
+      "PUNO",
+      "HUANCANE",
+      "HUANCANE",
+      "210601",
+      "JR. ARICA 503 - HUANCANÉ"
+    ],
+    [
+      "00011707",
+      "CENTRO MEDICO ESSALUD TAMBOGRANDE",
+      "PIURA",
+      "PIURA",
+      "TAMBO GRANDE",
+      "200114",
+      "JIRON LIMA N° 352 TAMBOGRANDE"
+    ],
+    [
+      "00009903",
+      "CENTRO MEDICO AYAVIRI - ESSALUD - RED ASISTENCIAL JULIACA",
+      "PUNO",
+      "MELGAR",
+      "AYAVIRI",
+      "210801",
+      "JR. GRAU 230 - AYAVIRI."
+    ],
+    [
+      "00010299",
+      "CENTRO DE ATENCION PRIMARIA II SAN IGNACIO",
+      "CAJAMARCA",
+      "SAN IGNACIO",
+      "SAN IGNACIO",
+      "060901",
+      "AV.SAN IGNACIO 425"
+    ],
+    [
+      "00011020",
+      "HOSPITAL II LUIS HEYSEN INCHAUSTEGUI",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "PIMENTEL",
+      "140112",
+      "KM. 3.5 CARRETERA CHICLAYO-PIMENTEL"
+    ],
+    [
+      "00010278",
+      "CENTRO MEDICO ESSALUD CAJABAMBA",
+      "CAJAMARCA",
+      "CAJABAMBA",
+      "CAJABAMBA",
+      "060201",
+      "JR. ODONAVAN S/N"
+    ],
+    [
+      "00010533",
+      "HOSPITAL II LIMA NORTE CALLAO \"LUIS NEGREIROS VEGA\"",
+      "CALLAO",
+      "CALLAO",
+      "CALLAO",
+      "070101",
+      "AV. TOMAS VALLE DRA.39 - URB. VIPOL"
+    ],
+    [
+      "00010243",
+      "CAP III CASTILLA",
+      "PIURA",
+      "PIURA",
+      "CASTILLA",
+      "200104",
+      "LEONCIO PRADO  AAHH CALIXTO BALAREZO"
+    ],
+    [
+      "00012243",
+      "HOSPITAL II TALARA",
+      "PIURA",
+      "TALARA",
+      "PARIÑAS",
+      "200701",
+      "AV. PANAMERICANA S/N CARRETERA A LOBITOS"
+    ],
+    [
+      "00010275",
+      "POSTA MEDICA DE SAN MARCOS",
+      "CAJAMARCA",
+      "SAN MARCOS",
+      "PEDRO GALVEZ",
+      "061001",
+      "AV. 28 DE JULIO 114"
+    ],
+    [
+      "00010244",
+      "HOSPITAL II JORGE REATEGUI DELGADO",
+      "PIURA",
+      "PIURA",
+      "PIURA",
+      "200101",
+      "AVENIDA GRAU N° 1150"
+    ],
+    [
+      "00010270",
+      "CENTRO DE ATENCIÓN PRIMARIA I HUALGAYOC",
+      "CAJAMARCA",
+      "HUALGAYOC",
+      "HUALGAYOC",
+      "060703",
+      "JR. EMILIO MONTOYA N° 120"
+    ],
+    [
+      "00010267",
+      "HOSPITAL I ESSALUD-SULLANA",
+      "PIURA",
+      "SULLANA",
+      "SULLANA",
+      "200601",
+      "CALLE SANTA CLARA MZA O LOTE 44 SANCHEZ CERRO"
+    ],
+    [
+      "00010271",
+      "POSTA MEDICA ESSALUD SAN PABLO",
+      "CAJAMARCA",
+      "SAN PABLO",
+      "SAN PABLO",
+      "061201",
+      "JR. CAJAMARCA 557"
+    ],
+    [
+      "00010274",
+      "POSTA MEDICA TEMBLADERA",
+      "CAJAMARCA",
+      "CONTUMAZA",
+      "YONAN",
+      "060508",
+      "JR. CAJAMARCA Nº 211"
+    ],
+    [
+      "00011733",
+      "CENTRO MEDICO \"LEONCIO AMAYA TUME\"",
+      "PIURA",
+      "PIURA",
+      "LA UNION",
+      "200110",
+      "AV.AUGUSTO B. LEGUIA 666"
+    ],
+    [
+      "00020629",
+      "POSTA MEDICA SECHURA",
+      "PIURA",
+      "SECHURA",
+      "SECHURA",
+      "200801",
+      "AA.HH. VICTOR RAUL   I ETAPA LAS ORQUIDEAS"
+    ],
+    [
+      "00021003",
+      "CENTRO MEDICO RIOJA - ESSALUD",
+      "SAN MARTIN",
+      "RIOJA",
+      "RIOJA",
+      "220801",
+      "CRUCERO JR. CHACHAPOYAS CDRA:11 CON JR. LUIS LINARES CDRA:10 - BARRIO CASCAYUNGA"
+    ],
+    [
+      "00021230",
+      "CENTRO DE ATENCION PRIMARIA I  IMAZA",
+      "AMAZONAS",
+      "BAGUA",
+      "IMAZA",
+      "010205",
+      "AVENIDA PRINCIPAL S/N - CENTRO POBLADO CHIRIACO"
+    ],
+    [
+      "00011440",
+      "POSTA MEDICA HUANCASANCOS",
+      "AYACUCHO",
+      "HUANCA SANCOS",
+      "SANCOS",
+      "050301",
+      "CUSCO"
+    ],
+    [
+      "00010269",
+      "CENTRO MEDICO ESSALUD CELENDIN",
+      "CAJAMARCA",
+      "CELENDIN",
+      "CELENDIN",
+      "060301",
+      "JR. SALAVERRY CUADRA 7"
+    ],
+    [
+      "00011970",
+      "CHAVALINA",
+      "ICA",
+      "ICA",
+      "SAN JOSE DE LOS MOLINOS",
+      "110109",
+      "AV. CATALINA BUENDIA DE PECHO S/N"
+    ],
+    [
+      "00012188",
+      "CAP II CHILCA",
+      "JUNIN",
+      "HUANCAYO",
+      "CHILCA",
+      "120107",
+      "CALLE REAL Nº 1187"
+    ],
+    [
+      "00011213",
+      "HOSPITAL II ABANCAY - ESSALUD",
+      "APURIMAC",
+      "ABANCAY",
+      "ABANCAY",
+      "030101",
+      "SUB LOTE A PARTE INTEGRANTE DEL LOTE 61 Y 61A QUINTA CAYETANA PATIBAMBA"
+    ],
+    [
+      "00011397",
+      "CENTRO DE ATENCION PRIMARIA III PUNCHANA",
+      "LORETO",
+      "MAYNAS",
+      "PUNCHANA",
+      "160108",
+      "CALLE TRUJILLO 625"
+    ],
+    [
+      "00015598",
+      "HOSPITAL I ALTO MAYO",
+      "SAN MARTIN",
+      "MOYOBAMBA",
+      "MOYOBAMBA",
+      "220101",
+      "JR. 20 DE ABRIL NRO 347"
+    ],
+    [
+      "00010277",
+      "POSTA MEDICA ESSALUD BAMBAMARCA",
+      "CAJAMARCA",
+      "HUALGAYOC",
+      "BAMBAMARCA",
+      "060701",
+      "JR. 28 DE JULIO 558"
+    ],
+    [
+      "00010190",
+      "CENTRO  DE    ATENCION PRIMARIA  III  METROPOLITANO DE TACNA",
+      "TACNA",
+      "TACNA",
+      "TACNA",
+      "230101",
+      "AV. SAN MARTIN Nº  282"
+    ],
+    [
+      "00012189",
+      "CAP I PICHANAQUI",
+      "JUNIN",
+      "CHANCHAMAYO",
+      "PICHANAQUI",
+      "120303",
+      "PICHANAQUI"
+    ],
+    [
+      "00012190",
+      "CAP III MANTARO",
+      "JUNIN",
+      "HUANCAYO",
+      "HUANCAYO",
+      "120101",
+      "JIRON SAN JOSE - SAN CARLOS"
+    ],
+    [
+      "00012191",
+      "CAP II CHUPACA",
+      "JUNIN",
+      "CHUPACA",
+      "CHUPACA",
+      "120901",
+      "PETRONA APOALAYA 379"
+    ],
+    [
+      "00012235",
+      "CENTRO DE ATENCIÓN PRIMARIA CAP III METROPOLITANO- ESSALUD",
+      "PIURA",
+      "PIURA",
+      "PIURA",
+      "200101",
+      "ESQUINA ICA - TACNA N° 388 - CERCADO DE PIURA"
+    ],
+    [
+      "00013910",
+      "RENE TOCHE GROPPO",
+      "ICA",
+      "CHINCHA",
+      "CHINCHA ALTA",
+      "110201",
+      "AV. SAN ILDEFONSO N° 101"
+    ],
+    [
+      "00009902",
+      "POLICLINICO AZANGARO - ESSALUD - RED ASISTENCIAL JULIACA",
+      "PUNO",
+      "AZANGARO",
+      "AZANGARO",
+      "210201",
+      "JR. LIMA Nº 290 - AZÁNGARO"
+    ],
+    [
+      "00019915",
+      "POSTA MEDICA LOS ORGANOS - ESSALUD",
+      "PIURA",
+      "TALARA",
+      "LOS ORGANOS",
+      "200705",
+      "BARRIO SAN ISIDRO CALLE 5 Nº 901"
+    ],
+    [
+      "00013185",
+      "CAP I SANTO TOMÁS  ESSALUD",
+      "CUSCO",
+      "CHUMBIVILCAS",
+      "SANTO TOMAS",
+      "080701",
+      "AVENIDA PERU S/N SECTOR CONDEPAMAPA"
+    ],
+    [
+      "00014339",
+      "POSTA MEDICA SALVACION-ESSALUD",
+      "MADRE DE DIOS",
+      "MANU",
+      "MANU",
+      "170201",
+      "BARRIO NUEVA ESPERANZA,MZ.\"L\" LOTE N-03"
+    ],
+    [
+      "00015471",
+      "CENTRO DE ATENCION PRIMARIA-CAP III SAN ISIDRO-ESSALUD",
+      "LIMA",
+      "LIMA",
+      "SAN ISIDRO",
+      "150131",
+      "AV. PEREZ ARANIBAR 1551"
+    ],
+    [
+      "00017814",
+      "CENTRO DE ATENCION PRIMARIA III PEDRO REYES BARBOZA - BARRANCA",
+      "LIMA",
+      "BARRANCA",
+      "BARRANCA",
+      "150201",
+      "AV. EL BOSQUE S/N - URB LAS PALMERAS"
+    ],
+    [
+      "00010273",
+      "POSTA MEDICA ESSALUD SAN MIGUEL",
+      "CAJAMARCA",
+      "SAN MIGUEL",
+      "SAN MIGUEL",
+      "061101",
+      "PROL. PEDRO NOVOA ROJAS Nº360"
+    ],
+    [
+      "00021333",
+      "MODULO BASICO DE REHABILITACION",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "CHICLAYO",
+      "140101",
+      "CALLE VICENTE DE LA VEGA 1348"
+    ],
+    [
+      "00026203",
+      "CENTRO DE RADIOTERAPIA RALL",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "LA ESPERANZA",
+      "130105",
+      "JOAQUIN OLMEDO ESQUINA PASAJE BARDALES"
+    ],
+    [
+      "00011556",
+      "CENTRO DE ATENCION PRIMARIA II CABALLOCOCHA",
+      "LORETO",
+      "MARISCAL RAMON CASTILLA",
+      "RAMON CASTILLA",
+      "160401",
+      "CALLE RAMON CASTILLA N° 700"
+    ],
+    [
+      "00026183",
+      "METROPOLITANO",
+      "CUSCO",
+      "CUSCO",
+      "WANCHAQ",
+      "080108",
+      "MICAELA BASTIDAS"
+    ],
+    [
+      "00020625",
+      "POSTA MEDICA HUANCABAMBA",
+      "PIURA",
+      "HUANCABAMBA",
+      "HUANCABAMBA",
+      "200301",
+      "AV CENTENARIO S/N  - HUANCABAMBA"
+    ],
+    [
+      "00021032",
+      "CAP I SAN ANTONIO DEL ESTRECHO",
+      "LORETO",
+      "PUTUMAYO",
+      "PUTUMAYO",
+      "160801",
+      "CALLE AREQUIPA S/N"
+    ],
+    [
+      "00008265",
+      "HOSPITAL NACIONAL ALBERTO SABOGAL SOLOGUREN DE LA RED ASISTENCIAL SABOGAL",
+      "CALLAO",
+      "CALLAO",
+      "BELLAVISTA",
+      "070102",
+      "JR. COLINA NRO. 1081"
+    ],
+    [
+      "00010571",
+      "HOSPITAL II HUANUCO",
+      "HUANUCO",
+      "HUANUCO",
+      "AMARILIS",
+      "100102",
+      "JR.JOSE OLAYA C/.2"
+    ],
+    [
+      "00016481",
+      "HOSPITAL I JUANJUI - ESSALUD",
+      "SAN MARTIN",
+      "MARISCAL CACERES",
+      "JUANJUI",
+      "220601",
+      "JR. LA LIBERTAD CDRA. 2 S/N (JUANJUI) (CRUCE CON JR LA MERCED - BARRIO LA MERCED)"
+    ],
+    [
+      "00014147",
+      "ANTONIO SKRABONJA ANTONCICH",
+      "ICA",
+      "PISCO",
+      "PISCO",
+      "110501",
+      "AV. LAS AMERICAS S/N"
+    ],
+    [
+      "00020628",
+      "POSTA MEDICA NEGRITOS - ESSALUD",
+      "PIURA",
+      "TALARA",
+      "LA BREA",
+      "200703",
+      "AVENIDA SAN MARTIN Nº 100 NEGRITOS"
+    ],
+    [
+      "00020626",
+      "POSTA MEDICA IGNACIO ESCUDERO",
+      "PIURA",
+      "SULLANA",
+      "IGNACIO ESCUDERO",
+      "200603",
+      "AVENIDA PANAMERICANA NRO 212 IGNACIO ESCUDERO"
+    ],
+    [
+      "00016363",
+      "INSTITUTO PERUANO DE OFTALMOLOGIA",
+      "PIURA",
+      "PIURA",
+      "CASTILLA",
+      "200104",
+      "AV. UNIVERSITARIA S/N"
+    ],
+    [
+      "00019835",
+      "POSTA MEDICA ESSALUD CANCHAQUE",
+      "PIURA",
+      "HUANCABAMBA",
+      "CANCHAQUE",
+      "200302",
+      "AV. 22 DE AGOSTO 301 CANCHAQUE"
+    ],
+    [
+      "00016374",
+      "HOSPITAL IV AUGUSTO HERNANDEZ MENDOZA",
+      "ICA",
+      "ICA",
+      "ICA",
+      "110101",
+      "AV. JOSÉ MATIAS MANZANILLA S/N"
+    ],
+    [
+      "00015233",
+      "ESSALUD CUTERVO",
+      "CAJAMARCA",
+      "CUTERVO",
+      "CUTERVO",
+      "060601",
+      "AV. SAN JUAN S/N"
+    ],
+    [
+      "00015849",
+      "C.A.P.  I ASILLO",
+      "PUNO",
+      "AZANGARO",
+      "ASILLO",
+      "210204",
+      "CALLE  ROSELLO S/N"
+    ],
+    [
+      "00015848",
+      "C.A.P. II CABANILLAS",
+      "PUNO",
+      "SAN ROMAN",
+      "CABANILLAS",
+      "211103",
+      "JR. MARISCAL CASTILLA  Nº 285"
+    ],
+    [
+      "00014923",
+      "CENTRO DE ATENCION PRIMARIA II COTABAMBAS",
+      "APURIMAC",
+      "COTABAMBAS",
+      "TAMBOBAMBA",
+      "030501",
+      "AV. MARTINELLY S/N"
+    ],
+    [
+      "00008832",
+      "POSTA MEDICA DE UCUPE - ESSALUD",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "LAGUNAS",
+      "140107",
+      "CALLE VICTOR RAMIREZ  S/N."
+    ],
+    [
+      "00010702",
+      "POSTA MEDICA SANTA LUCIA",
+      "SAN MARTIN",
+      "TOCACHE",
+      "SANTA LUCÍA",
+      "221006",
+      "AV LAS PALMAS MZA 3 LOTE 35"
+    ],
+    [
+      "00013295",
+      "HOSPITAL II MANUEL DE TORRES MUÑOZ -  MOLLENDO",
+      "AREQUIPA",
+      "ISLAY",
+      "MOLLENDO",
+      "040701",
+      "CALLE JUAN B. ARENAS S/N MOLLENDO"
+    ],
+    [
+      "00008317",
+      "HOSPITAL AURELIO DIAZ UFANO Y PERAL",
+      "LIMA",
+      "LIMA",
+      "SAN JUAN DE LURIGANCHO",
+      "150132",
+      "CALLE MAJES S/N G-11 - URB. LOS PINOS"
+    ],
+    [
+      "00008658",
+      "HOSPITAL I - RIO NEGRO",
+      "JUNIN",
+      "SATIPO",
+      "RIO NEGRO",
+      "120607",
+      "JIRON HEROES DEL CENEPA S/N 2DA. CIUADRA - RIO NEGRO"
+    ],
+    [
+      "00018011",
+      "INSTITUTO NACIONAL CARDIOVASCULAR CARLOS ALBERTO PESCHIERA CARRILLO – INCOR –ESSALUD",
+      "LIMA",
+      "LIMA",
+      "JESUS MARIA",
+      "150113",
+      "JIRON CORONEL FÉLIX ZEGARRA Nº.S 397-417-455-465-491-495"
+    ],
+    [
+      "00009922",
+      "CENTRO DE ATENCION PRIMARIA II POMABAMBA",
+      "ANCASH",
+      "POMABAMBA",
+      "POMABAMBA",
+      "021601",
+      "JR. SANTA ROSA Nº 100"
+    ],
+    [
+      "00008673",
+      "POSTA MEDICA MARH TUNEL",
+      "JUNIN",
+      "YAULI",
+      "YAULI",
+      "120810",
+      "CAMPAMENTO MINERO MARH TUNEL"
+    ],
+    [
+      "00016704",
+      "POSTA MÉDICA DE PUCARÁ",
+      "CAJAMARCA",
+      "JAEN",
+      "PUCARA",
+      "060808",
+      "CALLE SAN MARTÍN S/N PUCARÁ"
+    ],
+    [
+      "00010136",
+      "HOSPITAL II-1 CLINICA JAEN",
+      "CAJAMARCA",
+      "JAEN",
+      "JAEN",
+      "060801",
+      "CALLE MARIANO MELGAR Nº 192- URB. SANTA BEATRIZ"
+    ],
+    [
+      "00011702",
+      "CENTRO DE SALUD \"VICTOR SOLES GARCIA\"",
+      "LA LIBERTAD",
+      "VIRU",
+      "VIRU",
+      "131201",
+      "AVENIDA VICTOR RAUL S/N SECTOR SAN LUIS"
+    ],
+    [
+      "00009140",
+      "POSTA MEDICA DE CHURCAMPA",
+      "HUANCAVELICA",
+      "CHURCAMPA",
+      "CHURCAMPA",
+      "090501",
+      "JR REAL N°171 - CHURCAMPA"
+    ],
+    [
+      "00008370",
+      "POLICLINICO CHOSICA - ESSALUD",
+      "LIMA",
+      "LIMA",
+      "LURIGANCHO",
+      "150118",
+      "JR.TRUJILLO SUR 800"
+    ],
+    [
+      "00008539",
+      "POLICLINICO CHINCHA",
+      "LIMA",
+      "LIMA",
+      "LIMA",
+      "150101",
+      "JR. CHINCHA 226"
+    ],
+    [
+      "00009896",
+      "POSTA MEDICA SAN GABAN - ESSALUD - RED ASISTENCIAL JULIACA",
+      "PUNO",
+      "CARABAYA",
+      "MACUSANI",
+      "210301",
+      "JR. GARCILAZO DE LA VEGA S/N - MACUSANI."
+    ],
+    [
+      "00020925",
+      "HOSPITAL DE ALTA COMPLEJIDAD DE LA LIBERTAD VIRGEN DE LA PUERTA",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "LA ESPERANZA",
+      "130105",
+      "AV. N° 05 Y N° 02, URB PARQUE INDUSTRIAL"
+    ],
+    [
+      "00018550",
+      "CENTRO DE ATENCION PRIMARIA  I  LOCUMBA",
+      "TACNA",
+      "JORGE BASADRE",
+      "LOCUMBA",
+      "230301",
+      "VILLA MUNICIPAL DE LOCUMBA S/N"
+    ],
+    [
+      "00017695",
+      "CENTRO DE ATENCION PRIMARIA III ALFREDO PIAZZA ROBERTS-GSPN I Y II-RPA-ESSALUD",
+      "LIMA",
+      "LIMA",
+      "LINCE",
+      "150116",
+      "CALLE LAS LILAS 223 SAN EUGENIO -LINCE"
+    ],
+    [
+      "00016153",
+      "HOSPITAL II ILO",
+      "MOQUEGUA",
+      "ILO",
+      "ILO",
+      "180301",
+      "JIRON MIRAMAR S/N"
+    ],
+    [
+      "00019912",
+      "CENTRO MEDICO EL ALTO",
+      "PIURA",
+      "TALARA",
+      "EL ALTO",
+      "200702",
+      "AV. BOLOGNESI S/N"
+    ],
+    [
+      "00016357",
+      "CENTRO DE ATENCION PRIMARIA III INDEPENDENCIA - RPA - ESSALUD",
+      "LIMA",
+      "LIMA",
+      "INDEPENDENCIA",
+      "150112",
+      "CALLE \"A\"  MZ \"D\" LOTE 13 Y 14 - URB. PANAMERICANA"
+    ],
+    [
+      "00016157",
+      "HOSPITAL II MOQUEGUA",
+      "MOQUEGUA",
+      "MARISCAL NIETO",
+      "MOQUEGUA",
+      "180101",
+      "URBANIZACION CAPILLUNE S/N SAN FRANCISCO"
+    ],
+    [
+      "00019914",
+      "POSTA MÉDICA AYABACA",
+      "PIURA",
+      "AYABACA",
+      "AYABACA",
+      "200201",
+      "CALLE BOLOGNES N° 312"
+    ],
+    [
+      "00016699",
+      "CENTRO DE ATENCION PRIMARIA II PATAPO",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "PATAPO",
+      "140117",
+      "CALLE EL CINTO  S/N"
+    ],
+    [
+      "00016703",
+      "POSTA MÉDICA DE SANTA CRUZ",
+      "CAJAMARCA",
+      "SANTA CRUZ",
+      "SANTA CRUZ",
+      "061301",
+      "AV. 21 DE ABRIL 166-172 – SANTA CRUZ"
+    ],
+    [
+      "00016484",
+      "POSTA MEDICA LAMAS - ESSALUD",
+      "SAN MARTIN",
+      "LAMAS",
+      "LAMAS",
+      "220501",
+      "JR. RAMON CASTILLA 476 (COSTADO DEL INST SUP. PEDAGOCICO LAMAS)"
+    ],
+    [
+      "00024531",
+      "LA TINGUIÑA",
+      "ICA",
+      "ICA",
+      "LA TINGUIÑA",
+      "110102",
+      "MONTEVIDEO 339"
+    ],
+    [
+      "00012109",
+      "PUESTO DE SALUD DEL CAP II HUAMACHUCO",
+      "LA LIBERTAD",
+      "SANCHEZ CARRION",
+      "HUAMACHUCO",
+      "130901",
+      "CALLE PONCE DE LEON ESQUINA CON RAMIRO PRIALE"
+    ],
+    [
+      "00024259",
+      "CAP III ENRIQUE ENCINAS FRANCO",
+      "PUNO",
+      "SAN ROMAN",
+      "JULIACA",
+      "211101",
+      "INDEPENDENCIA"
+    ],
+    [
+      "00009163",
+      "POLICLINICO PUENTE PIEDRA",
+      "LIMA",
+      "LIMA",
+      "PUENTE PIEDRA",
+      "150125",
+      "AV. BUENOS AIRES 652"
+    ],
+    [
+      "00021890",
+      "POSTA MEDICA YAURICOCHA",
+      "LIMA",
+      "YAUYOS",
+      "ALIS",
+      "151002",
+      "CAMPAMENTO MINERO YAURICOCHA"
+    ],
+    [
+      "00008835",
+      "HOSPITAL NAYLAMP",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "CHICLAYO",
+      "140101",
+      "AV BOLOGNESI 200"
+    ],
+    [
+      "00013291",
+      "HOSPITAL III YANAHUARA",
+      "AREQUIPA",
+      "AREQUIPA",
+      "YANAHUARA",
+      "040126",
+      "AV. ZAMACOLA Y AV. ENMEL S/N"
+    ],
+    [
+      "00008378",
+      "POLICLINICO PROCERES",
+      "LIMA",
+      "LIMA",
+      "SANTIAGO DE SURCO",
+      "150140",
+      "MANUEL PEREZ TUDELA BLOCK \"D\" \"B\""
+    ],
+    [
+      "00019336",
+      "CENTRO DE ATENCIÓN PRIMARIA CAP I NUEVA CAJAMARCA",
+      "SAN MARTIN",
+      "RIOJA",
+      "NUEVA CAJAMARCA",
+      "220804",
+      "AV. NUEVA CAJAMARCA NORTE S/N ALT KL 14 CFBT"
+    ],
+    [
+      "00009760",
+      "CENTRO MEDICO DE YANAHUANCA",
+      "PASCO",
+      "DANIEL ALCIDES CARRION",
+      "YANAHUANCA",
+      "190201",
+      "JR. SOLEDAD S/N. DISTRITO DE YANAHUANCA, PROVINCIA DANIEL CARRIÓN Y REGIÓN PASCO"
+    ],
+    [
+      "00008489",
+      "ESSALUD - HOSPITAL III SUÁREZ ANGAMOS",
+      "LIMA",
+      "LIMA",
+      "MIRAFLORES",
+      "150122",
+      "AV. ANGAMOS ESTE Nº 261"
+    ],
+    [
+      "00010075",
+      "CAP HUYRO - ESSALUD",
+      "CUSCO",
+      "LA CONVENCION",
+      "HUAYOPATA",
+      "080903",
+      "AVENIDA 2 DE MAYO S/N° CENTRO POBLADO HUYRO/ HUAYOPATA / LA CONVENCION / CUSCO"
+    ],
+    [
+      "00009298",
+      "POLICLINICO CENTRAL DE PREVENCION LARCO",
+      "LIMA",
+      "LIMA",
+      "MIRAFLORES",
+      "150122",
+      "AV. JOSE A. LARCO 670"
+    ],
+    [
+      "00010228",
+      "CENTRO DE ATENCIÓN PRIMARIA II ÓSCAR FÉRNANDEZ DÁVILA VÉLEZ",
+      "TACNA",
+      "TACNA",
+      "TACNA",
+      "230101",
+      "CALLE TARAPACA Nº 1035 URB FCO G. VIGIL"
+    ],
+    [
+      "00012198",
+      "POSTA MEDICA CHALA",
+      "AREQUIPA",
+      "CARAVELI",
+      "CHALA",
+      "040307",
+      "AV. COMERCIO 100 - CHALA"
+    ],
+    [
+      "00009304",
+      "POSTA MÉDICA CONSTRUCCIÓN CIVIL",
+      "LIMA",
+      "LIMA",
+      "LA VICTORIA",
+      "150115",
+      "PROLONGACIÓN CANGALLO N° 670"
+    ],
+    [
+      "00011438",
+      "CENTRO DE ATENCION PRIMARIA II PUQUIO",
+      "AYACUCHO",
+      "LUCANAS",
+      "PUQUIO",
+      "050601",
+      "JR. YAURIHUIRI S/N"
+    ],
+    [
+      "00009074",
+      "POSTA MEDICA OCALLI",
+      "AMAZONAS",
+      "LUYA",
+      "OCALLI",
+      "010512",
+      "JR. LORETO N° 295"
+    ],
+    [
+      "00009038",
+      "CENTRO DE SALUD CON INTERNAMIENTO MOCHE",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "MOCHE",
+      "130107",
+      "CALLE ELIO JACOBO CAFFO S/N URB EL PARAISO"
+    ],
+    [
+      "00010333",
+      "CENTRO DE ATENCION PRIMARIA III HUARAL",
+      "LIMA",
+      "HUARAL",
+      "HUARAL",
+      "150601",
+      "AV CIRCUNVALACION ESTE 405"
+    ],
+    [
+      "00008831",
+      "CENTRO DE ATENCIÓN PRIMARIA III MANUEL MANRIQUE NEVADO",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "JOSE LEONARDO ORTIZ",
+      "140105",
+      "CALLE CONQUISTA 464-470"
+    ],
+    [
+      "00009222",
+      "ESSALUD JULI",
+      "PUNO",
+      "CHUCUITO",
+      "JULI",
+      "210401",
+      "JIRON ILAVE NUMERO 316"
+    ],
+    [
+      "00013304",
+      "CENTRO DE ATENCION PRIMARIA I EL PEDREGAL ESSALUD",
+      "AREQUIPA",
+      "CAYLLOMA",
+      "MAJES",
+      "040520",
+      "MANZANA 3 – E D LOTE  03 EL PEDREGAL"
+    ],
+    [
+      "00010013",
+      "POLICLÍNICO DE COMPLEJIDAD CRECIENTE \"VICTOR PANTA RODRIGUEZ\"",
+      "ANCASH",
+      "SANTA",
+      "CHIMBOTE",
+      "021801",
+      "PROLONGACION FRANCISCO PIZARRO Nº 444 BARRIO FISCAL Nº 5"
+    ],
+    [
+      "00008672",
+      "POSTA MÉDICA JUNÍN",
+      "JUNIN",
+      "JUNIN",
+      "JUNIN",
+      "120501",
+      "JIRON SIMÓN BOLIVAR Nº 820"
+    ],
+    [
+      "00012112",
+      "POSTA DE SALUD QUIRUVILCA",
+      "LA LIBERTAD",
+      "SANTIAGO DE CHUCO",
+      "QUIRUVILCA",
+      "131006",
+      "PASAJE GILDEMEISTER S/N"
+    ],
+    [
+      "00009762",
+      "POSTA MEDICA DE PAUCARTAMBO",
+      "PASCO",
+      "PASCO",
+      "PAUCARTAMBO",
+      "190107",
+      "AV. FRATERNIDAD S/N. DISTRITO DE PAUCARTAMBO, PROVINCIA Y REGIÓN DE PASCO"
+    ],
+    [
+      "00016482",
+      "POSTA MEDICA BELLAVISTA - ESSALUD",
+      "SAN MARTIN",
+      "BELLAVISTA",
+      "BELLAVISTA",
+      "220201",
+      "JR. MOQUEGUA S/N TERCER PISO"
+    ],
+    [
+      "00009761",
+      "CENTRO MEDICO DE VILLA RICA",
+      "PASCO",
+      "OXAPAMPA",
+      "VILLA RICA",
+      "190307",
+      "JR. OXAPAMPA S/N"
+    ],
+    [
+      "00016151",
+      "CENTRO DE ATENCION PRIMARIA II TORATA",
+      "MOQUEGUA",
+      "MARISCAL NIETO",
+      "TORATA",
+      "180106",
+      "PASAJE ALEGOMA 2 SECTOR EL MOGOTE ANEXO LA PASCANA"
+    ],
+    [
+      "00029514",
+      "ESSALUD ANTA",
+      "CUSCO",
+      "ANTA",
+      "ANTA",
+      "080301",
+      "JAQUIJAHUANA"
+    ],
+    [
+      "00012104",
+      "POSTA DE SALUD CASCAS",
+      "LA LIBERTAD",
+      "GRAN CHIMU",
+      "CASCAS",
+      "131101",
+      "CALLE BOLIVAR 426"
+    ],
+    [
+      "00009180",
+      "HOSPITAL I TINGO MARIA",
+      "HUANUCO",
+      "LEONCIO PRADO",
+      "RUPA-RUPA",
+      "100601",
+      "JR. BOLOGNESI 120 PPJJ TUPAC AMARU"
+    ],
+    [
+      "00009218",
+      "POLICLINICO ILAVE -  RED ASISTENCIAL PUNO",
+      "PUNO",
+      "EL COLLAO",
+      "ILAVE",
+      "210501",
+      "JR. INDEPENDENCIA Nº 210 - PLAZA DE ARMAS"
+    ],
+    [
+      "00020274",
+      "ESSALUD - HOSPITAL I YURIMAGUAS",
+      "LORETO",
+      "ALTO AMAZONAS",
+      "YURIMAGUAS",
+      "160201",
+      "HUMBOLT N° 100"
+    ],
+    [
+      "00012103",
+      "POSTA DE SALUD SALAVERRY",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "SALAVERRY",
+      "130109",
+      "CALLE LIBERTAD Nº 348"
+    ],
+    [
+      "00009751",
+      "CENTRO MEDICO  HUAYLLAY",
+      "PASCO",
+      "PASCO",
+      "HUAYLLAY",
+      "190104",
+      "JR . SAN MARTÍN S/N. DISTRITO DE HUAYLLAY, PROVINCIA Y REGIÓN DE PASCO"
+    ],
+    [
+      "00013307",
+      "POSTA MEDICA SANTA RITA DE SIGUAS",
+      "AREQUIPA",
+      "AREQUIPA",
+      "SANTA RITA DE SIHUAS",
+      "040121",
+      "CALLE AUGUSTO GUILARDI 405"
+    ],
+    [
+      "00009068",
+      "HOSPITAL I HEROES DEL CENEPA",
+      "AMAZONAS",
+      "BAGUA",
+      "BAGUA",
+      "010201",
+      "JR. LAMBAYEQUE N° 517"
+    ],
+    [
+      "00026055",
+      "POSTA MEDICA OMATE",
+      "MOQUEGUA",
+      "GENERAL SANCHEZ CERRO",
+      "OMATE",
+      "180201",
+      "LIMMA"
+    ],
+    [
+      "00026009",
+      "CAP III CARABAYLLO",
+      "LIMA",
+      "LIMA",
+      "CARABAYLLO",
+      "150106",
+      "MOSHOLLACTA Y DIEGO BERMEJO"
+    ],
+    [
+      "00027563",
+      "CAP III METROPOLITANO DEL CALLAO",
+      "CALLAO",
+      "CALLAO",
+      "LA PERLA",
+      "070104",
+      "LA MARINA"
+    ],
+    [
+      "00007948",
+      "CENTRO DE ATENCION PRIMARIA CAP III LUIS NEGREIROS VEGA",
+      "CALLAO",
+      "CALLAO",
+      "CALLAO",
+      "070101",
+      "AVENIDA TOMAS VALLE CDRA 34 S/N"
+    ],
+    [
+      "00027591",
+      "POSTA MEDICA LLATA",
+      "HUANUCO",
+      "HUAMALIES",
+      "LLATA",
+      "100501",
+      "INDEPENDENCIA SN"
+    ],
+    [
+      "00012195",
+      "POSTA MEDICA ACARI",
+      "AREQUIPA",
+      "CARAVELI",
+      "ACARI",
+      "040302",
+      "AV. RICARDO PALMA S/N - ACARI"
+    ],
+    [
+      "00025427",
+      "CAP II SAYÁN",
+      "LIMA",
+      "HUAURA",
+      "SAYAN",
+      "150811",
+      "BARTOLOME SUAREZ"
+    ],
+    [
+      "00012241",
+      "AGUSTIN GAVIDIA SALCEDO",
+      "LAMBAYEQUE",
+      "LAMBAYEQUE",
+      "LAMBAYEQUE",
+      "140301",
+      "CALLE POEMAPE Nº 120 - LAMBAYEQUE"
+    ],
+    [
+      "00009069",
+      "CENTRO DE ATENCIÓN PRIMARIA II RODRÍGUEZ DE MENDOZA",
+      "AMAZONAS",
+      "RODRIGUEZ DE MENDOZA",
+      "SAN NICOLAS",
+      "010601",
+      "JR. MANUEL PELAEZ N° 108"
+    ],
+    [
+      "00010272",
+      "HOSPITAL II CAJAMARCA",
+      "CAJAMARCA",
+      "CAJAMARCA",
+      "CAJAMARCA",
+      "060101",
+      "AV. MARIO URTEAGA NO  S/N"
+    ],
+    [
+      "00012194",
+      "CAP III - PAUCARPATA",
+      "AREQUIPA",
+      "AREQUIPA",
+      "PAUCARPATA",
+      "040112",
+      "CALLE ABANCAY S/N - ZONA A MIGUEL GRAU- PAUCARPATA"
+    ],
+    [
+      "00027085",
+      "POSTA MEDICA SUNGARO",
+      "HUANUCO",
+      "PUERTO INCA",
+      "PUERTO INCA",
+      "100901",
+      "LAS AGUILAS SN"
+    ],
+    [
+      "00027730",
+      "CENTRO DE ATENCIÓN PRIMARIA MORALES - ESSALUD",
+      "SAN MARTIN",
+      "SAN MARTIN",
+      "MORALES",
+      "220910",
+      "1 DE MAYO"
+    ],
+    [
+      "00027733",
+      "HOSPITAL II TARAPOTO ESSALUD",
+      "SAN MARTIN",
+      "SAN MARTIN",
+      "TARAPOTO",
+      "220901",
+      "PROGRESO Cdra.-8"
+    ],
+    [
+      "00028259",
+      "POLICLÍNICO DE COMPLEJIDAD CRECIENTE \"LAS AMÉRICAS\"",
+      "APURIMAC",
+      "ABANCAY",
+      "ABANCAY",
+      "030101",
+      "VENEZUELA"
+    ],
+    [
+      "00027611",
+      "CENTRO MEDICO PAMPA INALAMBRICA",
+      "MOQUEGUA",
+      "ILO",
+      "ILO",
+      "180301",
+      "ASENTAMIENTO  HUMANO PROMUVI III"
+    ],
+    [
+      "00009203",
+      "CENTRO MEDICO SIHUAS",
+      "ANCASH",
+      "SIHUAS",
+      "SIHUAS",
+      "021901",
+      "28 DE JULIO"
+    ],
+    [
+      "00027769",
+      "CAP I SAN CLEMENTE",
+      "ICA",
+      "PISCO",
+      "SAN CLEMENTE",
+      "110507",
+      "ABANCAY"
+    ],
+    [
+      "00027727",
+      "CENTRO DE ATENCIÓN PRIMARIA METROPOLITANO - ESSALUD",
+      "SAN MARTIN",
+      "SAN MARTIN",
+      "TARAPOTO",
+      "220901",
+      "PLAZA MAYOR TARAPOTO - ESQUINA CON RAMIREZ HURTADO C-2"
+    ],
+    [
+      "00011409",
+      "HOSPITAL III IQUITOS",
+      "LORETO",
+      "MAYNAS",
+      "PUNCHANA",
+      "160108",
+      "AVENIDA LA MARINA S/N"
+    ],
+    [
+      "00012196",
+      "POSTA MEDICA CARAVELI",
+      "AREQUIPA",
+      "CARAVELI",
+      "CARAVELI",
+      "040301",
+      "CALLE AUGUSTO B. LEGUIA S/N - CARAVELI"
+    ],
+    [
+      "00009748",
+      "HOSPITAL I OXAPAMPA",
+      "PASCO",
+      "OXAPAMPA",
+      "OXAPAMPA",
+      "190301",
+      "PROLONGACION ENRIQUE BOTTGER S/N, DISTRITO, PROVINCIA DE OXAPAMPA Y REGIÓN PASCO"
+    ],
+    [
+      "00008892",
+      "POSTA MEDICA DE DE OYOTUN - ESSALUD",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "OYOTUN",
+      "140110",
+      "MANUEL GONZALEZ PRADA CUADRA 03  S/N"
+    ],
+    [
+      "00010704",
+      "POSTA MEDICA UCHIZA",
+      "SAN MARTIN",
+      "TOCACHE",
+      "UCHIZA",
+      "221005",
+      "AV. MARCELIANO ALVAREZ N° 300"
+    ],
+    [
+      "00029978",
+      "Policlinico de Complejidad Creciente El Retablo - Comas",
+      "LIMA",
+      "LIMA",
+      "COMAS",
+      "150110",
+      "Jose Maria Pagador"
+    ],
+    [
+      "00012319",
+      "CENTRO DE ATENCION PRIMARIA-CAP III CATACAOS",
+      "PIURA",
+      "PIURA",
+      "CATACAOS",
+      "200105",
+      "JR. ZEPITA Nº 535 Y JR. SAN FRANCISCO Nº 646"
+    ],
+    [
+      "00013091",
+      "CENTRO DE ATENCION PRIMARIA III SURQUILLO",
+      "LIMA",
+      "LIMA",
+      "SURQUILLO",
+      "150141",
+      "AV LOS HALCONES 414 URB LIMATAMBO"
+    ],
+    [
+      "00009900",
+      "HOSPITAL I LAMPA - ESSALUD - RED ASISTENCIAL JULIACA  ESPECIALIZADO EN SALUD MENTAL",
+      "PUNO",
+      "LAMPA",
+      "LAMPA",
+      "210701",
+      "JR. ALFONSO UGARTE 124 - LAMPA."
+    ],
+    [
+      "00010821",
+      "CENTRO DE ATENCION PRIMARIA II",
+      "CAJAMARCA",
+      "CAJAMARCA",
+      "LOS BAÑOS DEL INCA",
+      "060108",
+      "JR. LOS SAUCES S/N -URB. LAGUNA SECA MZNA A LOTE 4"
+    ],
+    [
+      "00011445",
+      "POSTA MEDICA SAN FRANCISCO",
+      "AYACUCHO",
+      "LA MAR",
+      "AYNA",
+      "050503",
+      "AV. PROGRESO S/N MZ. A\" LT. 04 SECTOR BARRIO COMERCIO INDUSTRIAL"
+    ],
+    [
+      "00013012",
+      "CENTRO DE ATENCIÓN PRIMARIA III SAN JUAN DE MIRAFLORES",
+      "LIMA",
+      "LIMA",
+      "SAN JUAN DE MIRAFLORES",
+      "150133",
+      "AV. CANEVARO CON AV. VARGAS MACHUCA S/N"
+    ],
+    [
+      "00029682",
+      "CAP II CABANILLAS",
+      "PUNO",
+      "SAN ROMAN",
+      "CABANILLAS",
+      "211103",
+      "BARRIO LA QUINTA"
+    ],
+    [
+      "00008608",
+      "POSTA MEDICA DE TUCUME",
+      "LAMBAYEQUE",
+      "LAMBAYEQUE",
+      "TUCUME",
+      "140312",
+      "AV. FEDERICO VILLAREAL 294"
+    ],
+    [
+      "00013911",
+      "MARIA REICHE NEUMAN",
+      "ICA",
+      "NAZCA",
+      "MARCONA",
+      "110304",
+      "CIRCUNVALACION S/N, ZONA P"
+    ],
+    [
+      "00009202",
+      "POSTA MEDICA PAMPAS",
+      "ANCASH",
+      "PALLASCA",
+      "PAMPAS",
+      "021509",
+      "JR.CALLAO S/N- PAMPAS"
+    ],
+    [
+      "00012111",
+      "CENTRO DE SALUD CAP II TAYABAMBA",
+      "LA LIBERTAD",
+      "PATAZ",
+      "TAYABAMBA",
+      "130801",
+      "CALLE DOS DE MAYO S/N"
+    ],
+    [
+      "00009060",
+      "CENTRO MEDICO CARHUAZ",
+      "ANCASH",
+      "CARHUAZ",
+      "CARHUAZ",
+      "020601",
+      "AV. LA MERCED 346 - CARHUAZ"
+    ],
+    [
+      "00027084",
+      "POSTA MEDICA LA UNION",
+      "HUANUCO",
+      "DOS DE MAYO",
+      "LA UNION",
+      "100301",
+      "DOS DE MAYO 1035"
+    ],
+    [
+      "00009923",
+      "POSTA MEDICA YUNGAY",
+      "ANCASH",
+      "YUNGAY",
+      "YUNGAY",
+      "022001",
+      "JR. SAENZ PEÑA S/N . AURA"
+    ],
+    [
+      "00027083",
+      "POSTA MÉDICA AUCAYACU",
+      "HUANUCO",
+      "LEONCIO PRADO",
+      "JOSE CRESPO Y CASTILLO",
+      "100604",
+      "HUANUCO"
+    ],
+    [
+      "00027743",
+      "POSTA MEDICA OLMOS",
+      "LAMBAYEQUE",
+      "LAMBAYEQUE",
+      "OLMOS",
+      "140308",
+      "ATAHUALPA"
+    ],
+    [
+      "00009957",
+      "CENTRO MEDICO LEONCIO PRADO - AMBO",
+      "HUANUCO",
+      "AMBO",
+      "AMBO",
+      "100201",
+      "JR. BOLOGNESI 134"
+    ],
+    [
+      "00027538",
+      "POSTA MEDICA CHALA",
+      "AREQUIPA",
+      "CARAVELI",
+      "CHALA",
+      "040307",
+      "COMERCIO"
+    ],
+    [
+      "00027565",
+      "Hospital I Marino Molina Scippa - EsSalud",
+      "LIMA",
+      "LIMA",
+      "COMAS",
+      "150110",
+      "Guillermo de la Fuente"
+    ],
+    [
+      "00009201",
+      "POSTA MEDICA CONCHUCOS",
+      "ANCASH",
+      "PALLASCA",
+      "CONCHUCOS",
+      "021503",
+      "AV.LOS INCAS S/N"
+    ],
+    [
+      "00027610",
+      "CENTRO MEDICO SAMEGUA",
+      "MOQUEGUA",
+      "MARISCAL NIETO",
+      "SAMEGUA",
+      "180104",
+      "ANDRES AVELINO CACERES"
+    ],
+    [
+      "00026385",
+      "URCOS - ESSALUD",
+      "CUSCO",
+      "QUISPICANCHI",
+      "URCOS",
+      "081201",
+      "VILCANOTA"
+    ],
+    [
+      "00027948",
+      "ESSALUD PICHARI",
+      "CUSCO",
+      "LA CONVENCION",
+      "PICHARI",
+      "080910",
+      "CESAR VALLEJO"
+    ],
+    [
+      "00026367",
+      "POSTA MEDICA CHUCARAPI",
+      "AREQUIPA",
+      "ISLAY",
+      "COCACHACRA",
+      "040702",
+      "PRINCIPAL"
+    ],
+    [
+      "00015230",
+      "HOSPITAL III JOSE CAYETANO HEREDIA",
+      "PIURA",
+      "PIURA",
+      "CASTILLA",
+      "200104",
+      "AV. INDEPENDENCIA S/N"
+    ],
+    [
+      "00010374",
+      "CENTRO DE ATENCION PRIMARIA II CHANCAY",
+      "LIMA",
+      "HUARAL",
+      "CHANCAY",
+      "150605",
+      "CALLE LUIS FELIPE DEL SOLAR 165"
+    ],
+    [
+      "00013912",
+      "FELIX TORREALVA GUTIERREZ",
+      "ICA",
+      "ICA",
+      "ICA",
+      "110101",
+      "AV. CUTERVO N° 104"
+    ],
+    [
+      "00025929",
+      "CENTRO DE ATENCIÓN ESPECIALIZADA INTEGRAL DE DIABETES E HIPERTENSIÓN-ESSALUD",
+      "LIMA",
+      "LIMA",
+      "JESUS MARIA",
+      "150113",
+      "arenales"
+    ],
+    [
+      "00009071",
+      "CENTRO DE ATENCIÓN PRIMARIA I LAMUD",
+      "AMAZONAS",
+      "LUYA",
+      "LAMUD",
+      "010501",
+      "AV. MIGUEL GRAU N° 577"
+    ],
+    [
+      "00013301",
+      "POSTA MEDICA COTAHUASI",
+      "AREQUIPA",
+      "LA UNION",
+      "COTAHUASI",
+      "040801",
+      "CALLE AREQUIPA 504"
+    ],
+    [
+      "00009274",
+      "POLICLINICO FIORI",
+      "LIMA",
+      "LIMA",
+      "SAN MARTIN DE PORRES",
+      "150135",
+      "DISTRITO DE SAN MARTIN DE PORRES CENTRO COMERCIAL FIORI BLOCK \"C\" - KM 13.5 PANAMERICANA NORTE"
+    ],
+    [
+      "00010135",
+      "HOSPITAL I CARLOS ALCANTARA BUTTERFIELD",
+      "LIMA",
+      "LIMA",
+      "LA MOLINA",
+      "150114",
+      "AV. LOS CONSTRUCTORES 1201 - URB. COVIMA"
+    ],
+    [
+      "00020627",
+      "POSTA MEDICA  ESSALUD MORROPON",
+      "PIURA",
+      "MORROPON",
+      "MORROPON",
+      "200405",
+      "CALLE LIMA N° 970"
+    ],
+    [
+      "00011216",
+      "CENTRO DE ATENCION PRIMARIA I CURAHUASI",
+      "APURIMAC",
+      "ABANCAY",
+      "CURAHUASI",
+      "030104",
+      "JR. ABANCAY Nº 331"
+    ],
+    [
+      "00011408",
+      "CAP III IQUITOS",
+      "LORETO",
+      "MAYNAS",
+      "IQUITOS",
+      "160101",
+      "MALECON TARAPACA N° 272, 278, 286"
+    ],
+    [
+      "00009217",
+      "CENTRO DE ATENCION PRIMARIA III METROPOLITANO DE PUNO",
+      "PUNO",
+      "PUNO",
+      "PUNO",
+      "210101",
+      "JR. AREQUIPA Nº 950"
+    ],
+    [
+      "00008577",
+      "HOSPITAL NACIONAL ALMANZOR AGUINAGA ASENJO",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "CHICLAYO",
+      "140101",
+      "PLAZA DE LA SEGURIDAD SOCIAL S/N"
+    ],
+    [
+      "00009040",
+      "HOSPITAL I - LA ESPERANZA",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "LA ESPERANZA",
+      "130105",
+      "LIMA CUADRA 7"
+    ],
+    [
+      "00010392",
+      "CENTRO DE ATENCION PRIMARIA I HUMAYA",
+      "LIMA",
+      "HUAURA",
+      "HUAURA",
+      "150806",
+      "JOSE FAUSTINO SANCHEZ CARRION S/N- CENTRO POBLADO MENOR DE HUMAYA"
+    ],
+    [
+      "00008656",
+      "HOSPITAL  SELVA CENTRAL Y ENFERMEDADES TROPICALES HUGO PESCE PESCETTO",
+      "JUNIN",
+      "CHANCHAMAYO",
+      "CHANCHAMAYO",
+      "120301",
+      "JR. LOS CAUCHOS Nº 223-271 Y JR. LOS ROBLES Nº 527"
+    ],
+    [
+      "00012108",
+      "POSTA MEDICA SANTIAGO DE CHUCO",
+      "LA LIBERTAD",
+      "SANTIAGO DE CHUCO",
+      "SANTIAGO DE CHUCO",
+      "131001",
+      "CALLE LUIS FELIPE DE LA PUENTE UCEDA N° 1630 BARRIO SAN JOSE"
+    ],
+    [
+      "00008502",
+      "HOSPITAL DE EMERGENCIAS GRAU",
+      "LIMA",
+      "LIMA",
+      "LIMA",
+      "150101",
+      "AVENIDA GRAU N° 351"
+    ],
+    [
+      "00009072",
+      "CENTRO DE ATENCIÓN PRIMARIA I PEDRO RUIZ",
+      "AMAZONAS",
+      "BONGARA",
+      "JAZAN",
+      "010307",
+      "JR. SACSAHUAMAN CDRA  5"
+    ],
+    [
+      "00009057",
+      "CENTRO MEDICO CASMA",
+      "ANCASH",
+      "CASMA",
+      "CASMA",
+      "020801",
+      "PROLONGACION LA LIBERTAD S/N"
+    ],
+    [
+      "00008653",
+      "HOSPITAL II ALBERTO HURTADO ABADIA",
+      "JUNIN",
+      "YAULI",
+      "SANTA ROSA DE SACCO",
+      "120808",
+      "AVENIDA MIGUEL GRAU Nº 1250"
+    ],
+    [
+      "00008880",
+      "CENTRO MEDICO ANCIJE",
+      "LIMA",
+      "LIMA",
+      "LIMA",
+      "150101",
+      "JR. CHOTA Nº 1449 - CERCADO DE LIMA"
+    ],
+    [
+      "00010536",
+      "HOSPITAL II CAÑETE",
+      "LIMA",
+      "CAÑETE",
+      "SAN VICENTE DE CAÑETE",
+      "150501",
+      "AV. MARISCAL BENAVIDES Nº 495"
+    ],
+    [
+      "00010276",
+      "POSTA MEDICA ESSALUD CONTUMAZA",
+      "CAJAMARCA",
+      "CONTUMAZA",
+      "CONTUMAZA",
+      "060501",
+      "JR. JOSE PARDO Nº 616"
+    ],
+    [
+      "00031294",
+      "CAP III EL AGUSTNO-RAA-ESSALUD",
+      "LIMA",
+      "LIMA",
+      "EL AGUSTINO",
+      "150111",
+      "RENAN ELIAS OLIVERA  145 - URBANIZACIÓN POPULAR EL AGUSTINO, Mz A, LOTE 27 Y ANEXO JIRÓN POLO JIMENEZ S/N"
+    ],
+    [
+      "00028422",
+      "CONSULTORIO ESPECIALIZADO GINEND MUJER",
+      "LIMA",
+      "LIMA",
+      "LINCE",
+      "150116",
+      "GENERAL CORDOVA"
+    ],
+    [
+      "00027202",
+      "Servicio de Transporte Asistido de Emergencia STAE",
+      "LIMA",
+      "LIMA",
+      "JESUS MARIA",
+      "150113",
+      "ARENALES"
+    ],
+    [
+      "00025342",
+      "CAP I LARAQUERI",
+      "PUNO",
+      "PUNO",
+      "PICHACANI",
+      "210111",
+      "AUGUSTO B. LEGUIA"
+    ],
+    [
+      "00009136",
+      "POSTA MEDICA CASTROVIRREYNA",
+      "HUANCAVELICA",
+      "CASTROVIRREYNA",
+      "CASTROVIRREYNA",
+      "090401",
+      "AV. LOS LIBERTADORES S/N"
+    ],
+    [
+      "00027081",
+      "POSTA MÉDICA BAÑOS",
+      "HUANUCO",
+      "LAURICOCHA",
+      "BAÑOS",
+      "101002",
+      "LIBERTAD SN"
+    ],
+    [
+      "00012023",
+      "TAMBO DE MORA",
+      "ICA",
+      "CHINCHA",
+      "TAMBO DE MORA",
+      "110211",
+      "AV. JOSE OLAYA CUADRA 5"
+    ],
+    [
+      "00031393",
+      "CENTRO DE ATENCIÓN PRIMARIA II CHINCHEROS",
+      "APURIMAC",
+      "CHINCHEROS",
+      "CHINCHEROS",
+      "030601",
+      "LAS FLORES"
+    ],
+    [
+      "00031567",
+      "POSTA MEDICA DE SAPOSOA - ESSALUD",
+      "SAN MARTIN",
+      "HUALLAGA",
+      "SAPOSOA",
+      "220401",
+      "ARICA"
+    ],
+    [
+      "00031880",
+      "POSTA DE SALUD AGUAYTIA",
+      "UCAYALI",
+      "PADRE ABAD",
+      "PADRE ABAD",
+      "250301",
+      "JUNTA VECINAL BARRIO UNIDO"
+    ],
+    [
+      "00031881",
+      "POSTA MEDICA-CAMPO VERDE-ESSALUD",
+      "UCAYALI",
+      "CORONEL PORTILLO",
+      "CAMPOVERDE",
+      "250102",
+      "MUNICIPAL"
+    ],
+    [
+      "00031841",
+      "CAP III MIRAFLORES",
+      "AREQUIPA",
+      "AREQUIPA",
+      "MIRAFLORES",
+      "040110",
+      "SAN MARTIN 416"
+    ],
+    [
+      "00031879",
+      "CENTRO MEDICO DE  ATALAYA - ESSALUD",
+      "UCAYALI",
+      "ATALAYA",
+      "RAIMONDI",
+      "250201",
+      "LAS CAOBAS"
+    ],
+    [
+      "00032194",
+      "CENTRO  DE SALUD ALAMEDAS - ESSALUD",
+      "UCAYALI",
+      "CORONEL PORTILLO",
+      "YARINACOCHA",
+      "250105",
+      "URUBAMBA"
+    ],
+    [
+      "00032739",
+      "CENTRO DE SALUD MANANTAY - ESSALUD",
+      "UCAYALI",
+      "CORONEL PORTILLO",
+      "MANANTAY",
+      "250107",
+      "9"
+    ],
+    [
+      "00032601",
+      "HOSPITAL MODULAR BICENTENARIO CHOTA \"GILBERTO VILLENA ARROBAS\"",
+      "CAJAMARCA",
+      "CHOTA",
+      "CHOTA",
+      "060401",
+      "COMUNIDAD DE PINGOBAMBA"
+    ],
+    [
+      "00032596",
+      "HOSPITAL I CLINICA UNIVERSITARIA",
+      "PUNO",
+      "PUNO",
+      "PUNO",
+      "210101",
+      "INCA GARCILAZO DE LA VEGA"
+    ],
+    [
+      "00034002",
+      "VICTOR SOLES GARCIA ESSALUD",
+      "LA LIBERTAD",
+      "VIRU",
+      "VIRU",
+      "131201",
+      "VICTOR RAUL  SECTOR 3B SAN LUIS"
+    ],
+    [
+      "00034417",
+      "CAP I ECHARATE - KITENI",
+      "CUSCO",
+      "LA CONVENCION",
+      "ECHARATE",
+      "080902",
+      "JUAN OLARTE"
+    ],
+    [
+      "00033542",
+      "CAP II SAN JACINTO",
+      "ANCASH",
+      "SANTA",
+      "NEPEÑA",
+      "021806",
+      "Mz. W1  Lot. 08 Sector 1"
+    ],
+    [
+      "00034377",
+      "POSTA MEDICA ACOBAMBA",
+      "HUANCAVELICA",
+      "ACOBAMBA",
+      "ACOBAMBA",
+      "090201",
+      "MANUEL CANDAMO"
+    ],
+    [
+      "00033170",
+      "CRD LOS OLIVOS",
+      "LIMA",
+      "LIMA",
+      "LOS OLIVOS",
+      "150117",
+      "ANTUNEZ DE MAYOLO"
+    ],
+    [
+      "00033721",
+      "CENTRO DE ATENCION PRIMARIA I LONYA GRANDE",
+      "AMAZONAS",
+      "UTCUBAMBA",
+      "LONYA GRANDE",
+      "010706",
+      "28 DE JULIO"
+    ],
+    [
+      "00033438",
+      "CAP PICOTA",
+      "SAN MARTIN",
+      "PICOTA",
+      "PICOTA",
+      "220701",
+      "COMERCIO"
+    ],
+    [
+      "00034252",
+      "HOSPITAL BICENTENARIO JAUJA",
+      "JUNIN",
+      "JAUJA",
+      "JAUJA",
+      "120401",
+      "CALLE HUGO ORELLANA BONILLA"
+    ],
+    [
+      "00034658",
+      "POSTA MEDICA CAP  III  AMARILIS - PILLCO MARCA",
+      "HUANUCO",
+      "HUANUCO",
+      "PILLCO MARCA",
+      "100111",
+      "LOS ALISOS  CDRA 4"
+    ],
+    [
+      "00034041",
+      "CENTRO DE ATENCIÓN PRIMARIA III METROPOLITANO",
+      "AYACUCHO",
+      "HUAMANGA",
+      "JESUS NAZARENO",
+      "050115",
+      "RICARDO PALMA"
+    ],
+    [
+      "00034970",
+      "CENTRO DE ATENCION PRIMARIA II HUNTER",
+      "AREQUIPA",
+      "AREQUIPA",
+      "JACOBO HUNTER",
+      "040107",
+      "PARIS"
+    ],
+    [
+      "00034572",
+      "CENTRO DE ATENCION PRIMARIA II CURAHUASI",
+      "APURIMAC",
+      "ABANCAY",
+      "CURAHUASI",
+      "030104",
+      "LOS GERANIOS"
+    ],
+    [
+      "00033595",
+      "CENTRO DE ATENCION PRIMARIA I ITE",
+      "TACNA",
+      "JORGE BASADRE",
+      "ITE",
+      "230303",
+      "PRINCIPAL ZONA EL MIRADOR"
+    ],
+    [
+      "00035003",
+      "CENTRO NACIONAL DE TELEMEDICINA- CENATE",
+      "LIMA",
+      "LIMA",
+      "JESUS MARIA",
+      "150113",
+      "DOMINGO CUETO"
+    ],
+    [
+      "00034933",
+      "SANTIAGO ESSALUD",
+      "CUSCO",
+      "CUSCO",
+      "SANTIAGO",
+      "080106",
+      "PUEBLO JOVEN LAS MALVINAS"
+    ],
+    [
+      "00035151",
+      "HOSPITAL DE ESPECIALIDADES QUIRÚRGICAS DE SAN JUAN DE MIRAFLORES",
+      "LIMA",
+      "LIMA",
+      "SAN JUAN DE MIRAFLORES",
+      "150133",
+      "CESAR CANEVARO"
+    ],
+    [
+      "00034894",
+      "BICENTENARIO DE CHAO",
+      "LA LIBERTAD",
+      "VIRU",
+      "CHAO",
+      "131202",
+      "PANAMERICANA NORTE"
+    ],
+    [
+      "00035236",
+      "CAP I YURA",
+      "AREQUIPA",
+      "AREQUIPA",
+      "YURA",
+      "040128",
+      "URBZ. CIUDAD DE DIOS MZ. U LT. 01 SECTOR B Zn 3, DISTRITO DE YURA"
+    ],
+    [
+      "00034972",
+      "C.M. Huanchaco",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "HUANCHACO",
+      "130104",
+      "A.H HUANCHAQUITO ALTO"
+    ],
+    [
+      "00034999",
+      "CENTRO MEDICO LIRCAY",
+      "HUANCAVELICA",
+      "ANGARAES",
+      "LIRCAY",
+      "090301",
+      "Lima - Av. Ricardo Fernández"
+    ],
+    [
+      "00036306",
+      "POSTA MEDICA CONCHUCOS",
+      "ANCASH",
+      "PALLASCA",
+      "CONCHUCOS",
+      "021503",
+      "CENTRO POBLADO CONCHUCOS"
+    ],
+    [
+      "00035611",
+      "FLORENCIA DE MORA",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "FLORENCIA DE MORA",
+      "130103",
+      "BARRIO 6 CALLE 9 DE OCTUBRE N° 1030 MZ 10 LOTE 01"
+    ],
+    [
+      "00038223",
+      "POSTA MEDICA SAN MIGUEL",
+      "AYACUCHO",
+      "LA MAR",
+      "SAN MIGUEL",
+      "050501",
+      "PRINCIPAL DE SAN MIGUEL"
+    ],
+    [
+      "00036694",
+      "POLICLÍNICO DE COMPLEJIDAD CRECIENTE SAN LUIS",
+      "LIMA",
+      "LIMA",
+      "LA VICTORIA",
+      "150115",
+      "México"
+    ],
+    [
+      "00036151",
+      "POSTA DE SALUD CHICAMA",
+      "LA LIBERTAD",
+      "ASCOPE",
+      "CHICAMA",
+      "130202",
+      "ULISES"
+    ],
+    [
+      "00035741",
+      "CAP III METROPOLITANO",
+      "LA LIBERTAD",
+      "TRUJILLO",
+      "TRUJILLO",
+      "130101",
+      "BLAS PASCAL"
+    ],
+    [
+      "00036970",
+      "CAP III CATACAOS",
+      "PIURA",
+      "PIURA",
+      "CATACAOS",
+      "200105",
+      "ALEJANDRO TABOADA"
+    ],
+    [
+      "00038390",
+      "POSTA DE SALUD SAUSAL",
+      "LA LIBERTAD",
+      "ASCOPE",
+      "CHICAMA",
+      "130202",
+      "JACOBO MZ. J LOT. 1"
+    ],
+    [
+      "00038398",
+      "POSTA MEDICA ZORRITOS",
+      "TUMBES",
+      "CONTRALMIRANTE VILLAR",
+      "ZORRITOS",
+      "240201",
+      "FAUSTINO PIAGGIO"
+    ],
+    [
+      "00038800",
+      "POSTA MEDICA SAN MARCOS - ESSALUD",
+      "CAJAMARCA",
+      "SAN MARCOS",
+      "PEDRO GALVEZ",
+      "061001",
+      "AV PRIMAVERA"
+    ],
+    [
+      "00037499",
+      "HOSPITAL CLINICO ESPECIALIZADO EN MEDICINA INTERNA - ESSALUD - TUMAN",
+      "LAMBAYEQUE",
+      "CHICLAYO",
+      "TUMAN",
+      "140120",
+      "RIOJA S/N - BLOCK 10"
+    ],
+    [
+      "00038811",
+      "POSTA MEDICA DE PUCARA",
+      "CAJAMARCA",
+      "JAEN",
+      "PUCARA",
+      "060808",
+      "San Jose Cuadra 5"
+    ],
+    [
+      "00038213",
+      "POSTA MEDICA HUANCAPI",
+      "AYACUCHO",
+      "VICTOR FAJARDO",
+      "HUANCAPI",
+      "051001",
+      "AREQUIPA"
+    ],
+    [
+      "00036256",
+      "CENTRO MEDICO SAMEGUA",
+      "MOQUEGUA",
+      "MARISCAL NIETO",
+      "SAMEGUA",
+      "180104",
+      "ADELAIDA BOLIVAR"
+    ],
+    [
+      "00038214",
+      "POSTA MEDICA CANGALLO",
+      "AYACUCHO",
+      "CANGALLO",
+      "CANGALLO",
+      "050201",
+      "FAUSTINO SANCHEZ CARRION"
+    ],
+    [
+      "00037885",
+      "CENTRO DE ATENCIÓN PRIMARIA I ANTABAMBA",
+      "APURIMAC",
+      "ANTABAMBA",
+      "ANTABAMBA",
+      "030301",
+      "RENOVACIÓN"
+    ],
+    [
+      "00035628",
+      "HOSPITAL DE ESPECIALIDADES QUIRURGICAS CANTA CALLAO",
+      "LIMA",
+      "LIMA",
+      "SAN MARTIN DE PORRES",
+      "150135",
+      "LOS HUERTOS DE NARANJAL"
+    ],
+    [
+      "00036345",
+      "POSTA MEDICA SAN RAFAEL",
+      "PUNO",
+      "MELGAR",
+      "ANTAUTA",
+      "210802",
+      "KENAMARI"
+    ],
+    [
+      "00038547",
+      "CENTRO MÉDICO BAMBAMARCA",
+      "CAJAMARCA",
+      "HUALGAYOC",
+      "BAMBAMARCA",
+      "060701",
+      "JORGE CHAVEZ"
+    ]
+  ]
+}

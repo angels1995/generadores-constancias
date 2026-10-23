@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Verificar registro de receta</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#eef2f4;color:#172b35;font:16px/1.6 system-ui,sans-serif}main{max-width:660px;margin:50px auto;padding:32px;background:white;border-radius:16px;box-shadow:0 8px 32px #10203012}h1{font-size:26px;margin-top:0}.label{color:#526673;font-size:13px;letter-spacing:1px}#estado{padding:14px;background:#f5f1e8;border-left:4px solid #b27b24;white-space:pre-wrap}dl{display:grid;grid-template-columns:1fr 1fr;gap:12px}dt{font-weight:600}dd{margin:0;overflow-wrap:anywhere}small{display:block;margin-top:28px;color:#526673}@media(max-width:600px){main{margin:16px;padding:22px}dl{grid-template-columns:1fr;gap:4px}dd{margin-bottom:12px}}</style>
+<script src="/receta/verificador.js" defer></script></head><body><main>
+<p class="label">REGISTRO DEL SISTEMA</p><h1>Verificación de receta</h1><p id="estado" role="status">Consultando el registro…</p>
+<dl id="datos" hidden><dt>Código</dt><dd id="codigo"></dd><dt>Estado del documento</dt><dd>BORRADOR</dd>
+<dt>Fecha de registro</dt><dd id="fecha"></dd><dt>Plazo declarado hasta</dt><dd id="hasta"></dd>
+<dt>Medicamentos registrados</dt><dd id="total"></dd></dl>
+<small>La existencia de este registro no acredita firma, habilitación profesional ni emisión por MINSA. El documento requiere revisión y firma del profesional. Esta página no publica datos del paciente ni indicaciones clínicas.</small>
+</main></body></html>

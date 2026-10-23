@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Muestra MINSA</title>
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+html, body { padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif; color: #111; }
+.page { width: 794px; height: 1123px; position: relative; padding: 58px 52px 0; overflow: hidden; }
+.header { display: flex; align-items: center; justify-content: space-between; height: 74px; margin-bottom: 65px; }
+.header img { width: 304px; height: auto; }
+.title { width: 162px; font-size: 13px; font-weight: bold; text-align: center; line-height: 1.25; }
+.fields { display: grid; grid-template-columns: 255px minmax(0, 1fr); column-gap: 10px; font-size: 11.5px; line-height: 1.4; }
+.label, .data { min-height: 24px; overflow-wrap: anywhere; }
+.label { font-weight: bold; }
+.observations { margin-top: 12px; font-size: 11.5px; }
+.observations b { display: block; margin-bottom: 8px; }
+.observation-box { border: 1.5px solid #222; min-height: 42px; padding: 9px 10px; line-height: 1.4; }
+.signature { position: absolute; top: 564px; right: 65px; width: 334px; border: 3px solid #111; border-radius: 3px; }
+.signature-images { display: flex; align-items: center; justify-content: center; gap: 10px; height: 91px; padding: 5px; }
+.seal { width: 75px; height: 75px; object-fit: contain; }
+.sign { width: 213px; height: 78px; object-fit: contain; }
+.signature-caption { font: 10px 'Courier New', monospace; padding: 0 3px 3px; }
+.signature-bottom { border-top: 3px solid #111; display: flex; justify-content: space-between; font-size: 9px; padding: 4px; }
+.issued { position: absolute; top: 715px; left: 52px; right: 52px; font-size: 10.5px; line-height: 1.5; }
+.issued div { overflow-wrap: anywhere; }
+.issued b { margin-right: 7px; }
+.sample { position: absolute; bottom: 176px; left: 52px; right: 52px; border: 1px solid #a00000; color: #a00000; text-align: center; font-size: 11px; font-weight: bold; padding: 7px; }
+.qr { position: absolute; left: 57px; bottom: 59px; width: 94px; height: 94px; }
+.footer { position: absolute; bottom: 22px; left: 52px; right: 52px; display: flex; align-items: center; gap: 16px; font-size: 7px; line-height: 1.6; }
+.footer img { width: 93px; }
+</style></head>
+<body><main class="page">
+<header class="header"><img src="{{LOGO}}" alt="Ministerio de Salud"><div class="title">MINISTERIO DE SALUD<br>CONSTANCIA DE<br>DESCANSO MÉDICO</div></header>
+<section class="fields">
+  <span class="label">DIRIS / DIRESA / GERESA</span><span class="data"></span>
+  <span class="label">UBICACIÓN</span><span class="data">{{UBICACION}}</span>
+  <span class="label">PACIENTE</span><span class="data">{{PACIENTE}}</span>
+  <span class="label">EDAD (AÑOS)</span><span class="data">{{EDAD}}</span>
+  <span class="label">DNI</span><span class="data">{{DNI}}</span>
+  <span class="label">TIPO DE SEGURO</span><span class="data">{{SEGURO}}</span>
+  <span class="label">INICIO DEL DESCANSO</span><span class="data">{{INICIO}} · {{HORA}}</span>
+  <span class="label">FIN DEL DESCANSO</span><span class="data">{{FIN}}</span>
+  <span class="label">TOTAL DE DÍAS</span><span class="data">{{DIAS}}</span>
+  <span class="label">DIAGNÓSTICO</span><span class="data">{{DIAGNOSTICO}}</span>
+</section>
+<section class="observations"><b>Observaciones:</b><div class="observation-box">{{OBSERVACIONES}}</div></section>
+<div class="signature"><div class="signature-images"><img class="seal" src="{{SELLO}}" alt="Sello existente"><img class="sign" src="{{FIRMA}}" alt="Firma existente"></div>
+  <div class="signature-caption">Firma y sello:</div><div class="signature-bottom"><span>CMP: 000000</span><span>PROFESIONAL FICTICIO - MUESTRA</span></div>
+</div>
+<div class="issued"><div><b>USUARIO</b> {{USUARIO}}</div><div><b>FECHA / HORA</b> 22/10/2026<br>10:30 AM</div><div>{{HOSPITAL}}</div><div>{{UBICACION}}</div></div>
+<div class="sample">MUESTRA - SIN VALIDEZ · DATOS FICTICIOS · PRUEBA DE DISEÑO</div>
+<img class="qr" src="{{QR}}" alt="QR de muestra">
+<footer class="footer"><img src="{{LOGO}}" alt="Ministerio de Salud"><div>DEMOSTRACIÓN DEL FORMATO. NO ACREDITA UNA ATENCIÓN MÉDICA.<br>USUARIO: {{USUARIO}}</div></footer>
+</main></body></html>

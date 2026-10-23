@@ -1,0 +1,35 @@
+{
+  "usar_reniec": false,
+  "paciente_dni": "00000000",
+  "paciente_nombre": "PACIENTE FICTICIO DE DEMOSTRACIÓN",
+  "paciente_nacimiento": "2001-02-28",
+  "sede": "SEDE DE DEMOSTRACIÓN",
+  "direccion": "DOMICILIO DE DEMOSTRACIÓN",
+  "ubicacion": "DISTRITO DE DEMOSTRACIÓN",
+  "hospital": "CLÍNICA LA LUZ",
+  "fecha_atencion": "2026-10-22",
+  "valido_hasta": "2026-10-23",
+  "seguro": "OTRO",
+  "atencion": "CONSULTA EXTERNA",
+  "especialidad": "SERVICIO DE DEMOSTRACIÓN",
+  "historia_interna": null,
+  "diagnostico": "CASO FICTICIO PARA REVISAR EL DISEÑO",
+  "cie10": null,
+  "medico_nombre": null,
+  "medico_cmp": null,
+  "medico_especialidad": null,
+  "usuario": "PRUEBA LOCAL",
+  "medicamentos": [
+    {
+      "nombre": "PARACETAMOL",
+      "concentracion": null,
+      "forma": null,
+      "cantidad": 1,
+      "dosis": "DOSIS FICTICIA",
+      "via": "ORAL",
+      "frecuencia": "PAUTA FICTICIA",
+      "dias": 1,
+      "indicaciones": "DEMOSTRACIÓN. NO USAR COMO TRATAMIENTO."
+    }
+  ]
+}

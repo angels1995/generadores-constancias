@@ -1,3 +1,54 @@
 node_modules/
 .env
+.env.*
+!.env.example
+!.env.*.example
 *.log
+
+# PDF generados, datos de pacientes, diagnósticos y paquetes temporales.
+/tmp/
+/output/
+# Descargas antiguas del cliente guardadas en la raíz.
+/receta-*-DOC-*.pdf
+/receta-*-RECETA-*.pdf
+/laluz-*-DOC-*.pdf
+/certificado-essalud-DOC-*.pdf
+/backup/
+/backups/
+*.bak
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Credenciales y llaves privadas; .env.example sí se versiona.
+.ssh/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Cachés y entornos locales de Python.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Archivos locales del sistema.
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Configuración activa privada: conservar las diferencias de PC y VPS.
+/config/recursos-pdf.json
+/cloudflared.deb
+# Recursos profesionales de referencia: conservados localmente, no publicados.
+/prototipos/essalud-citt-v1/
+/src/assets/**/firma*.png
+/src/assets/**/sello*.png
+/src/essalud-demo/assets/firma-referencia.png
+/src/essalud-demo/assets/sello-referencia.png
+
+# No ignorar config/, data/, docs/, prototipos/, src/assets/ ni tests/:
+# contienen recursos y código necesarios para los generadores publicados.

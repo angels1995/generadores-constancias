@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Muestra del nuevo CITT</title>
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+html, body { padding: 0; margin: 0; color: #161616; font-family: Arial, Helvetica, sans-serif; }
+.page { width: 794px; height: 1123px; padding: 38px 52px 0; position: relative; overflow: hidden; }
+.header { display: grid; grid-template-columns: 190px 1fr; gap: 13px; height: 90px; font-size: 10px; line-height: 1.5; }
+.logo { width: 168px; height: auto; align-self: start; margin-top: 12px; }
+.registered strong { display: block; font-size: 10.5px; }
+.registered .user { font-size: 11px; margin: 3px 0; }
+.formline { display: flex; justify-content: space-between; font-size: 10px; margin: 3px 0 16px; }
+h1 { margin: 0 0 23px; font-size: 14.6px; text-align: center; line-height: 1.3; }
+.facility { display: grid; grid-template-columns: 1fr 100px; gap: 22px; min-height: 112px; padding-bottom: 12px; }
+.qr { width: 94px; height: 94px; }
+.item { display: flex; gap: 8px; line-height: 1.35; min-height: 21px; font-size: 10.5px; align-items: baseline; }
+.item .label { flex: 0 0 98px; color: #3f3f3f; }
+.value { font-family: 'Courier New', Courier, monospace; font-weight: bold; font-size: 10.5px; overflow-wrap: anywhere; }
+.address, .location { font-size: 9px; line-height: 1.45; color: #414141; margin: 0 0 7px; overflow-wrap: anywhere; }
+.patient, .period, .accumulated, .observations { border-top: 1.4px solid #666; padding-top: 12px; padding-bottom: 8px; }
+.patient .name { min-height: 25px; }
+.patient .name .label, .professional .label { flex-basis: 148px; }
+.twocol { display: grid; grid-template-columns: 1fr 1fr; column-gap: 10px; }
+.twocol .item .label { flex-basis: 98px; }
+.patient .location { margin: 0; }
+h2 { font-size: 12px; margin: 0 0 12px; line-height: 1.25; }
+.period { padding-top: 13px; padding-bottom: 10px; }
+.accumulated { padding-top: 13px; padding-bottom: 9px; }
+.observations { padding-top: 13px; min-height: 115px; }
+.observations p { font-size: 10.5px; line-height: 1.45; margin: 0 0 10px; overflow-wrap: anywhere; }
+.observations p:empty { display: none; }
+.observations .item { min-height: 23px; }
+.observations .label { flex-basis: auto; }
+.observations .userline .label { flex-basis: 98px; }
+.signatures { height: 145px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; justify-items: center; }
+.signatures img { max-height: 125px; max-width: 215px; object-fit: contain; }
+.issued { display: flex; justify-content: space-between; font-size: 10px; padding-top: 4px; }
+.issued b { font-family: 'Courier New', monospace; font-size: 10px; }
+.footer { position: absolute; left: 52px; right: 52px; bottom: 30px; display: flex; align-items: center; gap: 15px; font-size: 7px; line-height: 1.65; }
+.footer img { width: 92px; }
+.sample { position: absolute; bottom: 83px; left: 52px; right: 52px; text-align: center; color: #a02828; border: 1px solid #a02828; padding: 7px; font-size: 11px; font-weight: bold; letter-spacing: .6px; background: white; }
+</style>
+</head>
+<body><main class="page">
+  <header class="header">
+    <img class="logo" src="{{LOGO}}" alt="Ministerio de Salud">
+    <div class="registered"><strong>REGISTRADO ELECTRÓNICAMENTE POR:</strong><strong class="user">{{USUARIO}}</strong>
+      <div>Fecha: <b>{{FECHA_EMISION}}, {{HORA_EMISION_24}} -05:00</b></div><div>Motivo: Emisión del documento</div>
+    </div>
+  </header>
+  <div class="formline"><b>Formulario 8017-1</b><span>N.º <b class="value">{{AUTOG}}</b></span></div>
+  <h1>CERTIFICADO DE INCAPACIDAD TEMPORAL PARA EL TRABAJO</h1>
+  <section class="facility"><div>
+    <div class="item"><span class="label">E. S.:</span><span class="value">{{HOSPITAL}}</span></div>
+    <div class="address">{{DIRECCION}}</div>
+    <div class="item"><span class="label">N.º registro:</span><span class="value">{{AUTOG}}</span></div>
+    <div class="item"><span class="label">Acto médico:</span><span class="value">{{ACTO_MEDICO}}</span></div>
+    <div class="item"><span class="label">Servicio:</span><span class="value">{{SERVICIO}}</span></div>
+  </div><img class="qr" src="{{QR}}" alt="QR de muestra"></section>
+  <section class="patient">
+    <div class="item name"><span class="label">Nombre del asegurado:</span><span class="value">{{PACIENTE_NOMBRE}}</span></div>
+    <div class="twocol">
+      <div class="item"><span class="label">Documento:</span><span class="value">{{PACIENTE_DNI}}</span></div>
+      <div class="item"><span class="label">Edad / sexo:</span><span class="value">{{EDAD_SEXO}}</span></div>
+      <div class="item"><span class="label">Autogenerado:</span><span class="value">{{AUTOG_SHORT}}</span></div>
+      <div class="item"><span class="label">Seguro:</span><span class="value">{{SEGURO}}</span></div>
+      <div class="item"><span class="label">Atención:</span><span class="value">{{TIPO_ATENCION}}</span></div>
+      <div class="item"><span class="label">Contingencia:</span><span class="value">{{CONTINGENCIA}}</span></div>
+    </div>
+    <div class="item"><span class="label" style="flex-basis:180px">DIRIS / DIRESA / GERESA:</span><span class="value"></span></div>
+    <div class="location">{{UBICACION}}</div>
+  </section>
+  <section class="period"><h2>PERIODO DE INCAPACIDAD</h2><div class="twocol">
+    <div class="item"><span class="label">Inicio:</span><span class="value">{{INICIO}} · {{HORA_ATENCION}}</span></div>
+    <div class="item"><span class="label">Fin:</span><span class="value">{{FIN}}</span></div>
+    <div class="item"><span class="label">Total de días:</span><span class="value">{{DIAS}}</span></div>
+    <div class="item"><span class="label">Otorgamiento:</span><span class="value">{{OTORGAMIENTO}}</span></div>
+  </div></section>
+  <section class="accumulated"><h2>DÍAS ACUMULADOS</h2><div class="twocol">
+    <div class="item"><span class="label">Consecutivos:</span><span class="value"></span></div>
+    <div class="item"><span class="label">No consecutivos:</span><span class="value"></span></div>
+  </div><div class="item professional"><span class="label">Profesional tratante:</span><span class="value">{{MEDICO}}</span></div><div class="twocol">
+    <div class="item"><span class="label">CMP:</span><span class="value">{{CMP}}</span></div>
+    <div class="item"><span class="label">RNE:</span><span class="value">{{RNE}}</span></div>
+  </div></section>
+  <section class="observations"><h2>OBSERVACIONES</h2>
+    <p><b>Diagnóstico:</b> {{DIAGNOSTICO}}</p><p>{{OBSERVACIONES}}</p>
+    <div class="item"><span class="label">Días acumulados (total):</span><span class="value"></span></div>
+    <div class="item userline"><span class="label">USUARIO:</span><span class="value">{{USUARIO}}</span></div>
+  </section>
+  <div class="signatures"><img src="{{SELLO}}" alt="Sello existente"><img src="{{FIRMA}}" alt="Firma existente"></div>
+  <div class="issued"><span>Fecha de emisión: <b>{{FECHA_EMISION}}</b></span><span>Hora: <b>{{HORA_EMISION}}</b></span></div>
+  <div class="sample">MUESTRA - SIN VALIDEZ · DATOS DE PRUEBA · PRUEBA DE DISEÑO</div>
+  <footer class="footer"><img src="{{LOGO}}" alt="Ministerio de Salud"><div>DEMOSTRACIÓN DEL FORMATO. NO ACREDITA UNA ATENCIÓN MÉDICA.<br>USUARIO: {{USUARIO}}</div></footer>
+</main></body></html>

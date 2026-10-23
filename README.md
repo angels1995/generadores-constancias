@@ -1,5 +1,50 @@
 # Constancias API (MINSA)
 
+## Autocompletar paciente con RENIEC (MINSA y CITT)
+
+Configura `RENIEC_API_TOKEN` en el `.env` privado del backend. No envíes ese
+token desde el frontend ni lo incluyas en Git. El backend consulta por HTTPS
+`https://api.sin-flower.com/api/reniec/:dni`, con un límite de 15 segundos.
+
+Ambos endpoints existentes (`POST /api/minsa/generar` y
+`POST /api/citt/generar`) admiten este cuerpo:
+
+```json
+{
+  "usar_reniec": true,
+  "paciente_dni": "00000001",
+  "hospital": "INSTITUCIÓN DE PRUEBA",
+  "fecha_atencion": "2026-10-22",
+  "hora_atencion": "09:30",
+  "descanso_fin": "2026-10-23",
+  "diagnostico": "CASO DE PRUEBA",
+  "sintomas": []
+}
+```
+
+El DNI del ejemplo es ficticio. Debe enviarse como texto de 8 dígitos para
+conservar los ceros iniciales. RENIEC completa `paciente_nombre` (nombres,
+apellido paterno y materno), `paciente_nacimiento` (`YYYY-MM-DD`) y
+`paciente_edad` (calculada para la fecha actual de Perú). Al consultar,
+estos campos se reemplazan juntos para mantener una identidad coherente.
+`data.input` devuelve los datos que se utilizaron en la generación.
+No se incorporan fotografías, firmas, huellas ni otros campos de RENIEC.
+
+Solo `usar_reniec: true` activa la consulta. En ese modo nombre, nacimiento y
+edad pueden omitirse o enviarse como `null` o texto vacío: se completan con
+RENIEC. Sin ese campo, o con `usar_reniec: false`, se conserva la entrada
+manual y las validaciones anteriores, incluso la edad opcional de CITT.
+La consulta no completa diagnóstico, fechas de atención, hospital ni datos
+del profesional. Los errores de RENIEC detienen la generación antes de crear
+el PDF o escribir en la BD: DNI inválido (400), no encontrado por HTTP (404),
+respuesta/conexión inválida (502), servicio no disponible o sin token (503),
+tiempo agotado (504). No hay reintentos automáticos.
+
+Las rutas del panel conservan sus destinos. Para activar en producción hay
+que configurar allí el token y desplegar los cambios tras revisar el servidor.
+Pruebas aisladas, sin credenciales, consultas reales ni escrituras a BD:
+`node --test tests/reniec.test.js`.
+
 API en Node.js + Express que genera constancias en PDF, guarda el código de
 verificación en Postgres y devuelve los datos junto al PDF en base64.
 

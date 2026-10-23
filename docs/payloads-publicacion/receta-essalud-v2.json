@@ -1,0 +1,36 @@
+{
+  "usar_reniec": false,
+  "paciente_dni": "00000000",
+  "paciente_nombre": "PACIENTE FICTICIO",
+  "paciente_edad": 25,
+  "hospital": "ESTABLECIMIENTO FICTICIO",
+  "fecha_atencion": "2026-10-22",
+  "valido_hasta": "2026-10-23",
+  "atencion": "CONSULTA EXTERNA",
+  "especialidad": "TRAUMATOLOGÍA",
+  "paciente_pi": null,
+  "autogenerado_paciente": null,
+  "acto_medico": null,
+  "documento_id": null,
+  "historia_interna": null,
+  "usuario": "PRUEBA LOCAL",
+  "medicamentos": [
+    {
+      "nombre": "PARACETAMOL",
+      "concentracion": null,
+      "forma": null,
+      "um_ff": null,
+      "cantidad": 1,
+      "dosis": "DOSIS FICTICIA",
+      "via": "ORAL",
+      "frecuencia": "FRECUENCIA FICTICIA",
+      "dias": 1,
+      "indicaciones": "DEMOSTRACIÓN. NO USAR COMO TRATAMIENTO.",
+      "codigo_producto": null
+    }
+  ],
+  "medico_nombre": null,
+  "medico_cmp": null,
+  "farmacia_codigo": null,
+  "farmacia_nombre": null
+}

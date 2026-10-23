@@ -5,21 +5,16 @@ import { pool } from '../lib/db.js';
 import { htmlAPdfBase64 } from '../lib/pdf.js';
 import { generarQRBase64 } from '../lib/qr.js';
 import { imagenBase64 } from '../lib/assets.js';
+import { completarPaciente } from '../lib/reniec.js';
+import { completarOpciones } from '../lib/citt-opciones.js';
+import { renderHtmlMinsa, validarHoraFin } from '../lib/minsa-render.js';
+import { validarEstadoSintomas } from '../lib/sintomas.js';
 import {
   parseFechaUTC,
   calcularInicioDescanso,
   calcularDias,
   calcularValidoHasta
 } from '../lib/vigencia.js';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const TEMPLATE_HTML = fs.readFileSync(
-  path.join(__dirname, '..', 'templates', 'minsa.html'),
-  'utf-8'
-);
-
-const VERIFICADOR_URL_BASE =
-  process.env.VERIFICADOR_URL_BASE || 'https://tu-proyecto.pages.dev/certificado_minsa.html';
 
 const CAMPOS_REQUERIDOS = [
   'hospital',
@@ -112,15 +107,14 @@ function generarAutog() {
   return 'MINSA-' + Math.random().toString(36).substring(2, 10).toUpperCase();
 }
 
-function rellenarTemplate(html, tokens) {
-  let resultado = html;
-  for (const [clave, valor] of Object.entries(tokens)) {
-    resultado = resultado.split(`{{${clave}}}`).join(valor ?? '');
-  }
-  return resultado;
-}
-
 export async function generarMinsa(body) {
+  for (const campo of CAMPOS_REQUERIDOS.filter((campo) => !['paciente_nombre', 'paciente_nacimiento'].includes(campo))) {
+    if (!body?.[campo]) throw new Error(`Falta el campo requerido: ${campo}`);
+  }
+  body = validarEstadoSintomas(body);
+  body = completarOpciones(body);
+  body.descanso_hora_fin = validarHoraFin(body.descanso_hora_fin);
+  body = await completarPaciente(body);
   for (const campo of CAMPOS_REQUERIDOS) {
     if (!body[campo]) throw new Error(`Falta el campo requerido: ${campo}`);
   }
@@ -148,30 +142,17 @@ export async function generarMinsa(body) {
     autog
   };
 
-  const qrUrl = `${VERIFICADOR_URL_BASE}?minsa=${autog}`;
-  const [qrBase64, logoBase64, firmaBase64] = await Promise.all([
-    generarQRBase64(qrUrl),
-    Promise.resolve(imagenBase64('minsasello_certificado.png')),
-    Promise.resolve(imagenBase64('minsafirma_certificado.png'))
-  ]);
-
-  const htmlFinal = rellenarTemplate(TEMPLATE_HTML, {
-    LOGO_BASE64:     logoBase64,
-    FIRMA_BASE64:    firmaBase64,
-    QR_BASE64:       qrBase64,
-    HOSPITAL:        datos.hospital,
-    PACIENTE_NOMBRE: datos.pacienteNombre,
-    PACIENTE_EDAD:   datos.pacienteEdad,
-    PACIENTE_DNI:    datos.pacienteDNI,
-    INICIO_DESCANSO: datos.descansoInicio,
-    FIN_DESCANSO:    datos.descansoFin,
-    DIAGNOSTICO:     datos.diagnosticoCompleto,
-    OBS_DNI:         datos.pacienteDNI,
-    OBS_FECHA:       datos.fechaAtencion,
-    OBS_HORA:        datos.horaAtencion,
-    OBS_SINTOMAS:    datos.sintomas,
-    OBS_DIAGNOSTICO: datos.diagnosticoLimpio,
-    OBS_DIAS:        datos.diasTexto
+  const observacionesAutomaticas =
+    `EL PACIENTE CON DOCUMENTO DE IDENTIDAD ${body.paciente_dni} ` +
+    `INGRESO HOY ${formatDateToMinsa(body.fecha_atencion).toUpperCase()} A LAS ${formatTime(body.hora_atencion)} ` +
+    (body.sintomas_no_consignados===true ? 'AL ÁREA DE EMERGENCIA. NO SE CONSIGNAN SÍNTOMAS EN ESTE REGISTRO. ' : `AL ÁREA DE EMERGENCIA CON SINTOMAS DE ${formatSintomas(sintomasInput)}. `) +
+    (body.sintomas_no_consignados===true
+      ? `EL DIAGNÓSTICO CONSIGNADO ES ${toMayus(stripCIE(body.diagnostico))}. SE SOLICITA DESCANSO `
+      : `TRAS LA EVALUACIÓN MÉDICA, SE DETERMINÓ QUE LOS SINTOMAS CORRESPONDEN A UN CUADRO DE ${toMayus(stripCIE(body.diagnostico))}. SE INDICA TRATAMIENTO SINTOMÁTICO Y SE SOLICITA DESCANSO `) +
+    `MÉDICO POR ${dias.texto.toUpperCase()}. EL PACIENTE DEBERÁ MANTENER ` +
+    `HIDRATACIÓN CONSTANTE, GUARDAR REPOSO Y CUMPLIR CON LAS INDICACIONES MÉDICAS ESTABLECIDAS.`;
+  const htmlFinal = await renderHtmlMinsa(body, {
+    autog, descansoInicio, dias: dias.total, pacienteEdad: datos.pacienteEdad, observacionesAutomaticas
   });
 
   const pdfBase64 = await htmlAPdfBase64(htmlFinal);
@@ -201,6 +182,7 @@ export async function generarMinsa(body) {
   return {
     autog,
     valido_hasta: validoHasta,
+    input: body,
     datos,
     pdf_base64: pdfBase64
   };
