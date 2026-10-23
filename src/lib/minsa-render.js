@@ -37,7 +37,7 @@ export async function renderHtmlMinsa(body, meta) {
     FIN: fecha(body.descanso_fin) + (horaFin ? ` · ${hora(horaFin)}` : ''),
     DIAS: meta.dias, DIAGNOSTICO: mayus(body.diagnostico),
     OBSERVACIONES: [meta.observacionesAutomaticas, body.observaciones].filter(Boolean).join('\n\n'),
-    USUARIO: mayus(String(body.usuario ?? '').trim() || 'JUAN PEREZ'),
+    USUARIO: mayus(String(body.usuario ?? '').trim() || 'JUAN PEREZ RODRIGUEZ'),
     CMP: body.medico_cmp ?? '', MEDICO: mayus(body.medico_nombre),
     FECHA_EMISION: now.toLocaleDateString('es-PE', { timeZone: 'America/Lima', day: '2-digit', month: '2-digit', year: 'numeric' }),
     HORA_EMISION: now.toLocaleTimeString('en-US', { timeZone: 'America/Lima', hour: '2-digit', minute: '2-digit', hour12: true })

@@ -30,6 +30,12 @@ export async function prepararLaLuz(raw,tipo,{completar=completarPaciente,now=ne
     if(['sede','direccion','ubicacion','medico_nombre','medico_cmp','medico_especialidad'].includes(key))
       body[key] ||= texto(settings[prefix+'_'+key],prefix+'_'+key,max);
   }
+  body.usuario ||= 'JUAN PEREZ RODRIGUEZ';
+  if(!body.sede || body.sede==='CLÍNICA LA LUZ · SEDE JAÉN') {
+    body.sede ||= 'CLÍNICA LA LUZ · SEDE JAÉN';
+    body.direccion ||= 'Av. Pakamuros 1113, frente al Hospital General de Jaén';
+    body.ubicacion ||= 'JAEN / JAEN / CAJAMARCA';
+  }
   if(body.paciente_sexo&&!['MASCULINO','FEMENINO','OTRO'].includes(body.paciente_sexo.toUpperCase()))throw bad('Sexo inválido.');
   body.paciente_sexo=body.paciente_sexo.toUpperCase();
   body.diagnostico=texto(body.diagnostico,'diagnostico',tipo==='receta'?220:600,tipo!=='receta');

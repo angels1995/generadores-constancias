@@ -1,7 +1,6 @@
-import {validarReceta,textoReceta} from '../../src/lib/receta-input.js';
+import {validarReceta,textoReceta,completarIdentificadoresReceta} from '../../src/lib/receta-input.js';
 import {leerRecursosPdf} from '../../src/lib/pdf-recursos.js';
 import fs from 'node:fs';
-import {randomBytes,createHash} from 'node:crypto';
 
 function sumarMeses(fecha,meses) {
   const year=fecha.getUTCFullYear(), month=fecha.getUTCMonth()+meses;
@@ -38,12 +37,9 @@ export function prepararCompacta(body, perfil, meta, {
     input[key]=input[key]||configured;
   }
   // Identificadores de demostración internos, no numeraciones institucionales.
-  const patientRef=createHash('sha256').update('muestra-local:'+input.paciente_dni).digest('hex').slice(0,12).toUpperCase();
-  input.autogenerado_paciente ||= 'INT-A-'+patientRef;
-  input.acto_medico ||= 'INT-AM-'+randomBytes(5).toString('hex').toUpperCase();
+  completarIdentificadoresReceta(input);
   // En el prototipo, la misma identidad conserva su referencia entre ambos perfiles.
   // Un sistema clínico real debe usar la historia persistida en su BD autorizada.
-  input.historia_interna ||= 'INT-HC-'+patientRef;
   if(input.paciente_nacimiento)input.edad_detallada=edadCalendario(input.paciente_nacimiento,input.fecha_atencion);
   const keys=['logo','firma','sello'].map(k=>prefix+'_'+k);
   const images=leerRecursosPdf(keys,{config});

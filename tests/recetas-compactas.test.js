@@ -20,7 +20,7 @@ test('candidato compacto acepta payload previo y campos opcionales null/vacíos 
 test('código de producto explícito independiente de ATC; no deduce farmacia ni identidad',()=>{
   const data=prepararCompacta({...fixture,medicamentos:[{...fixture.medicamentos[0],codigo_producto:'213700'}]},'minsa',meta);
   assert.equal(data.medicamentos[0].codigo_producto,'213700');assert.equal(data.medicamentos[0].atc_codigo,'N02BE01');
-  assert.match(data.autogenerado_paciente,/^INT-A-[A-F0-9]{12}$/);assert.equal(data.edad_detallada,'');
+  assert.match(data.autogenerado_paciente,/^[A-Z0-9]{9}$/);assert.equal(data.edad_detallada,'');
   assert.throws(()=>prepararCompacta({...fixture,farmacia_nombre:123},'minsa',meta));
   assert.throws(()=>prepararCompacta(fixture,'otro',meta));
   assert.throws(()=>prepararCompacta(fixture,'minsa',{...meta,codigo:'CODIGO-PRODUCCION'}));
@@ -39,8 +39,8 @@ test('edad calendario desde nacimiento: cumpleaños, meses cortos y año bisiest
 test('identidad interna estable entre perfiles, acto distinto por documento y valores declarados preservados',()=>{
   const a=prepararCompacta(fixture,'minsa',meta),b=prepararCompacta(fixture,'essalud',meta);
   assert.equal(a.autogenerado_paciente,b.autogenerado_paciente);
-  assert.equal(a.historia_interna,b.historia_interna);assert.match(a.historia_interna,/^INT-HC-[A-F0-9]{12}$/);
-  assert.notEqual(a.acto_medico,b.acto_medico);assert.match(a.acto_medico,/^INT-AM-[A-F0-9]{10}$/);
+  assert.equal(a.historia_interna,b.historia_interna);assert.match(a.historia_interna,/^[A-Z0-9]{9}$/);
+  assert.notEqual(a.acto_medico,b.acto_medico);assert.match(a.acto_medico,/^[A-Z0-9]{9}$/);
   const c=prepararCompacta({...fixture,autogenerado_paciente:'INTERNO-1',acto_medico:'INTERNO-2',historia_interna:'INTERNO-3'},'minsa',meta);
   assert.equal(c.autogenerado_paciente,'INTERNO-1');assert.equal(c.acto_medico,'INTERNO-2');assert.equal(c.historia_interna,'INTERNO-3');
 });

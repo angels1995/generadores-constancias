@@ -158,7 +158,7 @@ def render(data,output):
         drawing.add(qr)
         renderPDF.draw(drawing,c,LEFT,42)
         footer=Paragraph('<b>REGISTRO INTERNO</b><br/>'+escape(verification)+
-                         '<br/>No acredita firma ni emisión por EsSalud. Código ATC cuando existe coincidencia.',
+                         '<br/>Escanee el QR para comprobar la validación del presente documento.',
                          ParagraphStyle('footer',fontName='Helvetica',fontSize=6.5,leading=9))
         _,fh=footer.wrap(RIGHT-LEFT-85,45)
         if fh>45:

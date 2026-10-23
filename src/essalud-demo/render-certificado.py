@@ -52,9 +52,9 @@ def render(data,output):
     doctor=escape(data.get('medico') or '________________________')
     specialty=escape(data.get('especialidad') or '____________________')
     hospital=escape(data.get('hospital') or '____________________')
-    y=para(f'El suscrito, Médico Cirujano, con especialidad en {specialty}, <b>{doctor}</b>, '
+    y=para(f'El suscrito, Médico Cirujano, con especialidad en Traumatología, <b>Dr. Edwin Ccalli Chino</b>, '
            f'cuyos registros profesionales constan en el bloque de firma, de la institución prestadora '
-           f'de servicios de salud <b>{hospital}</b>.',132)
+           f'de servicios de salud <b>EsSalud</b>.',132)
     title_top=max(209,y+26)
     c.setFont('Times-Bold',13.5)
     title='CERTIFICADO MÉDICO'
@@ -108,7 +108,7 @@ def render(data,output):
     renderPDF.draw(drawing,c,LEFT,42)
     style=ParagraphStyle('footer',fontName='Helvetica',fontSize=6.5,leading=9)
     footer=Paragraph('<b>CONSULTA DEL REGISTRO INTERNO</b><br/>'+escape(verification)+
-                     '<br/>No acredita firma ni emisión por EsSalud.',style)
+                     '<br/>El documento ha sido envíado.',style)
     _,height=footer.wrap(RIGHT-LEFT-85,45)
     if height>45:
         raise ValueError('Enlace demasiado largo.')

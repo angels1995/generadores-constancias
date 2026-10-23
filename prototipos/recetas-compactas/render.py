@@ -103,7 +103,7 @@ def render(d,output):
         renderPDF.draw(drawing,c,L,H-top-75)
         c.linkURL(d['verificador_url'],(L,H-top-75,L+75,H-top),relative=0)
         img('sello',330,top,85,80);img('firma',430.5,top,135,80)
-        label(R,top+86,'Espacio para firma y sello autorizados',6,right=True)
+        label(R,top+86,' ',6,right=True)
         label(L,top+88,('Registro interno: ' if d.get('modo')=='produccion' else 'Código local de muestra: ')+d['autog'],6)
         label(L,730,'MEDICO:',8.25)
         physician='  '.join(filter(None,[d['medico_cmp'],d['medico_nombre']]))

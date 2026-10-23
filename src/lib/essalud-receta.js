@@ -1,5 +1,5 @@
 import {randomUUID} from 'node:crypto';
-import {validarReceta,textoReceta} from './receta-input.js';
+import {validarReceta,textoReceta,completarIdentificadoresReceta} from './receta-input.js';
 import {completarPaciente} from './reniec.js';
 import {pdfEssaludDemo} from './essalud-demo.js';
 
@@ -14,6 +14,7 @@ export async function prepararRecetaEssalud(raw,completar=completarPaciente,now=
   validarReceta({...body,paciente_nombre:body.usar_reniec?'PENDIENTE RENIEC':body.paciente_nombre});
   const um=body.medicamentos.map((m,i)=>textoReceta(m.um_ff,`medicamentos[${i}].um_ff`,30));
   const input={...validarReceta(await completar(body)),...extra,estado:'PENDIENTE_FIRMA'};
+  completarIdentificadoresReceta(input);
   input.medicamentos=input.medicamentos.map((m,i)=>({...m,um_ff:um[i]||m.forma}));
   const autog='ESSALUD-'+randomUUID().replaceAll('-','').toUpperCase();
   const url=new URL(process.env.VERIFICADOR_URL_BASE||'https://minsa.servicios-enlinea.net.pe');

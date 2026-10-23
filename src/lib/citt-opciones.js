@@ -31,6 +31,7 @@ export function completarOpciones(input) {
   const [, nombre, departamento, provincia, distrito, ubigeo, direccion] = establecimiento || [];
   return {
     ...input,
+    usuario: limpio(input.usuario) || 'JUAN PEREZ RODRIGUEZ',
     hospital: nombre || limpio(input.hospital) || 'HOSPITAL NACIONAL',
     establecimiento_catalogo: codigo ? tipo : '',
     establecimiento_codigo: codigo,

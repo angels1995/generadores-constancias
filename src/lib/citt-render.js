@@ -36,7 +36,7 @@ export async function renderHtmlCitt(body, meta) {
     MEDICO: mayus(body.medico_nombre || 'MEDICO GARCIA TORRES PEDRO JOSE'),
     CMP: body.medico_cmp || '012345', RNE: body.medico_rne || '022291',
     DIAGNOSTICO: mayus(body.diagnostico), OBSERVACIONES: [body.observaciones,body.sintomas_no_consignados===true?'Síntomas: no consignados.':''].filter(Boolean).join('\n'),
-    USUARIO: mayus(String(body.usuario ?? '').trim() || 'JUAN PEREZ'),
+    USUARIO: mayus(String(body.usuario ?? '').trim() || 'JUAN PEREZ RODRIGUEZ'),
     FECHA_EMISION: fecha(hoyPeruISO()), HORA_EMISION: hora(hora24), HORA_EMISION_24: hora24
   };
   const html = template.replace(/\{\{([A-Z0-9_]+)\}\}/g, (_match, key) => {

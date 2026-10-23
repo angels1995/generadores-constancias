@@ -1,6 +1,18 @@
 import { completarOpciones } from './citt-opciones.js';
 import { clasificarAtc } from './receta-atc.js';
 import { hoyPeruISO } from './vigencia.js';
+import { randomInt, createHash } from 'node:crypto';
+
+// Referencias internas del documento; nunca reemplazan un identificador declarado.
+export function completarIdentificadoresReceta(input) {
+  const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  for (const campo of ['autogenerado_paciente', 'acto_medico', 'documento_id', 'historia_interna', 'paciente_pi']) {
+    input[campo] ||= ['autogenerado_paciente', 'historia_interna', 'paciente_pi'].includes(campo)
+      ? createHash('sha256').update(`interno:${campo}:${input.paciente_dni}`).digest('hex').slice(0,9).toUpperCase()
+      : Array.from({length: 9}, () => alfabeto[randomInt(alfabeto.length)]).join('');
+  }
+  return input;
+}
 
 export function textoReceta(v, campo, max, requerido = false) {
   if (v != null && typeof v !== 'string') throw new Error(`${campo} debe ser texto.`);
@@ -41,6 +53,8 @@ export function validarReceta(body) {
     diagnostico: 220, cie10: 12, medico_nombre: 100, medico_cmp: 12, usuario: 70
   };
   const limpio = Object.fromEntries(Object.entries(campos).map(([k, max]) => [k, textoReceta(body[k], k, max)]));
+  limpio.atencion ||= 'CONSULTA EXTERNA';
+  limpio.especialidad ||= 'Traumatología';
   const opciones = completarOpciones(limpio);
   const fecha_atencion = fecha(body.fecha_atencion, 'fecha_atencion');
   const valido_hasta = fecha(body.valido_hasta, 'valido_hasta');
@@ -68,7 +82,7 @@ export function validarReceta(body) {
     return { ...result, ...clasificarAtc(result) };
   });
   return {
-    ...limpio, hospital: opciones.hospital, seguro: opciones.seguro,
+    ...limpio, usuario: opciones.usuario, hospital: opciones.hospital, seguro: opciones.seguro,
     establecimiento_catalogo: opciones.establecimiento_catalogo,
     establecimiento_codigo: opciones.establecimiento_codigo,
     establecimiento_direccion: opciones.establecimiento_direccion,

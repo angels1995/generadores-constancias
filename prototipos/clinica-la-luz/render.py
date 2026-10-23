@@ -67,7 +67,7 @@ class Document:
         if self.d['medico_cmp']:
             self.text(x+width/2,top+96,'CMP: '+self.d['medico_cmp'],8,True,'center',width)
         if not any(self.d.get(k) for k in ['medico_nombre','medico_especialidad','medico_cmp']):
-            self.text(x+width/2,top+76,'Espacio para profesional autorizado',7,False,'center',width)
+            self.text(x+width/2,top+76,' ',7,False,'center',width)
     def footer(self,page=1,pages=1,top=690):
         self.text(L,top,'USUARIO  '+self.d['usuario'],8,True,width=350)
         self.text(R,top,'HORA  '+self.d['hora_emision'],8,align='right')

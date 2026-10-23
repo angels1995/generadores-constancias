@@ -7,10 +7,10 @@ import {crearRouterEssalud} from '../src/routes/essalud-demo.js';
 import {leerRecursosEssalud} from '../src/lib/essalud-recursos.js';
 
 const fixture=JSON.parse(await fs.readFile(new URL('../docs/essalud-receta-payload.json',import.meta.url)));
-test('receta EsSalud conserva datos declarados e identificadores opcionales vacíos',async()=>{
+test('receta EsSalud conserva datos declarados y completa identificadores internos ausentes',async()=>{
   const d=await prepararRecetaEssalud({...fixture,paciente_edad:0});
   assert.equal(d.input.estado,'PENDIENTE_FIRMA');assert.equal(d.input.paciente_edad,0);
-  for(const key of ['paciente_pi','autogenerado_paciente','acto_medico','documento_id','historia_interna'])assert.equal(d.input[key],'');
+  for(const key of ['paciente_pi','autogenerado_paciente','acto_medico','documento_id','historia_interna'])assert.match(d.input[key],/^[A-Z0-9]{9}$/);
   assert.equal(d.render.numero_orden,d.autog);assert.equal(d.input.medicamentos[0].um_ff,'');
   assert.equal(d.input.medicamentos[0].atc_codigo,'N02BE01');assert.equal(d.input.medicamentos[0].dosis,'DOSIS FICTICIA');
   const resources=await leerRecursosEssalud(undefined,'receta');assert.ok(resources.logo);

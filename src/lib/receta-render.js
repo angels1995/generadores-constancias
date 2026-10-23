@@ -15,9 +15,7 @@ export async function renderHtmlReceta(input, meta) {
     <div>${e([input.establecimiento_departamento, input.establecimiento_provincia, input.establecimiento_distrito].filter(Boolean).join(' / '))}</div>
     <h3>RECETA ÚNICA ESTANDARIZADA${indicaciones ? '<br>INDICACIONES' : ''}</h3><small>N.º ${e(meta.autog)}</small></header>${paciente}`;
   const firma = `<div class="signature"><div class="signature-art">
-    <img class="firma-sello-image" alt="Espacio para imagen única de firma y sello" src="${e(firmaSelloConfigurada)}"></div>
-    <div class="signature-caption">Firma y sello del profesional</div>
-    <div class="professional">Profesional declarado: ${e(input.medico_nombre)} &nbsp; CMP: ${e(input.medico_cmp)}</div></div>`;
+    <img class="firma-sello-image" alt="Espacio para imagen única de firma y sello" src="${e(firmaSelloConfigurada)}"></div>`;
   const tablas = (items, indicaciones, pagina) => `<table><thead><tr>${(indicaciones ?
     ['Medicamento', 'Dosis', 'Vía', 'Frecuencia', 'Días'] :
     ['Medicamento / ATC', 'Concentración', 'Forma', 'Cant.']).map(t => `<th>${t}</th>`).join('')}</tr></thead><tbody>${items.map((m, n) => {
@@ -47,7 +45,7 @@ export async function renderHtmlReceta(input, meta) {
       ${tablas(items, false, i)}${firma}<div class="dates">Fecha de atención: ${f(input.fecha_atencion)}<br>Válido hasta (declarado): ${f(input.valido_hasta)}</div></div>
     <div class="col">${encabezado(true)}<div class="details indications-space"></div>
       ${tablas(items, true, i)}${firma}<div class="dates">Fecha de atención: ${f(input.fecha_atencion)}<br>Válido hasta (declarado): ${f(input.valido_hasta)}</div></div>
-    </div><footer><img alt="QR del registro" src="${e(qr)}"><div class="text"><b>Verificación del registro del sistema</b><br>Este QR no acredita firma, habilitación profesional ni emisión por MINSA.
+    </div><footer><img alt="QR del registro" src="${e(qr)}"><div class="text"><b>Verificación del registro del sistema</b><br>
       <br><a href="${e(meta.verificador_url)}">${e(meta.verificador_url)}</a><br>ATC: referencia del WHO Collaborating Centre for Drug Statistics Methodology. Enlaces en cada código.</div>
       <div class="metadata">Emitido: ${e(meta.emitido_lima)}<br>Usuario: ${e(input.usuario)}<br><span class="page-number">Página ${i + 1} de ${grupos.length}</span></div></footer></section>`).join('')}</body></html>`;
 }
