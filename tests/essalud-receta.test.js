@@ -9,7 +9,7 @@ import {leerRecursosEssalud} from '../src/lib/essalud-recursos.js';
 const fixture=JSON.parse(await fs.readFile(new URL('../docs/essalud-receta-payload.json',import.meta.url)));
 test('receta EsSalud conserva datos declarados y completa identificadores internos ausentes',async()=>{
   const d=await prepararRecetaEssalud({...fixture,paciente_edad:0});
-  assert.equal(d.input.estado,'PENDIENTE_FIRMA');assert.equal(d.input.paciente_edad,0);
+  assert.equal(d.input.estado,'OPERATIVO');assert.equal(d.input.paciente_edad,0);
   for(const key of ['paciente_pi','autogenerado_paciente','acto_medico','documento_id','historia_interna'])assert.match(d.input[key],/^[A-Z0-9]{9}$/);
   assert.equal(d.render.numero_orden,d.autog);assert.equal(d.input.medicamentos[0].um_ff,'');
   assert.equal(d.input.medicamentos[0].atc_codigo,'N02BE01');assert.equal(d.input.medicamentos[0].dosis,'DOSIS FICTICIA');
@@ -26,7 +26,7 @@ test('RENIEC y catálogos no inventan medicamentos ni pautas; validación previa
 test('HTTP genera PDF EsSalud, registro simulado y respuesta pública sin identidad',async()=>{
   const records=new Map();
   const db={query:async(sql,args)=>{
-    if(sql.startsWith('INSERT')){records.set(args[0],{autog:args[0],estado:'PENDIENTE_FIRMA',pdf_sha256:args[1],created_at:'2026-10-22T15:00:00Z'});return {rows:[]};}
+    if(sql.startsWith('INSERT')){records.set(args[0],{autog:args[0],estado:'OPERATIVO',pdf_sha256:args[1],created_at:'2026-10-22T15:00:00Z'});return {rows:[]};}
     return {rows:records.has(args[0])?[records.get(args[0])]:[]};
   }};
   const app=express();app.use(express.json());app.use(crearRouterEssalud({db,preparar:prepararRecetaEssalud,pdf:pdfRecetaEssalud}));
@@ -34,7 +34,7 @@ test('HTTP genera PDF EsSalud, registro simulado y respuesta pública sin identi
   try {
     const base='http://127.0.0.1:'+server.address().port;
     const r=await fetch(base+'/generar',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(fixture)});
-    assert.equal(r.status,200);const j=await r.json();assert.equal(j.data.estado,'PENDIENTE_FIRMA');
+    assert.equal(r.status,200);const j=await r.json();assert.equal(j.data.estado,'OPERATIVO');
     const bytes=Buffer.from(j.data.pdf_base64,'base64');assert.equal(bytes.subarray(0,5).toString(),'%PDF-');
     const v=await fetch(base+'/verificar/'+j.data.autog);assert.equal(v.status,200);
     const text=await v.text();assert.ok(!text.includes(fixture.paciente_nombre));assert.ok(!text.includes('PARACETAMOL'));

@@ -19,10 +19,10 @@ router.post('/generar',async (req,res)=>{
     } catch {
       return res.status(503).json({status:false,message:'Registro interno temporalmente no disponible. No se entregó el PDF.',data:null});
     }
-    res.json({status:true,message:'Documento pendiente de firma generado.',data:{
-      estado:'PENDIENTE_FIRMA',autog:data.autog,registrado:true,verificador_url:data.verificador_url,pdf_sha256,
+    res.json({status:true,message:'Documento operativo generado.',data:{
+      estado:'OPERATIVO',autog:data.autog,registrado:true,verificador_url:data.verificador_url,pdf_sha256,
       descanso_inicio:data.inicio,total_dias:data.dias,input:data.input,pdf_base64,
-      aviso:'Pendiente de firma profesional. El enlace verifica el registro interno; no acredita firma ni emisión por EsSalud.'
+      aviso:'Documento operativo en el sistema. El enlace verifica el registro interno; no acredita firma ni emisión por EsSalud.'
     }});
   } catch(error) {
     res.status(error.statusCode || 400).json({status:false,message:error.statusCode?error.message:'No se pudo validar la solicitud.',data:null});
@@ -35,7 +35,7 @@ router.get('/verificar/:autog',async(req,res)=>{
     if(!rows.length)return res.status(404).json({status:false,message:'Registro no encontrado.'});
     const row=rows[0];
     res.json({status:true,data:{autog:row.autog,estado:row.estado,pdf_sha256:row.pdf_sha256,created_at:row.created_at,
-      aviso:'Registro interno de un documento pendiente de firma. No acredita atención médica, firma ni emisión por EsSalud.'}});
+      aviso:'Registro operativo del documento en el sistema. No acredita atención médica, firma ni emisión por EsSalud.'}});
   } catch {
     res.status(503).json({status:false,message:'Verificador temporalmente no disponible.'});
   }

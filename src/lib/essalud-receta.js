@@ -13,7 +13,7 @@ export async function prepararRecetaEssalud(raw,completar=completarPaciente,now=
   const extra=Object.fromEntries(['paciente_pi','autogenerado_paciente','acto_medico','documento_id','numero_orden'].map(key=>[key,textoReceta(body[key],key,64)]));
   validarReceta({...body,paciente_nombre:body.usar_reniec?'PENDIENTE RENIEC':body.paciente_nombre});
   const um=body.medicamentos.map((m,i)=>textoReceta(m.um_ff,`medicamentos[${i}].um_ff`,30));
-  const input={...validarReceta(await completar(body)),...extra,estado:'PENDIENTE_FIRMA'};
+  const input={...validarReceta(await completar(body)),...extra,estado:'OPERATIVO'};
   completarIdentificadoresReceta(input);
   input.medicamentos=input.medicamentos.map((m,i)=>({...m,um_ff:um[i]||m.forma}));
   const autog='ESSALUD-'+randomUUID().replaceAll('-','').toUpperCase();

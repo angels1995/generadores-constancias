@@ -23,7 +23,7 @@ def render(data,output):
     c=canvas.Canvas(output,pagesize=A4)
     c.setTitle('Certificado médico - Registro del sistema')
     c.setAuthor('Registro interno')
-    c.setSubject('Documento pendiente de validación y firma profesional.')
+    c.setSubject('Documento operativo registrado en el sistema.')
     c.setFont('Helvetica',7)
     c.setFillColor(HexColor('#555555'))
     c.drawRightString(RIGHT,H-14,'REGISTRO VERIFICADO EN EL SISTEMA')

@@ -70,7 +70,7 @@ export async function prepararLaLuz(raw,tipo,{completar=completarPaciente,now=ne
   let input={...body,paciente_nombre:person.paciente_nombre,paciente_nacimiento:person.paciente_nacimiento||'',paciente_edad:age};
   if(tipo==='receta')input={...input,...validarReceta(input)};
   input.historia_interna ||= 'INT-HC-'+createHash('sha256').update('muestra-local:'+input.paciente_dni).digest('hex').slice(0,12).toUpperCase();
-  input.estado='PENDIENTE_FIRMA';
+  input.estado='OPERATIVO';
   const keys=['logo','firma','sello',...(tipo==='descanso'?['isotipo']:[])];
   const images=leerRecursosPdf(keys.map(k=>prefix+'_'+k),{config});
   const recursos=Object.fromEntries(keys.map(k=>[k,images[prefix+'_'+k]?.bytes.toString('base64')??null]));

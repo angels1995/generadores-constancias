@@ -5,7 +5,7 @@ import { crearRouterEssalud } from '../src/routes/essalud-demo.js';
 
 const records=new Map();
 const db={query:async(sql,args)=>{
-  if(sql.startsWith('INSERT')){records.set(args[0],{autog:args[0],estado:'PENDIENTE_FIRMA',pdf_sha256:args[1],created_at:'2026-10-22T15:00:00Z'});return {rows:[]};}
+  if(sql.startsWith('INSERT')){records.set(args[0],{autog:args[0],estado:'OPERATIVO',pdf_sha256:args[1],created_at:'2026-10-22T15:00:00Z'});return {rows:[]};}
   return {rows:records.has(args[0])?[records.get(args[0])]:[]};
 }};
 const router=crearRouterEssalud({db});
@@ -17,7 +17,7 @@ try {
   const payload=JSON.parse(await fs.readFile(new URL('../docs/essalud-citt-demo-payload.json',import.meta.url)));
   const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
   assert.equal(r.status,200);
-  const {data,status}=await r.json();assert.equal(status,true);assert.equal(data.estado,'PENDIENTE_FIRMA');
+  const {data,status}=await r.json();assert.equal(status,true);assert.equal(data.estado,'OPERATIVO');
   assert.equal(data.registrado,true);assert.equal(new URL(data.verificador_url).searchParams.get('essalud'),data.autog);
   const pdf=Buffer.from(data.pdf_base64,'base64');assert.equal(pdf.subarray(0,5).toString(),'%PDF-');
   await fs.mkdir(new URL('../tmp/pdfs/essalud-api/',import.meta.url),{recursive:true});

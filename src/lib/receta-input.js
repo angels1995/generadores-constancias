@@ -91,6 +91,6 @@ export function validarReceta(body) {
     establecimiento_distrito: opciones.establecimiento_distrito,
     paciente_dni, paciente_nombre: textoReceta(body.paciente_nombre, 'paciente_nombre', 100, true),
     paciente_nacimiento, paciente_edad, fecha_atencion, valido_hasta,
-    medicamentos, usar_reniec: body.usar_reniec === true, estado: 'BORRADOR'
+    medicamentos, usar_reniec: body.usar_reniec === true, estado: 'OPERATIVO'
   };
 }

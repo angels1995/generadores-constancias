@@ -13,9 +13,9 @@ export function crearRouterDocumentos({db=pool,preparar=prepararVersionado,pdf=p
       const pdf_sha256=createHash('sha256').update(Buffer.from(pdf_base64,'base64')).digest('hex');
       try{await db.query('INSERT INTO documentos_pendientes (autog,tipo,pdf_sha256) VALUES ($1,$2,$3)',[d.autog,d.tipo,pdf_sha256]);}
       catch{return res.status(503).json({status:false,message:'Registro no disponible. No se entregó el PDF.'});}
-      res.json({status:true,data:{estado:'PENDIENTE_FIRMA',autog:d.autog,tipo:d.tipo,registrado:true,
+      res.json({status:true,data:{estado:'OPERATIVO',autog:d.autog,tipo:d.tipo,registrado:true,
         verificador_url:d.verificador_url,pdf_sha256,input:d.input,pdf_base64,
-        aviso:'Registro interno. Pendiente de validación y firma profesional; no acredita emisión institucional.'}});
+        aviso:'Operativo.'}});
     }catch(e){res.status(e.statusCode||400).json({status:false,message:e.statusCode?e.message:'No se pudo validar la solicitud.'});}
   });
   r.get('/verificar/:autog',async(req,res)=>{
@@ -25,7 +25,7 @@ export function crearRouterDocumentos({db=pool,preparar=prepararVersionado,pdf=p
       if(!rows.length)return res.status(404).json({status:false,message:'Registro no encontrado.'});
       const {autog,tipo,estado,pdf_sha256,created_at}=rows[0];
       res.json({status:true,data:{autog,tipo,estado,pdf_sha256,created_at,
-        aviso:'Registro interno pendiente de firma; no acredita atención, firma ni emisión institucional.'}});
+        aviso:'Registro operativo del sistema; no acredita atención, firma ni emisión institucional.'}});
     }catch{res.status(503).json({status:false,message:'Verificador no disponible.'});}
   });return r;
 }

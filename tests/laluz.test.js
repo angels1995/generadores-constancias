@@ -12,7 +12,7 @@ test('La Luz: tres perfiles, opcionales null/vacíos, edad al atender y recursos
   for(const tipo of tipos)for(const empty of [undefined,null,'','  ']){
     const d=await prepararLaLuz({...fixtures[tipo],medico_nombre:empty,medico_cmp:empty,paciente_sexo:empty},tipo);
     assert.equal(d.medico_nombre,'');assert.equal(d.medico_cmp,'');assert.equal(d.paciente_sexo,'');
-    assert.equal(d.paciente_edad,25);assert.equal(d.registrado,false);assert.equal(d.estado,'PENDIENTE_FIRMA');
+    assert.equal(d.paciente_edad,25);assert.equal(d.registrado,false);assert.equal(d.estado,'OPERATIVO');
     assert.match(d.autog,/^LOCAL-[A-F0-9]{16}$/);assert.match(d.historia_interna,/^INT-HC-/);
     assert.ok(d.recursos.logo);
   }

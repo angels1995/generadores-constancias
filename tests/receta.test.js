@@ -81,7 +81,7 @@ test('HTTP entrega PDF/QR/registro, escapa HTML y no asigna datos clínicos auto
   assert.match(body.data.autog,/^RECETA-[A-F0-9]{32}$/);
   assert.equal(new URL(body.data.verificador_url).searchParams.get('receta'),body.data.autog);
   assert.equal(new URL(body.data.verificador_url).origin,new URL(process.env.VERIFICADOR_URL_BASE || 'https://minsa.servicios-enlinea.net.pe').origin);
-  assert.equal(body.data.input.estado,'BORRADOR');
+  assert.equal(body.data.input.estado,'OPERATIVO');
   assert.ok(html.includes('PACIENTE &lt;b&gt;&amp; FICTICIO'));
   assert.ok(html.includes('REGISTRO VERIFICADO EN EL SISTEMA')); assert.ok(!html.includes('PENDIENTE DE VALIDACIÓN Y FIRMA'));
   assert.equal((html.match(/alt="Logo de referencia MINSA"/g)||[]).length,2);
@@ -91,7 +91,7 @@ test('HTTP entrega PDF/QR/registro, escapa HTML y no asigna datos clínicos auto
   assert.equal(body.data.input.medico_cmp,''); assert.equal(externas,0);
   const res = await fetch(`${base}/api/receta/verificar/${body.data.autog}`);
   const verif = await res.json();
-  assert.equal(res.status,200); assert.equal(verif.data.estado,'BORRADOR');
+  assert.equal(res.status,200); assert.equal(verif.data.estado,'OPERATIVO');
   for (const k of ['input','paciente_nombre','paciente_dni','diagnostico','medicamentos']) assert.ok(!(k in verif.data));
   assert.equal(verif.data.medicamentos_total,1);
 });

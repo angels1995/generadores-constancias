@@ -41,7 +41,7 @@ test('texto clínico vacío o excesivo no se inventa ni se recorta',async()=>{
 test('HTTP genera certificado PDF real con registro simulado y no publica identidad',async()=>{
   const records=new Map();
   const db={query:async(sql,args)=>{
-    if(sql.startsWith('INSERT')){records.set(args[0],{autog:args[0],estado:'PENDIENTE_FIRMA',pdf_sha256:args[1],created_at:'2026-10-22T15:00:00Z'});return {rows:[]};}
+    if(sql.startsWith('INSERT')){records.set(args[0],{autog:args[0],estado:'OPERATIVO',pdf_sha256:args[1],created_at:'2026-10-22T15:00:00Z'});return {rows:[]};}
     return {rows:records.has(args[0])?[records.get(args[0])]:[]};
   }};
   const app=express();app.use(express.json());
@@ -50,7 +50,7 @@ test('HTTP genera certificado PDF real con registro simulado y no publica identi
   try {
     const base='http://127.0.0.1:'+server.address().port+'/api/essalud/certificado';
     const r=await fetch(base+'/generar',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(fixture)});
-    assert.equal(r.status,200);const j=await r.json();assert.equal(j.data.estado,'PENDIENTE_FIRMA');
+    assert.equal(r.status,200);const j=await r.json();assert.equal(j.data.estado,'OPERATIVO');
     const bytes=Buffer.from(j.data.pdf_base64,'base64');assert.equal(bytes.subarray(0,5).toString(),'%PDF-');
     const check=await fetch(base+'/verificar/'+j.data.autog);assert.equal(check.status,200);
     const text=await check.text();assert.ok(!text.includes(fixture.paciente_nombre));assert.ok(!text.includes(fixture.paciente_dni));

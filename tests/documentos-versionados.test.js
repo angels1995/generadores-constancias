@@ -26,7 +26,7 @@ test('HTTP con PDF real y BD simulada, siete rutas y verificación sin identidad
   const records=new Map();let fail=false;
   const db={query:async(sql,a)=>{
     if(fail)throw Error('Fallo privado de BD');
-    if(sql.startsWith('INSERT')){records.set(a[0],{autog:a[0],tipo:a[1],pdf_sha256:a[2],estado:'PENDIENTE_FIRMA',created_at:'2026-10-22T12:00:00Z'});return {rows:[]};}
+    if(sql.startsWith('INSERT')){records.set(a[0],{autog:a[0],tipo:a[1],pdf_sha256:a[2],estado:'OPERATIVO',created_at:'2026-10-22T12:00:00Z'});return {rows:[]};}
     return {rows:records.has(a[0])?[records.get(a[0])]:[]};
   }};
   const app=express();app.use(express.json());app.use(crearRouterDocumentos({db}));
@@ -39,7 +39,7 @@ test('HTTP con PDF real y BD simulada, siete rutas y verificación sin identidad
       assert.equal(r.status,200,tipo);const {data:d}=await r.json();
       const bytes=Buffer.from(d.pdf_base64,'base64');assert.equal(bytes.subarray(0,5).toString(),'%PDF-');
       assert.equal(createHash('sha256').update(bytes).digest('hex'),d.pdf_sha256);
-      assert.equal(d.estado,'PENDIENTE_FIRMA');
+      assert.equal(d.estado,'OPERATIVO');
       const v=await fetch(base+'/verificar/'+d.autog);assert.equal(v.status,200);const {data:publicData}=await v.json();
       assert.deepEqual(Object.keys(publicData).sort(),['autog','tipo','estado','pdf_sha256','created_at','aviso'].sort());
       await fs.writeFile(new URL('../tmp/pdfs/versionados/'+tipo+'.pdf',import.meta.url),bytes);

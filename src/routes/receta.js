@@ -32,7 +32,7 @@ router.get('/verificar/:autog', async (req, res) => {
       FROM recetas_minsa WHERE autog = $1`, [req.params.autog]);
     if (!rows.length) return res.status(404).json({ status: false, message: 'Registro no encontrado.' });
     const row = rows[0];
-    res.json({ status: true, data: { ...row, estado: 'BORRADOR',
+    res.json({ status: true, data: { ...row, estado: 'OPERATIVO',
       dentro_del_plazo_declarado: hoyPeruISO() <= row.valido_hasta,
       aviso: 'Verifica el registro del sistema. No acredita firma, habilitación profesional ni emisión por MINSA.' } });
   } catch {

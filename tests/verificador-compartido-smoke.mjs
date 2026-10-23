@@ -28,7 +28,7 @@ try{
   if(r.url().startsWith('https://descanso-api.sin-flower.com/api/')){
     calls.push(r.url());
     const body=['essalud','documento'].includes(current)?{status:true,data:{autog:'<img src=x onerror="window.inyectado=1">',tipo:current==='documento'?documentType:undefined,
-      estado:'PENDIENTE_FIRMA',created_at:'2026-10-22T13:00:00Z',pdf_sha256:'a'.repeat(64)}}:current==='receta'?{status:true,data:{autog:'<img src=x onerror="window.inyectado=1">',
+      estado:'OPERATIVO',created_at:'2026-10-22T13:00:00Z',pdf_sha256:'a'.repeat(64)}}:current==='receta'?{status:true,data:{autog:'<img src=x onerror="window.inyectado=1">',
       created_at:'2026-10-22T13:00:00Z',valido_hasta:'2026-10-23',dentro_del_plazo_declarado:true,medicamentos_total:9}}:legacy;
     return r.respond({status,contentType:'application/json',headers:{'Access-Control-Allow-Origin':'*'},body:JSON.stringify(body)});
   }
