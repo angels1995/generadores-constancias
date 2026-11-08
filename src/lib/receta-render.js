@@ -15,7 +15,7 @@ export async function renderHtmlReceta(input, meta) {
     <div>${e([input.establecimiento_departamento, input.establecimiento_provincia, input.establecimiento_distrito].filter(Boolean).join(' / '))}</div>
     <h3>RECETA ÚNICA ESTANDARIZADA${indicaciones ? '<br>INDICACIONES' : ''}</h3><small>N.º ${e(meta.autog)}</small></header>${paciente}`;
   const firma = `<div class="signature"><div class="signature-art">
-    <img class="firma-sello-image" alt="Espacio para imagen única de firma y sello" src="${e(firmaSelloConfigurada)}"></div>`;
+    <img class="firma-sello-image" alt="Espacio para imagen única de firma y sello" src="${e(firmaSelloConfigurada)}"></div></div>`;
   const tablas = (items, indicaciones, pagina) => `<table><thead><tr>${(indicaciones ?
     ['Medicamento', 'Dosis', 'Vía', 'Frecuencia', 'Días'] :
     ['Medicamento / ATC', 'Concentración', 'Forma', 'Cant.']).map(t => `<th>${t}</th>`).join('')}</tr></thead><tbody>${items.map((m, n) => {
